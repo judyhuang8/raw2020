@@ -1,0 +1,32 @@
+html{
+  overflow: hidden;
+}
+h2{
+  font-size: 47px;
+}
+.container-fluid{
+  margin: 20px 30px;
+  width: auto;
+ }
+.icon{
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+.arrow{
+  height: 15px;
+  width: 30px;
+  float: right;
+  align-self: center;
+  cursor: pointer;
+}
+.article_cover{
+  margin: 0px auto;
+  padding: 20px 0px;
+}
+.details{
+  margin-bottom: 30px;
+}
+.hidden{
+  display: none;
+}

@@ -38,3 +38,7 @@ p{
   font-family: 'Times Now', serif;
   font-size: 20px;
 }
+.container-fluid{
+  margin: 20px 30px;
+  width: auto;
+ }

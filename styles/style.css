@@ -1,4 +1,5 @@
 @font-face{
+<<<<<<< HEAD
     font-family: "Neue Haas Grotesk 65";
     src: url("fonts/NHaasGroteskDSPro-65Md.ttf");
   }
@@ -57,3 +58,48 @@
     font-family: 'Times Now', serif;
     font-size: 48px;
   }
+=======
+  font-family: "Neue Haas Grotesk 65";
+  src: url("fonts/NHaasGroteskDSPro-65Md.ttf");
+}
+@font-face{
+  font-family: "Neue Haas Grotesk 55";
+  src: url("fonts/NHaasGroteskDSPro-55Rg.ttf");
+}
+@font-face{
+  font-family: "Times Now";
+  src: url("fonts/Times\ Now\ SemiLight.otf");
+}
+h1, h2, h3, h4{
+  font-family: 'Neue Haas Grotesk 65', sans-serif;
+}
+h5, h6{
+  font-family: 'Neue Haas Grotesk 55', sans-serif;
+}
+h1{
+  font-size: 72px;
+}
+h2{
+  font-size: 48px;
+}
+h3{
+  font-size: 36px;
+}
+h4{
+  font-size: 24px;
+}
+h5{
+  font-size: 24px;
+}
+h6{
+  font-size: 18px;
+}
+p{
+  font-family: 'Times Now', serif;
+  font-size: 20px;
+}
+.container-fluid{
+  margin: 20px 30px;
+  width: auto;
+ }
+>>>>>>> 4b0f97d850788a3762937e1a3d15909af02f945f

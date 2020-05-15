@@ -1,0 +1,46 @@
+/* CSS files add styling rules to your content */
+
+body {
+  font-family: helvetica, arial, sans-serif;
+  margin: 2em;
+  background-color: black;
+  color: white;
+  font-size: 20px;
+  overflow-x: hidden;
+}
+
+p{
+  margin: 0px;
+}
+#countdown{
+  height: 80vh;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#time:hover{
+  animation: glitch .25s;
+}
+
+@keyframes glitch {
+  0% {
+    transform: translateX(-15px);
+    color: cyan;
+  }
+
+  25% {
+    transform: translateX(15px);
+    color: #f22966;
+    
+  }
+  50% {
+    transform: translateX(15px);
+    color: cyan;
+  }
+  100% {
+    transform: translateX(-15px);
+    color: #f22966;
+  }
+}

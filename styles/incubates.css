@@ -56,15 +56,42 @@ h5{
   position: absolute;
   bottom: 28px;
   transform: translateX(-60%);
-  /* animation: 1s navhover; */
+  animation: 0.5s navhover ease-in-out;
+}
+
+#full-content {
+  display: none;
+  align-items: start;
+  margin: 1em auto;
+  width: 75%;
+}
+
+#full-content img {
+  height:200px;
+}
+
+.incubates-text {
+  margin: 2em;
+}
+
+a.button h4 {
+  font-size: 18px;
+  margin: 0;
+}
+
+.button {
+  border: 1px solid black;
+  padding: 1em 2em;
+  float: right;
+  border-radius: 1em;
 }
 
 @keyframes navhover{
   0% {
-    transform: scale(0);
+   opacity: 0;
   }
   100% {
-    transform: scale(1);
+    opacity: 1;
   }
 }
 

@@ -70,13 +70,20 @@ h5{
   height:200px;
 }
 
+
 .incubates-text {
-  margin: 2em;
+  margin: 2em;  height: 200px;
+  overflow: auto;
 }
 
 a.button h4 {
   font-size: 18px;
   margin: 0;
+  color: black;
+}
+
+a.button:hover {
+  text-decoration: none;
 }
 
 .button {

@@ -2,7 +2,7 @@
 
 body {
   font-family: helvetica, arial, sans-serif;
-  margin: 2em;
+  margin: 10px;
   background-color: black;
   color: white;
   font-size: 20px;
@@ -12,8 +12,11 @@ body {
 p{
   margin: 0px;
 }
+footer{
+  text-align: center;
+}
 #countdown{
-  height: 80vh;
+  height: 85vh;
   text-align: center;
   display: flex;
   justify-content: center;

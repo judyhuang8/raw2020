@@ -8,7 +8,14 @@ body {
   font-size: 20px;
   overflow-x: hidden;
 }
-
+a{
+  color: white;
+  text-decoration: none;
+}
+a:hover{
+  color: yellow;
+  text-decoration: none;
+}name
 p{
   margin: 0px;
 }

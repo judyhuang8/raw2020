@@ -15,12 +15,13 @@ a{
 a:hover{
   color: yellow;
   text-decoration: none;
-}name
+}
 p{
-  margin: 0px;
+  margin-bottom: 0px;
 }
 footer{
   text-align: center;
+  font-size: 12px;
 }
 #countdown{
   height: 85vh;
@@ -28,29 +29,29 @@ footer{
   display: flex;
   justify-content: center;
   flex-direction: column;
+  font-size: 20px;
 }
-
 #time:hover{
-  animation: glitch .25s;
+  animation: glitch .20s;
 }
 
 @keyframes glitch {
   0% {
     transform: translateX(-15px);
-    color: cyan;
+    color: #00ccffff;
   }
 
   25% {
     transform: translateX(15px);
-    color: #f22966;
+    color: #ff0066ff;
     
   }
   50% {
     transform: translateX(15px);
-    color: cyan;
+    color: #00ccffff;
   }
   100% {
     transform: translateX(-15px);
-    color: #f22966;
+    color: #ff0066ff;
   }
 }

@@ -5,18 +5,65 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    
+
     <!-- import the webpage's stylesheet -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="styles/style.css">
-    
+
     <!-- import the webpage's javascript file -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="scripts/script.js" defer></script>
-    
-  </head>  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.14/p5.js"></script>
+    <script>
+			function setup(){
+        createCanvas(windowWidth, windowHeight);
+    if(mouseX>200){
+     d = int(dist(mouseX, mouseY, 400,200));
+  }
+  else if (mouseX<200){
+     d=int(dist(mouseX, mouseY, 0,200));
+  }
+			}
+
+			function draw(){
+        blendMode(BLEND);
+	background(245);
+	//noStroke();
+	blendMode(MULTIPLY);
+	noStroke();
+	translate(width/2,height/2);
+	fill(0,150,240);
+	drawLiq(18,d,d,d);
+	fill(240,240,0);
+	drawLiq(15,90,25,120);
+	fill(240,0,240);
+	drawLiq(12,85,15,150);
+			}
+
+function drawLiq(vNnum,nm,sm,fcm){
+	push();
+	rotate(frameCount/fcm);
+	let dr = TWO_PI/vNnum;
+	beginShape();
+	for(let i = 0; i  < vNnum + 3; i++){
+		let ind = i%vNnum;
+		let rad = dr *ind;
+		let r = height*0.3 + noise(frameCount/nm + ind) * height*0.1 + sin(frameCount/sm + ind)*height*0.05;
+		curveVertex(cos(rad)*r, sin(rad)*r);
+	}
+	endShape();
+	pop();
+}
+		</script>
+  </head>
   <body>
-    <h1>Hello world</h1>
-    <h5>hello world</h5>
+    <div class="container">
+    <div class="center">
+      <div id="sketch-div"></div>
+    <h1>RAW VI: Forms of Belonging</h1>
+    <p>A collection of work and writing about diversity and inclusion in design</p>
+    <a href="index.html">Enter</a>
+    </div>
+  </div>
   </body>
 </html>

@@ -13,7 +13,7 @@
 }
 
 #incubates-blob-img img {
-  width: 100%;
+  height:300px;
 }
 
 #incubates-header{
@@ -59,7 +59,7 @@ h5{
 
 .hoverblob {
   position: absolute;
-  bottom: 21px;
+  bottom: 25px;
   transform: translateX(-41%);
   animation: 0.5s navhover ease-in-out;
 } 

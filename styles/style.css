@@ -53,7 +53,6 @@
 
 }
 .container {
- position: relative;
  text-align: center;
 }
 
@@ -63,6 +62,8 @@
   margin-right: 20px;
 }
 #contents {
+  position: absolute;
+  left: -100%;
     margin-top: 100px;
     color:  black;
     display: flex;
@@ -73,8 +74,8 @@
   position: relative;
   margin: 0 45px;
   margin-top: 45px;
-  width: 400px;
-  height: 400px;
+  width: 350px;
+  height: 350px;
   display: flex;
   justify-content: center;
   align-items: center;

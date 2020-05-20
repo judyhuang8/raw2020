@@ -21,7 +21,7 @@ h2{
   font-size:28px;
 }
 h5{
-  font-size:12px;
+  font-size:16px;
 }
 
 .centerblob{
@@ -51,11 +51,14 @@ h5{
 .single-nav-container {
   display: inline-block;
 }
+.single-nav-container img {
+  width: 14px;
+}
 .single-nav-container:hover :after{
   content: url(/images/incubates/hover-blob.png);
   position: absolute;
-  bottom: 28px;
-  transform: translateX(-60%);
+  bottom: 18px;
+  transform: translateX(-55%);
   animation: 0.5s navhover ease-in-out;
 }
 
@@ -67,12 +70,14 @@ h5{
 }
 
 #full-content img {
-  height:200px;
+  /* height:200px; */
+  width: 50%;
 }
 
 
 .incubates-text {
-  margin: 2em;  height: 200px;
+  margin: 0 0 2em 4em;  
+  height: 200px;
   overflow: auto;
 }
 
@@ -94,10 +99,10 @@ a.button:hover {
 }
 
 @keyframes navhover{
-  0% {
+  from {
    opacity: 0;
   }
-  100% {
+  to {
     opacity: 1;
   }
 }

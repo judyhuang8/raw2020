@@ -63,7 +63,15 @@ h5{
   transform: translateX(-41%);
   animation: 0.5s navhover ease-in-out;
 } 
-
+.absolute-centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 200px;
+  color: white;
+  text-align: center;
+}
 .absolute {
   position: absolute;
 }
@@ -76,6 +84,9 @@ h5{
   margin: 0 auto;
   width: 100px;
   transform: translate(-38%, -50px);
+}
+#emptystate{
+ width: 100%;
 }
 
 #full-content {
@@ -123,6 +134,7 @@ a.button:hover {
 /* .incubates-description {
   width: 50%;
 } */
+
 
 @keyframes navhover{
   from {

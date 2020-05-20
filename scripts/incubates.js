@@ -72,7 +72,7 @@ $(document).ready(function () {
     $("#authors").html("Erika Hauschild, Fiona Rath<br>With help from Chelsea choi, Sarah Mirae Kim, Stephanie Zheng");
     $("#incubates-blob-img").html('<img id="incubates-img" src="images/incubates/blob-img-3.png" onclick="showContent()"></img>');
     $("#incubates-img-full").html('<img src="images/incubates/full-img-3.png">');
-    $("#description").html('Designing an Inclusive Clothing Community Platform');
+    $("#description").html('Placeholder: We focused on helping those with disabilities find stylish clothing that suits their needs. For our first iteration we had designed a search engine that would simply help users find adaptive clothing brands. However, we later realized that there are only a limited number of adaptive clothing brands available. Additionally, the adaptive clothing brands available are usually not stylish, and the several stylish brands like Tommy Hilfiger are not affordable for most people and have a limited selection of clothing.');
     $("#nav-path-3").attr("fill", "black");
     $("#nav-path-1, #nav-path-2, #nav-path-4").attr("fill", "#909090");
 
@@ -84,7 +84,7 @@ $(document).ready(function () {
     $("#authors").html("Olivia Gee, Varun Iyengar, Iris Kim, Ami Mehta, Valentin Porcellini");
     $("#incubates-blob-img").html('<img id="incubates-img" src="images/incubates/blob-img-4.png" onclick="showContent()"></img>');
     $("#incubates-img-full").html('<img src="images/incubates/full-img-4.jpg">');
-    $("#description").html('Placeholder');
+    $("#description").html('Placeholder: Our solution centers on headline indexing and analysis. Roy Clark of the Poynter Institute once stated “in an ideological war, one side or another will try to use language as a weapon.” Evidently, buzzwords and loaded language are powerful tools that shape public opinion.');
     $("#nav-path-4").attr("fill", "black");
     $("#nav-path-1, #nav-path-2, #nav-path-3").attr("fill", "#909090");
   });

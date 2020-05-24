@@ -59,10 +59,10 @@ function init() {
   console.log("initalized")
   canvas = document.getElementById('can');
   ctx = canvas.getContext("2d");
-  w = window.innerWidth * .75;
+  w = window.innerWidth * .72;
   ctx.canvas.width = w;
   // console.log(w);
-  h = window.innerHeight * .80;
+  h = window.innerHeight * .83;
   ctx.canvas.height = h;
   // console.log(h);
 

@@ -12,6 +12,10 @@
   margin: 10vh auto;
 }
 
+#incubates-blob-img:hover {
+  cursor: pointer;
+}
+
 #incubates-blob-img img {
   height: 50vh;
 }
@@ -104,6 +108,9 @@ h5{
   display: flex;
   justify-content: center;
   align-items: center;
+}
+#emptystate:hover {
+  cursor: default;
 }
 
 .emptystatecontent{

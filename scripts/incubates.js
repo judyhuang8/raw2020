@@ -13,26 +13,34 @@ $(document).ready(function () {
   // nav hover effect
   $("#incubates-nav-small-1").hover(function () {
     $("#hoverblob-1").html("<img src='/images/incubates/hover-blob.png' class='hoverblob'><p class='hoverblob-text'>Heart-Tube-Heart</p>");
+    $("#incubates-nav-small-1").css("cursor", "pointer");
   }, function () {
     $("#hoverblob-1").html("");
+    $("#incubates-nav-small-1").css("cursor", "default");
   });
 
   $("#incubates-nav-small-2").hover(function () {
     $("#hoverblob-2").html("<img src='/images/incubates/hover-blob.png' class='hoverblob'><p class='hoverblob-text'>No-Body</p>");
+    $("#incubates-nav-small-2").css("cursor", "pointer");
   }, function () {
     $("#hoverblob-2").html("");
+    $("#incubates-nav-small-2").css("cursor", "default");
   });
 
   $("#incubates-nav-small-3").hover(function () {
     $("#hoverblob-3").html("<img src='/images/incubates/hover-blob.png' class='hoverblob'><p class='hoverblob-text'>Fibers</p>");
+    $("#incubates-nav-small-3").css("cursor", "pointer");
   }, function () {
     $("#hoverblob-3").html("");
+    $("#incubates-nav-small-3").css("cursor", "default");
   });
 
   $("#incubates-nav-small-4").hover(function () {
     $("#hoverblob-4").html("<img src='/images/incubates/hover-blob.png' class='hoverblob'><p class='hoverblob-text'>FVSO</p>");
+    $("#incubates-nav-small-4").css("cursor", "pointer");
   }, function () {
     $("#hoverblob-4").html("");
+    $("#incubates-nav-small-4").css("cursor", "default");
   });
 
 

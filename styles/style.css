@@ -46,7 +46,7 @@
 .center{
  width: 400px;
  position: absolute;
- left: 33%;
+ left: 50%;
  top: 200px;
  color: white;
  mix-blend-mode: difference;
@@ -64,12 +64,16 @@
 #contents {
   position: absolute;
   left: -100%;
-    margin-top: 100px;
+    margin-top: 200px;
     color:  black;
     display: flex;
     flex-direction: row;
 }
-
+a{
+  font-family: 'Neue Haas Grotesk 65', sans-serif;
+  color: white;
+  font-size: 20px;
+}
 .square {
   position: relative;
   margin: 0 45px;
@@ -116,7 +120,7 @@
 }
 .content {
   position: relative;
-  padding: 60px 60px;
+  padding: 40px 20px;
   color: #fff;
   text-align: center;
   transition: 0.5s;

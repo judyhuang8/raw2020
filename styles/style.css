@@ -44,9 +44,9 @@ body{
     font-size: 20px;
   }
  
-html {
+  html {
     scroll-behavior: smooth;
-}
+  }
    
   .nav-bar{
     z-index: 10;
@@ -178,7 +178,7 @@ a{
   color: #fff;
   text-align: center;
   transition: 0.5s;
-  z-index: 1000;
+  z-index: 100;
   margin: 30px;
   transition: 0.8s ease;
 }

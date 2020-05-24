@@ -1,3 +1,4 @@
+
 $(document).ready(function () {
   var ids = new Array();
   $('[id]').each(function () {
@@ -6,55 +7,38 @@ $(document).ready(function () {
   let ids_length = ids.length;
   let i = 0;
   let curr_id = ids[i];
-  // console.log(curr_id);
 
   function nextPg() {
     console.log("front clicked");
     i++;
-    console.log(i);
     curr_id = ids[i];
-    // if (curr_id != ids[ids_length - 1]) {
     $('#pg_' + (i)).removeClass("hidden");
     $('#pg_' + (i - 1)).addClass("hidden");
     ctx.clearRect(0, 0, w, h);
-    // document.getElementById("can").style.display = "none";
-    // } else {
-    //   console.log("last");
-    //   $('#pg_' + (i)).removeClass("hidden");
-    //   $('#pg_' + (i - 1)).addClass("hidden");
-    // }
   }
-
   function backPg() {
     console.log("back clicked");
     i--;
-    console.log(i);
     curr_id = ids[i];
-    // if (curr_id != ids[0]) {
     $('#pg_' + (i + 1)).addClass("hidden");
     $('#pg_' + (i)).removeClass("hidden");
     ctx.clearRect(0, 0, w, h);
-    // document.getElementById("canvasimg").style.display = "none";
-    // } else {
-    //   console.log("first");
-    //   $('#pg_' + (i + 1)).addClass("hidden");
-    //   $('#pg_' + (i)).removeClass("hidden");
-    // }
   }
+
   $(".front_arrow").click(nextPg);
   document.keyup = function (e) {
     console.log("front pressed");
     if (e.keyCode == 39) {
-      nextPg()
+      nextPg
     }
   };
   $(".back_arrow").click(backPg);
   document.keyup = function (e) {
+    console.log("back pressed");
     if (e.keyCode == 38) {
-      backPg()
+      backPg
     }
   };
-
 
 });
 
@@ -69,10 +53,15 @@ var x = "black",
   y = 2;
 
 function init() {
+  console.log("initalized")
   canvas = document.getElementById('can');
   ctx = canvas.getContext("2d");
-  w = canvas.width;
-  h = canvas.height;
+  w = window.innerWidth * .75;
+  ctx.canvas.width = w;
+  // console.log(w);
+  h = window.innerHeight * .80;
+  ctx.canvas.height = h;
+  // console.log(h);
 
   canvas.addEventListener("mousemove", function (e) {
     findxy('move', e)

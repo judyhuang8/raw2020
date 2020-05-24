@@ -1,3 +1,29 @@
+$(document).ready(function () {
+  // NAVIGATION
+  function navigateOpen() {
+    console.log("slide");
+    if ($(".nav-bar").first().is(":hidden")) {
+      $(".nav-bar").slideDown("slow");
+    } else {
+      $(".nav-bar").hide();
+    }
+    $('#menu').addClass("hidden");
+    $('#collapse').removeClass("hidden");
+  }
+  function navigateClose() {
+    if ($(".nav-bar").first().is(":hidden")) {
+      $(".nav-bar").show("slow");
+    } else {
+      $(".nav-bar").slideUp();
+    }
+    $('#menu').removeClass("hidden");
+    $('#collapse').addClass("hidden");
+  }
+
+  $("#menu").click(navigateOpen);
+  $('#collapse').click(navigateClose);
+});
+
 // let canvas, ctx;
 // let render, init;
 // let blob;
@@ -6,7 +32,7 @@
 //   constructor() {
 //     this.points = [];
 //   }
-  
+
 //   init() {
 //     for(let i = 0; i < this.numPoints; i++) {
 //       let point = new Point(this.divisional * ( i + 1 ), this);
@@ -14,7 +40,7 @@
 //       this.push(point);
 //     }
 //   }
-  
+
 //   render() {
 //     let canvas = this.canvas;
 //     let ctx = this.ctx;
@@ -24,9 +50,9 @@
 //     let points = this.numPoints;
 //     let divisional = this.divisional;
 //     let center = this.center;
-    
+
 //     ctx.clearRect(0,0,canvas.width,canvas.height);
-    
+
 //     pointsArray[0].solveWith(pointsArray[points-1], pointsArray[1]);
 
 //     let p0 = pointsArray[points-1].position;
@@ -38,7 +64,7 @@
 //     ctx.moveTo( (p0.x + p1.x) / 2, (p0.y + p1.y) / 2 );
 
 //     for(let i = 1; i < points; i++) {
-      
+
 //       pointsArray[i].solveWith(pointsArray[i-1], pointsArray[i+1] || pointsArray[0]);
 
 //       let p2 = pointsArray[i].position;
@@ -63,7 +89,7 @@
 //     ctx.fill();
 //     ctx.strokeStyle = '#000000';
 //     // ctx.stroke();
-    
+
 // /*
 //     ctx.fillStyle = '#000000';
 //     if(this.mousePos) {
@@ -73,20 +99,20 @@
 // */
 //     requestAnimationFrame(this.render.bind(this));
 //   }
-  
+
 //   push(item) {
 //     if(item instanceof Point) {
 //       this.points.push(item);
 //     }
 //   }
-  
+
 //   set color(value) {
 //     this._color = value;
 //   }
 //   get color() {
 //     return this._color || 'rgb(0,255,255)';
 //   }
-  
+
 //   set canvas(value) {
 //     if(value instanceof HTMLElement && value.tagName.toLowerCase() === 'canvas') {
 //       this._canvas = canvas;
@@ -96,7 +122,7 @@
 //   get canvas() {
 //     return this._canvas;
 //   }
-  
+
 //   set numPoints(value) {
 //     if(value > 2) {
 //       this._points = value;
@@ -105,7 +131,7 @@
 //   get numPoints() {
 //     return this._points || 32;
 //   }
-  
+
 //   set radius(value) {
 //     if(value > 0) {
 //       this._radius = value;
@@ -114,7 +140,7 @@
 //   get radius() {
 //     return this._radius || 150;
 //   }
-  
+
 //   set position(value) {
 //     if(typeof value == 'object' && value.x && value.y) {
 //       this._position = value;
@@ -123,15 +149,15 @@
 //   get position() {
 //     return this._position || { x: 0.5, y: 0.5 };
 //   }
-  
+
 //   get divisional() {
 //     return Math.PI * 2 / this.numPoints;
 //   }
-  
+
 //   get center() {
 //     return { x: this.canvas.width * this.position.x, y: this.canvas.height * this.position.y };
 //   }
-  
+
 //   set running(value) {
 //     this._running = value === true;
 //   }
@@ -148,14 +174,14 @@
 //       x: Math.cos(this.azimuth),
 //       y: Math.sin(this.azimuth)
 //     };
-    
+
 //     this.acceleration = -0.3 + Math.random() * 0.6;
 //   }
-  
+
 //   solveWith(leftPoint, rightPoint) {
 //     this.acceleration = (-0.3 * this.radialEffect + ( leftPoint.radialEffect - this.radialEffect ) + ( rightPoint.radialEffect - this.radialEffect )) * this.elasticity - this.speed * this.friction;
 //   }
-  
+
 //   set acceleration(value) {
 //     if(typeof value == 'number') {
 //       this._acceleration = value;
@@ -165,7 +191,7 @@
 //   get acceleration() {
 //     return this._acceleration || 0;
 //   }
-  
+
 //   set speed(value) {
 //     if(typeof value == 'number') {
 //       this._speed = value;
@@ -175,7 +201,7 @@
 //   get speed() {
 //     return this._speed || 0;
 //   }
-  
+
 //   set radialEffect(value) {
 //     if(typeof value == 'number') {
 //       this._radialEffect = value;
@@ -184,14 +210,14 @@
 //   get radialEffect() {
 //     return this._radialEffect || 0;
 //   }
-  
+
 //   get position() {
 //     return { 
 //       x: this.parent.center.x + this.components.x * (this.parent.radius + this.radialEffect), 
 //       y: this.parent.center.y + this.components.y * (this.parent.radius + this.radialEffect) 
 //     }
 //   }
-  
+
 //   get components() {
 //     return this._components;
 //   }
@@ -228,18 +254,18 @@
 //   }
 //   window.addEventListener('resize', resize);
 //   resize();
-  
+
 //   let oldMousePoint = { x: 0, y: 0};
 //   let hover = false;
 //   let mouseMove = function(e) {
-    
+
 //     let pos = blob.center;
 //     let diff = { x: e.clientX - pos.x, y: e.clientY - pos.y };
 //     let dist = Math.sqrt((diff.x * diff.x) + (diff.y * diff.y));
 //     let angle = null;
-    
+
 //     blob.mousePos = { x: pos.x - e.clientX, y: pos.y - e.clientY };
-    
+
 //     if(dist < blob.radius && hover === false) {
 //       let vector = { x: e.clientX - pos.x, y: e.clientY - pos.y };
 //       angle = Math.atan2(vector.y, vector.x);
@@ -251,21 +277,21 @@
 //       hover = false;
 //       blob.color = null;
 //     }
-    
+
 //     if(typeof angle == 'number') {
-      
+
 //       let nearestPoint = null;
 //       let distanceFromPoint = 100;
-      
+
 //       blob.points.forEach((point)=> {
 //         if(Math.abs(angle - point.azimuth) < distanceFromPoint) {
 //           // console.log(point.azimuth, angle, distanceFromPoint);
 //           nearestPoint = point;
 //           distanceFromPoint = Math.abs(angle - point.azimuth);
 //         }
-        
+
 //       });
-      
+
 //       if(nearestPoint) {
 //         let strength = { x: oldMousePoint.x - e.clientX, y: oldMousePoint.y - e.clientY };
 //         strength = Math.sqrt((strength.x * strength.x) + (strength.y * strength.y)) * 10;
@@ -273,13 +299,13 @@
 //         nearestPoint.acceleration = strength / 100 * (hover ? -1 : 1);
 //       }
 //     }
-    
+
 //     oldMousePoint.x = e.clientX;
 //     oldMousePoint.y = e.clientY;
 //   }
 //   // window.addEventListener('mousemove', mouseMove);
 //   window.addEventListener('pointermove', mouseMove);
-  
+
 //   blob.canvas = canvas;
 //   blob.init();
 //   blob.render();

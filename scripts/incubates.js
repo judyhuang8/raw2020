@@ -46,7 +46,7 @@ $(document).ready(function () {
   $("#incubates-nav-small-1").on("click", function () {
     $("#title").html("Heart-Tube-Heart: Designing a “connector” for story-telling and unexpected bonding");
     $("#authors").html("Sheri Guo, Connie Liu, Benji Magin, Mikail Maqsood, Joseph Yoon");
-    $("#incubates-blob-img").html('<img id="incubates-img" src="images/incubates/blob-img-1.png" onclick="showContent()"></img>');
+    $("#incubates-blob-img").html('<img id="incubates-img" src="images/incubates/Mask Group.png" onclick="showContent()"></img>');
     $("#incubates-img-full").html('<img src="images/incubates/full-img-1.jpg">');
     $("#description").html('Heart-Tube-heart is an installation intended to be located on the Milstein Hall walkway at Cornell University for Medium RAW Expo. The installation consists of multiple sets of height adjustable pipes that loops over the walkway. People can interact with each other through the pipe without being able to directly see each other, removing any social or visual preconceptions. People are able to press buttons that correspond to various questions that serve as conversation starters, facilitating storytelling and helping people to quickly build deeper connections with others.');
     $("#nav-path-1").attr("fill", "black");

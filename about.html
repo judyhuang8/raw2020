@@ -9,6 +9,7 @@
     <!-- import the webpage's stylesheet -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/about.css">
     
     <!-- import the webpage's javascript file -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -16,8 +17,45 @@
     
   </head>  
   <body>
-      <h2>What is RAW?</h2>
-      <p>RAW Expo is an interactive space connecting attendees with organizations, project teams, and creators across Cornell’s campus to provoke dialogue and spark conversation. RAW was founded under the belief that design exists across disciplines, creativity does not take a specific form, and collaboration creates opportunities. By bringing together people and projects from various backgrounds and forms, we hope that attendees walk out feeling more connected with the community at Cornell and inspired by the interactions made.</p>
+    <main class="container-fluid">
+    <div class="icons">
+      <div>
+        <img src="images/icons/menu.png" class="icon" id="menu" />
+        <img src="images/icons/collapse.png" class="icon hidden" id="collapse" />
+        <div class="nav-bar">
+          <ul>
+            <li>
+              <h5><a href="index.html">Home</a></h5>
+            </li>
+            <li>
+              <h5><a href="incubates.html">Incubates</a></h5>
+            </li>
+            <li>
+              <h5><a href="editorial.html">Editorial</a></h5>
+            </li>
+            <li>
+              <h5><a href="about.html">About</a></h5>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- <a href="editorial.html"><img src="images/icons/x.png" class="icon" /></a> -->
+    </div>
+    <div class="about-body">
+      <div class="row">
+          <div class="col">
+          <h2>What is RAW?</h2>
+          <p>RAW Expo is an interactive space connecting attendees with organizations, project teams, and creators across Cornell’s campus to provoke dialogue and spark conversation. RAW was founded under the belief that design exists across disciplines, creativity does not take a specific form, and collaboration creates opportunities. By bringing together people and projects from various backgrounds and forms, we hope that attendees walk out feeling more connected with the community at Cornell and inspired by the interactions made.</p>
+        </div>
+        <div class="square">
+          <span></span>
+          <span></span>
+          <span></span>
+          <div class="content">
+            <img id="img" src="images/about/rawmilstein.png" alt="RAW">
+          </div>
+      </div>
+  </div>
       <h2>RAW VI: Forms of Belonging</h2>
       <p>RAW Expo VI is focused on the theme diversity and inclusion and our roles as designers, engineers, entrepreneurs, and creators in making sure everyone is seen and heard and that we consider all forms of belonging. The scope of the projects featured this year will spotlight the conversations, and thought processes that engage with diversity and inclusion.</p>
       <p>Specifically, we seek to critically explore and ask ourselves: what does diversity and inclusion mean to us as creators? How does it influence the way we understand topics such as accessibility, bias, disability, identity, and exclusion? How does this theme emerge in different fields such as technology, culture, and society?</p>
@@ -25,5 +63,8 @@
       <p><em>
         In light of the recent pandemic, we have decided to host this year’s RAW Expo virtually on our website because we believe that our theme centers on an important discussion that we should have regardless of the time and circumstance. We hope you will come along on our journey and help us unpack this intricate topic! 
         </em></p>
+      </div>
+    </main>
+
   </body>
 </html>

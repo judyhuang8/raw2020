@@ -43,10 +43,7 @@ body{
     font-family: 'Times Now', serif;
     font-size: 20px;
   }
-  .container-fluid{
-    margin: 20px 30px;
-    width: auto;
-  }
+ 
    
   .nav-bar{
     z-index: 10;
@@ -80,14 +77,22 @@ body{
     color: black;
     text-decoration: none;
   }
+  .icons{
+    margin-top: 5px;
+    margin-left: 30px;
+    max-height: 30px;
+}
 .center{
  width: 400px;
  position: absolute;
- left: 50%;
+ left: 36%;
  top: 200px;
  color: white;
  mix-blend-mode: difference;
 
+}
+.center h1{
+  font-size: 64px;
 }
 .container {
  text-align: center;
@@ -100,12 +105,22 @@ body{
 }
 #contents {
   position: absolute;
-  left: -100%;
-    margin-top: 200px;
+  left: -110%;
+    margin-top: 300px;
+    margin-bottom: 200px;
     color:  black;
     display: flex;
     flex-direction: row;
 }
+.row{
+  display: flex;
+  flex-direction: row;
+}
+.col{
+  display: flex;
+  flex-direction: column;
+}
+
 a{
   font-family: 'Neue Haas Grotesk 65', sans-serif;
   color: white;
@@ -127,11 +142,9 @@ a{
   left: 0;
   width: 100%;
   height: 100%;
-  border: 2px solid black;
   border-radius: 32% 58% 69% 43% / 48% 32% 59% 55%;
-  transition: 0.5s;
   animation: animate 6s linear infinite;
-  background: black;
+  background: lightgray;
 }
 .square span:nth-child(2) {
   position: absolute;
@@ -139,21 +152,19 @@ a{
   left: 0;
   width: 100%;
   height: 100%;
-  border: 2px solid black;
   border-radius: 38% 62% 63% 37% / 41% 44% 56% 59%;
-  transition: 0.5s;
   animation: animate 4s linear infinite;
+  background: gray;
 }
 .square span:nth-child(3) {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
-  border: 2px solid black;
+  width: 95%;
+  height: 95%;
   border-radius: 31% 45% 74% 35% / 38% 56% 51% 87%;
-  transition: 0.5s;
   animation: animate2 10s linear infinite;
+  background: black;
 }
 .content {
   position: relative;
@@ -168,6 +179,24 @@ a{
 .hidden{
   display: none;
 }
+.square:hover span:nth-child(1){
+   background-color:rgb(0, 150, 240);
+   border: none;
+   mix-blend-mode: multiply;
+   text-decoration: none;
+ }
+.square:hover span:nth-child(2){
+    background-color: rgb(240, 240, 0);
+    border: none;
+    mix-blend-mode: multiply;
+    text-decoration: none;
+  }
+ .square:hover span:nth-child(3){
+   background-color:rgb(240, 0, 240);
+   border: none;
+   mix-blend-mode: multiply;
+   text-decoration: none;
+ }
 
 @keyframes animate {
   0% {
@@ -186,3 +215,12 @@ a{
       transform: rotate(0deg);
   }
 }
+@media (max-width: 900px) {
+    .center{
+      left: 10%;
+    }
+    #contents {
+      flex-direction: column;
+      left: -10%;
+    }
+  }

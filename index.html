@@ -25,7 +25,9 @@
         d = int(dist(mouseX, mouseY, 0, 200));
       }
     }
-
+    function windowResized() {
+  resizeCanvas(windowWidth, windowHeight);
+}
     function draw() {
       blendMode(BLEND);
       background(256);
@@ -81,19 +83,23 @@
           <span></span>
           <span></span>
           <span></span>
+          <a href="editorial.html">
           <div class="content">
             <h3>Artifacts for All</h3>
             <p>editorial of reflections, critiques, and perspectives on belonging </p>
           </div>
+        </a>
         </div>
         <div class="square">
           <span></span>
           <span></span>
           <span></span>
+          <a href="about.html">
           <div class="content">
             <h3>About RAW</h3>
             <p>what RAW is and why this one is different</p>
           </div>
+        </a>
         </div>
       </div>
     </div>

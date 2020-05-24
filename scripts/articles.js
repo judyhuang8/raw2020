@@ -1,6 +1,7 @@
 
 $(document).ready(function () {
   var ids = new Array();
+  // console.log("ids:" + ids);
   $('[id]').each(function () {
     ids.push($(this).attr("id"));
   });
@@ -12,7 +13,9 @@ $(document).ready(function () {
     console.log("front clicked");
     i++;
     curr_id = ids[i];
+    // console.log("curr-id" + i);
     $('#pg_' + (i)).removeClass("hidden");
+    // console.log("removed");
     $('#pg_' + (i - 1)).addClass("hidden");
     ctx.clearRect(0, 0, w, h);
   }

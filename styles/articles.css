@@ -89,7 +89,9 @@ a{
   height: 80%; */
 }
 
-
+.hidden{
+  display: none;
+}
 @media screen and (max-width: 600px){
   html{
     overflow-y: scroll;

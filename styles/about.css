@@ -14,7 +14,6 @@
     margin-right: 150px;
   }
   .about-body .square{
-    mix-blend-mode: difference;
     width: 370px;
     height: 350px;
   }
@@ -23,7 +22,6 @@
     height: 85%;
     left: 20%;
    background-color:rgb(0, 150, 240);
-   border: none;
    mix-blend-mode: multiply;
 
  }

@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Medium Design Collective</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- import the webpage's stylesheet -->
+  <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"> -->
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="styles/articles.css">
+
+  <!-- import the webpage's javascript file -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="scripts/script.js" defer></script>
+  <script src="scripts/articles.js" defer></script>
+
+</head>
+
+<body onload="init()">
+  <canvas id="can"></canvas>
+  <main class="container-fluid">
+    <div class="row icons">
+      <div>
+        <img src="images/icons/menu.png" class="icon" id="menu" />
+        <img src="images/icons/collapse.png" class="icon hidden" id="collapse" />
+        <div class="nav-bar">
+          <ul>
+            <li>
+              <h5><a href="index.html">Home</a></h5>
+            </li>
+            <li>
+              <h5><a href="incubates.html">Incubates</a></h5>
+            </li>
+            <li>
+              <h5><a href="editorial.html">Editorial</a></h5>
+            </li>
+            <li>
+              <h5><a href="about.html">About</a></h5>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <a href="editorial.html"><img src="images/icons/x.png" class="icon" /></a>
+    </div>
+
+    <!-- COVER -->
+    <div class="article_cover row align-items-end" id="pg_0">
+      <div class="col-1"></div>
+      <div class="col-5">
+        <div class="details">
+          <h2>Triple A</h2>
+          <h5>Mollie Zhang</h5>
+        </div>
+        <img src="images/articles/triple.jpg" alt="graphic with a person" class="img-fluid" />
+      </div>
+
+      <div class="info col-5">
+
+        <p>
+          <strong>Diversity and Inclusion or
+            Diversity VS Inclusion?</strong>
+          <br>
+          It started with a conversation among the thought
+          curators on the Editorial team. After Colton’s
+          proposal of the “donut” diagram, we discovered
+          that whenever we try to improve diversity of a
+          design, its inclusivity will be the cost and decrease
+          proportionally. And the following question thus came
+          to us: will we be able to discuss enhancing diversity
+          AND inclusion simultaneously in our writing?
+        </p>
+        <p>
+          To answer this question, the thought curation team
+          designed an experiment. The editorial team is split
+          into two separate groups to compete against each
+          other and design a recruitment process for “Triple
+          A multimedia design fraternity.” However, what
+          the two teams don’t know is the fact that they are
+          working on different prompts: one team is designing
+          a selective and diverse recruitment process, while
+          the other team is focusing on a selective and
+          inclusive process.
+        </p>
+      </div>
+      <div class="col-1">
+        <img src="images/icons/frontarrow.png" class="arrow front_arrow">
+      </div>
+    </div>
+
+    <!-- PAGE 1 -->
+    <div class="article_page no_img row align-items-end hidden" id="pg_1">
+      <div class="col-1">
+        <img src="images/icons/backarrow.png" class="arrow back_arrow">
+      </div>
+      <div class="col-5">
+        <p>
+          The two teams were given three weeks to develop
+          their recruitment process, and presented in front of
+          the entire team. We revealed the difference in their
+          prompts right before they present to preserve the
+          independence of their design thinking. The following
+          will point out some major differences between the
+          two design processes.
+        </p>
+        <p>
+          Definition of inclusivity and diversity:
+          <br>
+          The inclusivity team defined inclusivity as
+          “communication, compromising, understanding, and
+          willingness to include.”
+        </p>
+        <p>
+          The diversity team emphasized diversity in people’s
+          skills. They expect their brothers to be experts in
+          diverse areas of design.
+        </p>
+        <p>
+          <strong>Written Application</strong>
+          <br>
+          The two teams both chose to use written application
+          as their first stage of the recruitment process. The
+          applicants will submit an application form, and the
+          brothers in the organization will evaluate based on
+          their response. Justification: any reasons for the
+          teams to choose writing as their first stage of
+          application.
+        </p>
+      </div>
+      <div class="info col-5">
+        <!-- <img src="images/articles/Dates.PNG" alt="graphic with people" class="img-fluid article_imgs" /> -->
+        <p>
+          The inclusive team:
+          <br>
+          To evaluate the applicant’s passion while giving both
+          potential and mature designers equal opportunity,
+          the inclusive team decides to pick a variety of
+          prompts and ask the applicants to critique three
+          pieces of their choice. The team provides a total of
+          nine prompts in three categories: branding identity,
+          photography, and CAD.
+        </p>
+        <p>
+          The diverse team:
+          <br>
+          The diverse team aims to design an application
+          process that classifies the applicants for them
+          and builds a basis for picking equally from different
+          design fields. Thus, their application requires
+          applicants not only to respond to a prompt, but also
+          requires them to submit three or more past designs
+          reflecting their strength.
+        </p>
+
+      </div>
+      <div class="col-1 front">
+        <img src="images/icons/frontarrow.png" class="arrow front_arrow">
+      </div>
+    </div>
+
+    <!-- PAGE 2 -->
+    <div class="article_page no_img row align-items-end hidden" id="pg_2">
+      <div class="col-1">
+        <img src="images/icons/backarrow.png" class="arrow back_arrow">
+      </div>
+      <div class="col-5">
+        <p>
+          <strong>Interview Process</strong>
+          <br>
+          Moving on to the next stage, both teams chose
+          to interview the applicants that passed the
+          first round of application. In this setting, both
+          teams are designing it in an ideal situation where
+          time consumption of training interviewers and
+          conducting interviews are ignored.
+        </p>
+        <!-- <img src="images/articles/drinks.PNG" alt="graphic with people" class="img-fluid article_imgs" /> -->
+        <p>
+          This is the most interesting stage: the purpose
+          of the two designs diverges and serves to either
+          achieve diversity of final interviewees or elicit the
+          inclusive character of the interviewees.
+        </p>
+        <p>
+          The inclusive team:
+          <br>
+          The inclusive team designed a series of interviews
+          and design sessions to fully test whether the
+          interviewee possesses the quality of being
+          inclusive.
+        </p>
+
+      </div>
+      <div class="info col-5">
+        <p>
+          <strong>Conclusion</strong>
+          <br>
+          The two teams’ recruitment process follows
+          the traditional route: application, interview,
+          and final-round cut. However, their emphasis
+          of candidates’ desired qualities are different.
+          The diverse team ensures a new pledge class
+          of people with distinct design skills, while the
+          inclusive team implemented three rounds
+          of interviews to evaluate the applicant’s
+          communication skills and inclusive mindset.
+          Aiming to achieve both diversity and inclusivity,
+          we hope that this experiment elicits the end
+          goal of these two ideals, and hope to combine
+          the two processes to build a diverse and
+          inclusive recruitment process.
+        </p>
+
+      </div>
+      <!-- <div class="col-1 front">
+        <img src="images/icons/frontarrow.png" class="arrow front_arrow">
+      </div> -->
+    </div>
+
+
+    <!-- PAGE 3 -->
+    <!-- <div class="article_page no_img row align-items-end hidden" id="pg_3">
+      <div class="col-1">
+        <img src="images/icons/backarrow.png" class="arrow back_arrow">
+      </div>
+      <div class="col-5">
+
+        <p>
+          Before you know it, the people who want to come to your party — the ones who feel included — are
+          vanishing before your eyes.
+        </p>
+
+        <img src="images/articles/Invitation.PNG" alt="graphic with people" class="img-fluid article_imgs" />
+        <p>
+          But let’s spare you, the beleaguered party planner. Let’s say that the invites are sent out, and the day of
+          the party finally arrives. Let’s say that everyone who marked “Going” all show up. No one cancels at the
+          last minute. That still doesn’t mean that everyone who shows up will want to dance at your party, or
+          that they’ll feel comfortable being there at all.
+        </p>
+      </div>
+      <div class="info col-5">
+        <p>
+          What if someone comes, only to run into that one person
+          they can’t stand? What if someone comes, and they don’t know anyone? What if someone comes, and
+          they wish they hadn’t?
+        </p>
+        <p>
+          And let’s step away from the party analogy for a moment. What if these individual students come to
+          symbolize something beyond party-goers, and instead become identity groups? And what if it’s no
+          longer an innocent party, but a serious discussion where identity issues are discussed? How do you plan
+          this event so that everyone — regardless of who they are or where they come from — feels comfortable
+          attending and participating? There aren’t any easy answers to these very important questions.
+        </p>
+        <p>
+          Because what looks good on paper — big ideas like diversity and inclusivity — are hard to make into
+          realities. It’s hard to have both, and it’s almost impossible to maximize diversity and inclusivity at the
+          same time. No matter how hard we labor, it might just be that they can’t ever be equal.
+        </p>
+        <p>
+          Guess party planning isn’t so easy after all.
+        </p>
+      </div> -->
+    </div>
+
+  </main>
+</body>
+
+</html>

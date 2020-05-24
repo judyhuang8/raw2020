@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Medium Design Collective</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- import the webpage's stylesheet -->
+  <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"> -->
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="styles/articles.css">
+
+  <!-- import the webpage's javascript file -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="scripts/script.js" defer></script>
+  <script src="scripts/articles.js" defer></script>
+
+</head>
+
+<body onload="init()">
+  <canvas id="can"></canvas>
+  <main class="container-fluid">
+    <div class="row icons">
+      <div>
+        <img src="images/icons/menu.png" class="icon" id="menu" />
+        <img src="images/icons/collapse.png" class="icon hidden" id="collapse" />
+        <div class="nav-bar">
+          <ul>
+            <li>
+              <h5><a href="index.html">Home</a></h5>
+            </li>
+            <li>
+              <h5><a href="incubates.html">Incubates</a></h5>
+            </li>
+            <li>
+              <h5><a href="editorial.html">Editorial</a></h5>
+            </li>
+            <li>
+              <h5><a href="about.html">About</a></h5>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <a href="editorial.html"><img src="images/icons/x.png" class="icon" /></a>
+    </div>
+
+    <!-- COVER -->
+    <div class="article_cover row align-items-end" id="pg_0">
+      <div class="col-1"></div>
+      <div class="col-5">
+        <div class="details">
+          <h2>Cocktail Lounge</h2>
+          <h5>Jennifer Lee</h5>
+        </div>
+        <img src="images/articles/cocktail_lounge.png" alt="graphic with people" class="img-fluid" />
+      </div>
+
+      <div class="info col-5">
+        <p>
+          If it is your first, second, or third year at Cornell, you have
+          not seen Cocktail Lounge before her glow-up. Created in
+          1982, the Cocktail Lounge is a home for students with
+          questionable sleeping habits. The 24/7 study lounge is
+          an essential contribution to the Cornell student lifestyle
+          as it is conveniently located in the middle of Collegetown,
+          West Campus, and North Campus-- the locations of the
+          most popular student residencies. Not only is it close to
+          home, but also the Cocktail Lounge’s proximity to the
+          libraries allow students to grab a quick coffee and bagel
+          from Libe Cafe or even some popcorn to a three-course
+          meal from Willard Straight Hall for a study break.
+        </p>
+        <p>
+          However, this piece isn’t an advertisement for the
+          lounge. As a sophomore in the College of Engineering, my
+          freshman year was filled with more hours exploring the
+          iconic chain of Engineering buildings, Upson-Duffield-
+          Phillips, and grabbing some ramen at Trillium after my CS
+          1110 lecture. Furthermore my nights were spent in the
+          lounges of Court-Kay Bauer, spoiled by the AC, AC and AC.
+
+        </p>
+        <!-- <p>
+          
+        </p> -->
+      </div>
+      <div class="col-1">
+        <img src="images/icons/frontarrow.png" class="arrow front_arrow">
+      </div>
+    </div>
+
+    <!-- PAGE 1 -->
+    <div class="article_page no_img row align-items-end hidden" id="pg_1">
+      <div class="col-1">
+        <img src="images/icons/backarrow.png" class="arrow back_arrow">
+      </div>
+      <div class="col-5">
+        <p>
+          What was the old Cocktail lounge like?
+        </p>
+        <p>
+          Correct me if I’m wrong, but from my research
+          the Cocktail Lounge was the SPOT for night
+          owls. The lounge was filled with noises of
+          opening chips bags, whispers of late night
+          confessions, and the constant in and outflow
+          of students studying before or after some
+          Collegetown parties. She was homey and
+          relaxed allowing students to feel comfortable,
+          napping, eating, talking, etc. She lived up to her
+          name minus the alcohol.
+        </p>
+      </div>
+      <div class="info col-5">
+        <img src="images/articles/cl1.png" alt="graphic with people" class="img-fluid article_imgs" />
+      </div>
+      <div class="col-1 front">
+        <img src="images/icons/frontarrow.png" class="arrow front_arrow">
+      </div>
+    </div>
+
+    <!-- PAGE 2 -->
+    <div class="article_page no_img row align-items-end hidden" id="pg_2">
+      <div class="col-1">
+        <img src="images/icons/backarrow.png" class="arrow back_arrow">
+      </div>
+      <div class="col-5">
+        <p>
+          What is the new Cocktail Lounge like?
+        </p>
+        <p>
+          This time Facebook message me if I’m wrong,
+          but from my personal experience the Cocktail
+          Lounge now does a better job of fostering
+          a clinical space, but yes, it does get loud
+          sometimes. I personally love the Cocktail
+          Lounge because I am not the quietest person
+          on earth especially if my friends are just a desk
+          away. The location is so convenient (close to
+          where I work, live, and study).
+        </p>
+        <img src="images/articles/cl2.JPG" alt="graphic with people" class="img-fluid article_imgs" />
+      </div>
+      <div class="info col-5">
+
+        <p>
+          It is fairly close to
+          the Engineering Quad, but far enough so I don’t
+          coincidentally run into everyone I know. The
+          Cocktail Lounge’s minimalist, chic, new-decade
+          style is equivalent to that of a sheltered college
+          freshman going to 20 O-week parties with their
+          O-Week friends that they’re never going to talk
+          to again. Similar to the lounge, that freshman
+          can be considered an icon living their full lives
+          by some and the rock bottom of humanity by
+          others.
+        </p>
+        <p>
+          No hate, honestly. I love the Cocktail Lounge.
+          I’m there all the time. HMU my hours are 3-8 AM
+          Monday, Tuesday, Wednesday, Thursday, Friday
+          (if they’re open after cleaning), Saturday, and
+          Sunday. I’m an Asian girl with round glasses,
+          who looks like an international student, but
+          speaks like she’s been living in America for
+          more than her lifespan.
+        </p>
+      </div>
+      <div class="col-1 front">
+        <img src="images/icons/frontarrow.png" class="arrow front_arrow">
+      </div>
+    </div>
+
+
+    <!-- PAGE 3 -->
+    <div class="article_page no_img row align-items-end hidden" id="pg_3">
+      <div class="col-1">
+        <img src="images/icons/backarrow.png" class="arrow back_arrow">
+      </div>
+      <div class="col-5">
+
+        <p>
+          As a previous worshipper and lover of
+          the Cocktail Lounge, I did not understand
+          the controversy people had with the new
+          renovations. So I uploaded onto my SnapChat
+          and Instagram story for my biggest fans to
+          reply to me. I had to filter through SO many
+          results I spent HOURS on my app.
+        </p>
+        <p>
+          Here is what I uploaded (very professional I
+          know, I’m basically a full blown journalist):
+        </p>
+        <img src="images/articles/cl3.JPG" alt="graphic with people" class="img-fluid article_imgs" />
+      </div>
+      <div class="info col-5">
+        <img src="images/articles/cl4.png" alt="graphic with people" class="img-fluid" />
+      </div>
+      <div class="col-1 front">
+        <img src="images/icons/frontarrow.png" class="arrow front_arrow">
+      </div>
+    </div>
+
+    <!-- PAGE 4 -->
+    <div class="article_page no_img row align-items-end hidden" id="pg_4">
+      <div class="col-1">
+        <img src="images/icons/backarrow.png" class="arrow back_arrow">
+      </div>
+      <div class="col-5">
+        <p>
+          So why did they do all this?
+        </p>
+        <p>
+          Apparently the designers have taken
+          student feedback when choosing the
+          furniture, aiming to find a balance between
+          uncomfortable versus comfortable
+          furniture-- comfortable enough so there
+          is no pain, but uncomfortable so the
+          students do not fall asleep.
+        </p>
+        <p>
+          In conclusion, the cocktail lounge will not
+          be able to satisfy all students unless it
+          becomes 20 different study spaces at
+          once, but optimizing the campus so that
+          there is somewhere on campus where
+          everyone can go is the best.
+        </p>
+        <img src="images/articles/cl5.png" alt="graphic with people" class="img-fluid article_imgs" />
+      </div>
+      <div class="info col-5">
+        <p>
+          Try designing yours!
+          <br>
+          Any public space will not be a one-size-
+          fits-all sort of situation. That is like having
+          pants for everyone to share and wear. The
+          pants will be too long, fit too tight, fit too
+          loose, too short, blah blah blah. Just like
+          how the cocktail lounge is too loud, too
+          studious, too clinical, too blah blah blah.
+          What should happen is a flexible work
+          space. Something that is interchangeable
+          and flexible so it can accommodate the
+          student who can only work in silent spaces
+          and also accomodate the student who
+          likes having noise as a sort of white noise.
+        </p>
+      </div>
+    </div>
+  </main>
+</body>
+
+</html>

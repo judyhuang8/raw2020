@@ -10,12 +10,16 @@
   }
   .about-body{
     margin: 10px;
-    margin-left: 150px;
+    margin-left: 175px;
     margin-right: 150px;
   }
   .about-body .square{
     width: 370px;
     height: 350px;
+    padding: 0px;
+  }
+  .about-body a{
+    color: black;
   }
   .about-body .square span:nth-child(1){
     width: 85%;
@@ -40,8 +44,16 @@
    background-color:rgb(240, 0, 240);
    border: none;
    mix-blend-mode: multiply;
-
  }
+ .about-body p{
+   margin-bottom: 20px;
+ }
+ strong{
+  padding-bottom: 1%;
+    background-image: linear-gradient(110deg, #e1f549, #29d0be, #6cb8ea, #ff5959);
+    background-repeat: no-repeat;
+    background-size: 100% .2em;
+    background-position: 0 88%; }
  @media (max-width: 900px) {
      .row{
          flex-direction: column;

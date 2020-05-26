@@ -56,10 +56,10 @@ $(document).ready(function () {
     $("#authors").html("Sheri Guo, Connie Liu, Benji Magin, Mikail Maqsood, Joseph Yoon");
     $("#incubates-blob-img").html('<div class="square"><span></span><span></span><span></span><div class="content"><img id="incubates-img" src="images/incubates/blob-img-1.png" onclick="showContent()"></div>');
     $("#incubates-img-full").html('<img src="images/incubates/full-img-1.jpg">');
-    $("#description").html('Heart-Tube-heart is an installation intended to be located on the Milstein Hall walkway at Cornell University for Medium RAW Expo. The installation consists of multiple sets of height adjustable pipes that loops over the walkway. People can interact with each other through the pipe without being able to directly see each other, removing any social or visual preconceptions. People are able to press buttons that correspond to various questions that serve as conversation starters, facilitating storytelling and helping people to quickly build deeper connections with others.');
+    $("#description").html('Heart-Tube-Heart is an installation intended to be located on the Milstein Hall walkway at Cornell University for Medium RAW Expo. The installation consists of multiple sets of height adjustable pipes that loops over the walkway. People can interact with each other through the pipe without being able to directly see each other, removing any social or visual preconceptions. People are able to press buttons that correspond to various questions that serve as conversation starters, facilitating storytelling and helping people to quickly build deeper connections with others.');
     $("#nav-path-1").attr("fill", "black");
     $("#nav-path-4, #nav-path-2, #nav-path-3").attr("fill", "#909090");
-
+    hideContent();
   });
 
   // No-Body
@@ -68,10 +68,10 @@ $(document).ready(function () {
     $("#authors").html("Lauren Lam, Hahnbee Lee");
     $("#incubates-blob-img").html('<div class="square"><span></span><span></span><span></span><div class="content"><img id="incubates-img" src="images/incubates/blob-img-2.png" onclick="showContent()"></div>');
     $("#incubates-img-full").html('<img src="images/incubates/full-img-2.png">');
-    $("#description").html('We met up at oishii bowl to discuss ideas about “diversity and inclusion”. In the midst of the conversation, Lauren suddenly had to use the bathroom. She noticed the gender-neutral bathroom sign and thought that it wasn’t inclusive and overall a poor design. That’s when we decided to redesign bathroom signs. Bathroom signs are so common that they are usually overlooked, but in reality they reveal how people are categorized. During the Jim Crow era, they were used to segregate black and white people. Today, they are widely used to separate people by the gender binary: men and women. Because bathroom signs are representations for how society categorizes people, it is important that the signs are inclusive.');
+    $("#description").html('We are No-Body, a team dedicated to redesigning the bathroom sign to be more inclusive. The current binary bathroom sign is not an accurate representation of gender and forces people to categorize themselves into two categories. The gender neutral sign is an attempt at being inclusive, but its distinguishment of an “other” brings unnecessary attention to the trans community. Our redesign focuses on distinguishing bathrooms by the objects that reside inside of them instead of focusing on the bodies of the people that use them. We decided on this redesign because we believe that no body could represent everybody.');
     $("#nav-path-2").attr("fill", "black");
     $("#nav-path-1, #nav-path-4, #nav-path-3").attr("fill", "#909090");
-
+    hideContent();
   });
 
   // Fibers
@@ -80,10 +80,10 @@ $(document).ready(function () {
     $("#authors").html("Erika Hauschild, Fiona Rath<br>With help from Chelsea choi, Sarah Mirae Kim, Stephanie Zheng");
     $("#incubates-blob-img").html('<div class="square"><span></span><span></span><span></span><div class="content"><img id="incubates-img" src="images/incubates/blob-img-3.png" onclick="showContent()"></div>');
     $("#incubates-img-full").html('<img src="images/incubates/full-img-3.png">');
-    $("#description").html('Placeholder: We focused on helping those with disabilities find stylish clothing that suits their needs. For our first iteration we had designed a search engine that would simply help users find adaptive clothing brands. However, we later realized that there are only a limited number of adaptive clothing brands available. Additionally, the adaptive clothing brands available are usually not stylish, and the several stylish brands like Tommy Hilfiger are not affordable for most people and have a limited selection of clothing.');
+    $("#description").html('We are FIBERS, a team dedicated to Furthering the Inclusion of Bodies Everywhere through a Reliable Search. Our website provides a one stop shop for specialized and adaptive clothing with options to tailor your body with a simple fix. This clothing search engine helps physically and mentally disabled users experience the ease of dressing every day.');
     $("#nav-path-3").attr("fill", "black");
     $("#nav-path-1, #nav-path-2, #nav-path-4").attr("fill", "#909090");
-
+    hideContent();
   });
 
   // FVSO
@@ -95,6 +95,7 @@ $(document).ready(function () {
     $("#description").html('Placeholder: Our solution centers on headline indexing and analysis. Roy Clark of the Poynter Institute once stated “in an ideological war, one side or another will try to use language as a weapon.” Evidently, buzzwords and loaded language are powerful tools that shape public opinion.');
     $("#nav-path-4").attr("fill", "black");
     $("#nav-path-1, #nav-path-2, #nav-path-3").attr("fill", "#909090");
+    hideContent();
   });
 
 });

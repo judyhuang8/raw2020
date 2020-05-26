@@ -10,6 +10,7 @@
 #incubates-blob-img {
   width: 30%;
   margin: 10vh auto;
+
 }
 
 #incubates-blob-img:hover {
@@ -26,6 +27,8 @@ img#incubates-img {
 }
 img#incubates-img:hover {
   filter: none;
+  transform: scale(1.03);
+  transition: 0.8s ease;
 }
 
 #incubates-header{

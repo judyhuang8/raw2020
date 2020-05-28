@@ -6,6 +6,10 @@
   animation-name: blob1;
   animation-timing-function: ease-in-out; 
 } */
+html, body {
+  margin: 0;
+  height: 100vh;
+}
 
 #incubates-blob-img {
   width: 30%;
@@ -21,7 +25,7 @@
   height: 50vh;
 }
 
-img#incubates-img {
+/* img#incubates-img {
   filter: grayscale(1) contrast(1.2) brightness(1.05);
   transition: all .8s ease;
 }
@@ -29,11 +33,45 @@ img#incubates-img:hover {
   filter: none;
   transform: scale(1.03);
   transition: 0.8s ease;
+} */
+
+.img-normal {
+  height: 75vh;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  transition: 0.5s ease;
+  z-index: 1;
+}
+.img-normal:hover {
+  cursor: default;
+}
+/* 
+#incubates-img:hover {
+   transform: scale(1.1); 
+  height: 80vh;
+  transform: scale(1.05) translate(-50%, -55%);
+  transition: 0.5s ease;
+} */
+
+.img-hover {
+  transform: scale(1.05) translate(-47.5%, -52.5%);
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transition: 0.3s ease;
+  cursor: pointer;
+  z-index: 1;
 }
 
 #incubates-header{
   text-align: center;
   margin: 1em auto;
+  position: fixed;
+  z-index: 10;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 h2{
@@ -177,20 +215,40 @@ h5{
 }
 
 #innerwrapper {
-  display: flex;
-  width: 60%;
-  align-items: start;
+    display: flex;
+    width: 50%;
+    position: fixed;
+    right: 30%;
+    top: 50%;
+    transform: translate(50%, -50%);
+    align-items: start;
+    height: 50vh;
+    margin: 2em 4em 2em 2em;
+    animation: slideleft 0.5s ease;
 }
 
-#incubates-img-full img {
+#incubates-img-full {
   height: 60vh;
 }
 
 .incubates-text {
-  margin: 0 2em 2em 4em;
-  height: 50vh;
+  margin: 0 2em 2em 2em;
+  height: 40vh;
   overflow: auto;
   padding-right: 1em;
+}
+
+#readmore {
+  font-size: 16px;
+  text-align: center;
+  position: relative;
+  top: 70vh;
+  display: none;
+  z-index: 20;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 0.5em 1em;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 a.button h4 {
@@ -212,6 +270,48 @@ a.button:hover {
 /* .incubates-description {
   width: 50%;
 } */
+
+.yellow {
+  background: linear-gradient(#ECD486, #E6BE63)
+  /* background-color:#ECD486; */
+}
+.blue {
+  background-color: #99C2E5;
+}
+.peach {
+  background-color: #F4C9A2;
+}
+.orange {
+  background-color: #DF9059;
+}
+
+.moveleft {
+  left: 20%;
+}
+
+@keyframes slideleft {
+  0% {
+    opacity: 0;
+    right: 0;
+  }
+
+  100% {
+    opacity: 1;
+    right: 30%;
+  }
+}
+
+@keyframes slideright {
+  0% {
+    opacity: 1;
+    right: 30%;
+  }
+
+  100% {
+    opacity: 0;
+    right: 0%;
+  }
+}
 
 
 @keyframes navhover{

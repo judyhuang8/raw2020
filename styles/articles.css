@@ -4,7 +4,7 @@ html{
 body{
   margin: 0px;
 }
-h2, h5, h4{
+h2, h4{
   margin: 0px 0px;
 }
 h2{
@@ -35,6 +35,7 @@ a{
   flex-direction: column;
   width: 10%;
   align-self: flex-end;
+  padding-bottom: 20px;
 }
 .col-5, .col-10{
   display: flex;
@@ -53,11 +54,8 @@ a{
   /* margin-left: -10px; */
 }
 .container-fluid{
-  margin: 20px 30px;
-  width: auto;
+  padding-left: 15px;
  }
- 
-
 .arrow{
   height: 15px;
   width: 30px;
@@ -68,7 +66,7 @@ a{
 .article_cover, .article_page{
   height: 85vh;
   margin: 0px auto;
-  padding: 20px 0px;
+  padding: 10px 0px;
   /* display: inline-block; */
 }
 /* .article_page{
@@ -88,27 +86,76 @@ a{
   /* width: 75%;
   height: 80%; */
 }
-
+.page_nav{
+  margin: 10px auto;
+  position: fixed;
+  bottom: 20px;
+  left: 47vw;
+}
+.page_nav img{
+  width: 10px;
+  height: 10px;
+  margin: 0px 5px;
+}
+.fadeRight, .fadeLeft{
+  transition-timing-function: ease-in;
+  animation-fill-mode: both;
+}
+.fadeRight{
+  animation: fadeRight 1s;
+}
+.fadeLeft{
+  animation: fadeLeft 1s;
+}
 .hidden{
   display: none;
 }
-@media screen and (max-width: 600px){
+
+@keyframes fadeRight {
+  0% {
+    opacity: 0;
+    transform: translate3d(100%, 0, 0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+@keyframes fadeLeft {
+  0% {
+    opacity: 0;
+    transform: translate3d(-100%, 0, 0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+@media screen and (max-width: 900px){
   html{
     overflow-y: scroll;
   }
-  .col-1{
-    width:100%;
-  }
-  .col-5{
-    width:100%;
+  #can{
+    display: none;
   }
   .row{
     flex-wrap: wrap;
   }
-}
-
-@media screen and (max-width: 600px){
-  html{
-    overflow-y: scroll;
+  .col-1, .col-5{
+    width: 100%;
+  }
+  .icons{
+    margin-left: 0;
+  }
+  .front_arrow{
+    margin-bottom: 20px;
+  }
+  .info{
+    padding: 0px
+  }
+  .article_imgs{
+    width: 100%;
   }
 }

@@ -55,6 +55,9 @@
     background-size: 100% .2em;
     background-position: 0 88%; }
  @media (max-width: 900px) {
+    .about-body{
+      margin-left: 0px;
+    }
      .row{
          flex-direction: column;
      }

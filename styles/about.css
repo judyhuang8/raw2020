@@ -19,7 +19,18 @@
     padding: 0px;
   }
   .about-body a{
+    padding-bottom: 1%;
+    background-image: linear-gradient(110deg, #e1f549, #29d0be, #6cb8ea, #ff5959);
+    background-repeat: no-repeat;
+    background-size: 100% .2em;
+    background-position: 0 88%;
     color: black;
+    transition: background-size 0.25s ease-in;
+
+  }
+  .about-body a:hover{
+    background-size: 110% 88%;
+    text-decoration: none;
   }
   .about-body .square span:nth-child(1){
     width: 85%;
@@ -48,12 +59,7 @@
  .about-body p{
    margin-bottom: 20px;
  }
- strong{
-  padding-bottom: 1%;
-    background-image: linear-gradient(110deg, #e1f549, #29d0be, #6cb8ea, #ff5959);
-    background-repeat: no-repeat;
-    background-size: 100% .2em;
-    background-position: 0 88%; }
+
  @media (max-width: 900px) {
     .about-body{
       margin-left: 0px;

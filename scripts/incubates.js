@@ -81,7 +81,7 @@ function updateContent() {
       description = "";
   }
 
-  var colors = ["blue", "yellow", "peach", "orange"];
+  var colors = ["white", "blue", "yellow", "peach", "orange"];
   colors.forEach(function (color) {
     $("body").removeClass(color);
 

@@ -1,14 +1,10 @@
-/* #incubates-img-1{
-  clip-path: url(#blob1);
-  width: 100%;
-   animation: 1s blob1 ease-in-out; 
-   animation-duration: 1s;
-  animation-name: blob1;
-  animation-timing-function: ease-in-out; 
-} */
+
 html, body {
   margin: 0;
   height: 100vh;
+}
+body {
+  transition: 0.5s ease;
 }
 
 #incubates-blob-img {
@@ -25,16 +21,6 @@ html, body {
   height: 50vh;
 }
 
-/* img#incubates-img {
-  filter: grayscale(1) contrast(1.2) brightness(1.05);
-  transition: all .8s ease;
-}
-img#incubates-img:hover {
-  filter: none;
-  transform: scale(1.03);
-  transition: 0.8s ease;
-} */
-
 .img-normal {
   height: 75vh;
   position: fixed;
@@ -47,13 +33,6 @@ img#incubates-img:hover {
 .img-normal:hover {
   cursor: default;
 }
-/* 
-#incubates-img:hover {
-   transform: scale(1.1); 
-  height: 80vh;
-  transform: scale(1.05) translate(-50%, -55%);
-  transition: 0.5s ease;
-} */
 
 .img-hover {
   transform: scale(1.05) translate(-47.5%, -52.5%);
@@ -206,8 +185,6 @@ h5{
   background: black;
 }
 
-
-
 #outerwrapper {
   display: none;
   justify-content: center;
@@ -251,10 +228,6 @@ h5{
   left: 50%;
   transform: translateX(-50%);
 }
-/* p #readmore {
-  text-shadow: 2px 2px 12px white;
-
-} */
 
 a.button h4 {
   font-size: 16px;
@@ -277,8 +250,7 @@ a.button:hover {
 } */
 
 .yellow {
-  background: linear-gradient(#ECD486, #E6BE63)
-  /* background-color:#ECD486; */
+  background-color:#ECD486;
 }
 .blue {
   background-color: #99C2E5;
@@ -289,9 +261,28 @@ a.button:hover {
 .orange {
   background-color: #DF9059;
 }
+.white {
+  background-color: #FFFFFF;
+}
 
 .moveleft {
   left: 20%;
+}
+
+.nav-bar {
+  background-color: transparent;
+}
+
+@keyframes slideleft {
+  0% {
+    opacity: 0;
+    right: 0;
+  }
+
+  100% {
+    opacity: 1;
+    right: 30%;
+  }
 }
 
 @keyframes slideleft {

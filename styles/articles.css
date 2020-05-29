@@ -33,7 +33,7 @@ a{
 .col-1{
   display: flex;
   flex-direction: column;
-  width: 10%;
+  width: 15%;
   align-self: flex-end;
   padding-bottom: 20px;
 }
@@ -46,7 +46,7 @@ a{
   overflow: hidden;
 }
 .col-5{
-  width:35%;
+  width:37%;
 }
 .col-10{
   width:50%;
@@ -63,15 +63,20 @@ a{
   align-self: center;
   cursor: pointer;
 }
+.front_arrow{
+  float: left;
+}
 .article_cover, .article_page{
   height: 85vh;
   margin: 0px auto;
   padding: 10px 0px;
   /* display: inline-block; */
 }
-/* .article_page{
-  padding: 0px 0px;
-} */
+.page{
+  width: 75vw;
+  margin: 0 auto;
+  justify-content: space-evenly;
+}
 .article_imgs{
   width: 60%;
 }
@@ -82,7 +87,7 @@ a{
 #can{
   border: 2px solid black;
   position: absolute;
-  margin: 3% 12%;
+  margin: 3% 13%;
   /* width: 75%;
   height: 80%; */
 }
@@ -114,7 +119,7 @@ a{
 @keyframes fadeRight {
   0% {
     opacity: 0;
-    transform: translate3d(100%, 0, 0);
+    transform: translate3d(50%, 0, 0);
   }
 
   100% {
@@ -125,7 +130,7 @@ a{
 @keyframes fadeLeft {
   0% {
     opacity: 0;
-    transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-50%, 0, 0);
   }
 
   100% {

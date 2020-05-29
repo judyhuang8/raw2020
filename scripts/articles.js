@@ -25,23 +25,29 @@ $(document).ready(function () {
     $('.page_nav').html(html);
   }
   function nextPg() {
-    console.log("front clicked");
+    // console.log("front clicked");
     i++;
     // console.log("i:" + i);
     // curr_id = pg_ids[i];
     $('#pg_' + (i)).removeClass("hidden");
+    $('#apg_' + (i)).removeClass("hidden");
+    $('#pg_' + (i)).removeClass("fadeLeft");
     $('#pg_' + (i)).addClass("fadeRight");
     $('#pg_' + (i - 1)).addClass("hidden");
+    $('#apg_' + (i - 1)).addClass("hidden");
     pg_dots(i);
     ctx.clearRect(0, 0, w, h);
   }
   function backPg() {
-    console.log("back clicked");
+    // console.log("back clicked");
     i--;
     // curr_id = pg_ids[i];
     $('#pg_' + (i + 1)).addClass("hidden");
+    $('#apg_' + (i + 1)).addClass("hidden");
     $('#pg_' + (i)).removeClass("hidden");
+    $('#apg_' + (i)).removeClass("hidden");
     $('#pg_' + (i)).addClass("fadeLeft");
+    $('#pg_' + (i)).removeClass("fadeRight");
     pg_dots(i);
     ctx.clearRect(0, 0, w, h);
   }

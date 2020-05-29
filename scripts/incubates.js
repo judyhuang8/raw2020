@@ -1,4 +1,4 @@
-var currentProject, title, authors, description;
+var currentProject, title, authors, description, link;
 var fullView = false;
 
 function toggleImage() {
@@ -56,24 +56,28 @@ function updateContent() {
       authors = "Sheri Guo, Connie Liu, Benji Magin, Mikail Maqsood, Joseph Yoon";
       description = "Heart-Tube-Heart is an installation intended to be located on the Milstein Hall walkway at Cornell University for Medium RAW Expo. The installation consists of multiple sets of height adjustable pipes that loops over the walkway. People can interact with each other through the pipe without being able to directly see each other, removing any social or visual preconceptions. People are able to press buttons that correspond to various questions that serve as conversation starters, facilitating storytelling and helping people to quickly build deeper connections with others.";
       bgcolor = "yellow";
+      link = "https://medium.com/@connie_liu/heart-tube-heart-designing-a-connector-for-storytelling-d49b1767a0b3";
       break;
     case 2:
       title = "No-Body: Redesigning Restroom Signage";
       authors = "Lauren Lam, Hahnbee Lee";
-      description = "We are No-Body, a team dedicated to redesigning the bathroom sign to be more inclusive. The current binary bathroom sign is not an accurate representation of gender and forces people to categorize themselves into two categories. The gender neutral sign is an attempt at being inclusive, but its distinguishment of an “other” brings unnecessary attention to the trans community. Our redesign focuses on distinguishing bathrooms by the objects that reside inside of them instead of focusing on the bodies of the people that use them. We decided on this redesign because we believe that no body could represent everybody.";
-      bgcolor = "blue"
+      description = "No-Body is a restroom signage redesign. The current binary bathroom sign is not an accurate representation of gender and forces people to categorize themselves into two categories. The gender neutral sign is an attempt at being inclusive, but its distinguishment of an “other” brings unnecessary attention to the trans community. Our redesign focuses on distinguishing bathrooms by the objects that reside inside of them instead of focusing on the bodies of the people that use them. We decided on this redesign because we believe that no body could represent everybody.";
+      bgcolor = "blue";
+      link = "https://medium.com/@hl985/no-body-a-bathroom-sign-redesign-69d8d24d3665";
       break;
     case 3:
       title = "Fibers: Designing an Inclusive Clothing Community Platform";
       authors = "Erika Hauschild, Fiona Rath<br>With help from Chelsea choi, Sarah Mirae Kim, Stephanie Zheng";
-      description = "We are FIBERS, a team dedicated to Furthering the Inclusion of Bodies Everywhere through a Reliable Search. Our website provides a one stop shop for specialized and adaptive clothing with options to tailor your body with a simple fix. This clothing search engine helps physically and mentally disabled users experience the ease of dressing every day.";
-      bgcolor = "peach"
+      description = "FIBERS (Furthering the Inclusion of Bodies Everywhere through a Reliable Search) is a website that enables those with disabilities to easily find clothing for their needs. This is made possible through two components of our website: the search engine and community. Our search engine assists users through the process of finding clothing that suits their bodies. The FIBERS community is a place for customers of all disabilities to share their fashion tips and recommendations. We realized that customers know their bodies best and need a platform to voice their past experiences with fashion. ";
+      bgcolor = "peach";
+      link = "";
       break;
     case 4:
       title = "FVSO: Fact and Opinion Checker";
       authors = "Olivia Gee, Varun Iyengar, Iris Kim, Ami Mehta, Valentin Porcellini";
-      description = "Our solution centers on headline indexing and analysis. Roy Clark of the Poynter Institute once stated “in an ideological war, one side or another will try to use language as a weapon.” Evidently, buzzwords and loaded language are powerful tools that shape public opinion.";
-      bgcolor = "orange"
+      description = "FVSO is a Web extension that promotes news literacy and critical thinking by quantifying the volume of objective versus subjective language in the media. It’s a tool that allows the user to view headlines from a range of sources side by side, on a spectrum that ranges from totally objective to totally subjective. The goal here is to showcase the differences in levels of objectivity and subjectivity in the headlines and articles of popular news media sources in a way that gives the reader a full awareness of any potential bias they have when choosing their new source. We also hope for users to think more critically about the sources they select, and to become more attuned to authorial bias in the news that they read.";
+      bgcolor = "orange";
+      link = "";
       break;
     default:
       title = "";
@@ -91,6 +95,7 @@ function updateContent() {
   $("#authors").html(authors);
   $("#description").html(description);
   $("body").addClass(bgcolor);
+  $("#casestudy-link").attr("href", link);
 }
 
 

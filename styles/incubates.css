@@ -250,6 +250,10 @@ h5{
   left: 50%;
   transform: translateX(-50%);
 }
+/* p #readmore {
+  text-shadow: 2px 2px 12px white;
+
+} */
 
 a.button h4 {
   font-size: 16px;

@@ -6,10 +6,12 @@ function toggleImage() {
   $("#incubates-img").toggleClass("img-hover");
 }
 
+
+
 function showContent() {
   fullView = true;
   $("#readmore").css("display", "none");
-  document.getElementById('full-content').style.display = "flex";
+  document.getElementById('outerwrapper').style.display = "flex";
   toggleImage();
   $('#incubates-img').css("left", "25%");
   $('#incubates-img').css("height", "60vh");
@@ -17,12 +19,15 @@ function showContent() {
 
 function hideContent() {
   fullView = false;
-  document.getElementById('full-content').style.display = "none";
+  document.getElementById('outerwrapper').style.display = "none";
   $('#incubates-img').css("left", "50%");
   $('#incubates-img').css("height", "75vh");
 }
 
 function updateContent() {
+  // hide empty state and show project
+  $("#emptystate").css("display", "none");
+  $("#incubates-full").removeClass("hidden");
 
   // update images
   $("#incubates-img").attr("src", "images/incubates/full-img-" + currentProject + ".png");
@@ -91,6 +96,9 @@ function updateContent() {
 
 
 $(document).ready(function () {
+
+  // $("#incubates-full").addClass("hidden");
+
   // nav hover effect
   $("#incubates-nav-small-1").hover(function () {
     $("#hoverblob-1").html("<img src='/images/incubates/hover-blob.png' class='hoverblob'><p class='hoverblob-text'>Heart-Tube-Heart</p>");

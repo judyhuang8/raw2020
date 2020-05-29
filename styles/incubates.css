@@ -150,9 +150,10 @@ h5{
 }
 
 #emptystate {
-   left: 50%;
+  left: 50%;
+  top: 50%;
   position: fixed;
-  transform: translateX(-50%);
+  transform: translate(-50%, -50%);
   margin: 0; 
   width: 350px;
   height: 350px;
@@ -207,7 +208,7 @@ h5{
 
 
 
-#full-content {
+#outerwrapper {
   display: none;
   justify-content: center;
   margin: 3em auto;

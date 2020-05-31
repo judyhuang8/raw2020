@@ -22,11 +22,11 @@ body {
 }
 
 .img-normal {
-  height: 75vh;
+  height: 70vh;
   position: fixed;
   left: 50%;
   top: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -40%);
   transition: 0.5s ease;
   z-index: 1;
 }
@@ -35,7 +35,7 @@ body {
 }
 
 .img-hover {
-  transform: scale(1.05) translate(-47.5%, -52.5%);
+  transform: scale(1.05) translate(-47.5%, -40%);
   position: fixed;
   left: 50%;
   top: 50%;
@@ -225,10 +225,10 @@ h5{
   font-size: 16px;
   text-align: center;
   position: relative;
-  top: 70vh;
+  top: 75vh;
   display: none;
   z-index: 20;
-  background-color: rgba(255, 255, 255, 0.7);
+  /* background-color: rgba(255, 255, 255, 0.7); */
   padding: 0.5em 1em;
   left: 50%;
   transform: translateX(-50%);
@@ -253,7 +253,7 @@ a.button:hover {
 
 
 .yellow {
-  background-color:#ECD486;
+  background-color:#ECD178;
 }
 .blue {
   background-color: #99C2E5;

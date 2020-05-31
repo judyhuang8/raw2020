@@ -81,7 +81,7 @@ function updateContent() {
       authors = "Olivia Gee, Varun Iyengar, Iris Kim, Ami Mehta, Valentin Porcellini";
       description = "FVSO is a Web extension that promotes news literacy and critical thinking by quantifying the volume of objective versus subjective language in the media. It’s a tool that allows the user to view headlines from a range of sources side by side, on a spectrum that ranges from totally objective to totally subjective. The goal here is to showcase the differences in levels of objectivity and subjectivity in the headlines and articles of popular news media sources in a way that gives the reader a full awareness of any potential bias they have when choosing their new source. We also hope for users to think more critically about the sources they select, and to become more attuned to authorial bias in the news that they read.";
       bgcolor = "orange";
-      link = "";
+      link = "https://medium.com/@ong2/fvso-a-more-neutral-approach-to-media-3a3da6ac69e";
       break;
     default:
       title = "";

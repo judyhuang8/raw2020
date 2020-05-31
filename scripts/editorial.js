@@ -37,6 +37,12 @@ function showHover_donut(img) {
      }
 }
 
+function showHover_arch(img) {
+     if (img) {
+          img.src = 'images/editorial/arch.png';
+     }
+}
+
 
 
 
@@ -62,6 +68,12 @@ $(document).ready(function () {
 
      $('#tit_donut').mouseover(function () {
           showHover_donut($('#img').get()[0]);
+     }).mouseout(function () {
+          showNormal($('#img').get()[0]);
+     });
+
+     $('#tit_arch').mouseover(function () {
+          showHover_arch($('#img').get()[0]);
      }).mouseout(function () {
           showNormal($('#img').get()[0]);
      });

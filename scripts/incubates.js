@@ -73,7 +73,7 @@ function updateContent() {
       authors = "Erika Hauschild, Fiona Rath<br>With help from Chelsea choi, Sarah Mirae Kim, Stephanie Zheng";
       description = "FIBERS (Furthering the Inclusion of Bodies Everywhere through a Reliable Search) is a website that enables those with disabilities to easily find clothing for their needs. This is made possible through two components of our website: the search engine and community. Our search engine assists users through the process of finding clothing that suits their bodies. The FIBERS community is a place for customers of all disabilities to share their fashion tips and recommendations. We realized that customers know their bodies best and need a platform to voice their past experiences with fashion. ";
       bgcolor = "peach";
-      link = "";
+      link = "https://medium.com/@esh79/6ff8989de6c3";
       break;
     case 4:
       title = "FVSO";

@@ -15,7 +15,7 @@ body{
   margin: 0px;
 }
 .about-body{
-  overflow-x: hidden;
+  overflow: hidden;
 }
   h1, h2, h3, h4{
     font-family: 'Neue Haas Grotesk 65', sans-serif;

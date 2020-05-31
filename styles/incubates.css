@@ -105,7 +105,7 @@ h5{
   z-index: 200;
   bottom: 35px;
   transform: translateX(-35%);
-  animation: .5s navhover ease;
+  animation: .8s navhover ease;
 } 
 .absolute-centered {
   position: absolute;
@@ -228,10 +228,10 @@ h5{
   top: 75vh;
   display: none;
   z-index: 20;
-  /* background-color: rgba(255, 255, 255, 0.7); */
   padding: 0.5em 1em;
   left: 50%;
   transform: translateX(-50%);
+  animation: navhover 0.5s ease;
 }
 
 a.button h4 {

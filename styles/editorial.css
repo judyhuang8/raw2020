@@ -1,6 +1,6 @@
 body{
     background-color: black;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 h2{
     color: white;
@@ -30,12 +30,12 @@ h2{
 }
 .left{
     width: 40%;
-    padding-top: 200px;
+    padding-top: 180px;
     margin-right: 50px;
 }
 .right{
     width:50%;
-    padding-top: 60px;
+    padding-top: 40px;
 }
 .left img{
     display:block;
@@ -96,4 +96,36 @@ h2{
     filter:invert(1);
     color: white;
     text-decoration: none;
+}
+.buy{
+    margin: 50px;
+    width: 45%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+.buy a{
+    border: 2px solid white;
+    width: 20%;
+    border-radius: 20px;
+    padding: 5px 10px;
+}
+.buy a:hover{
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    transition-duration: .5s;
+}
+#expand{
+    filter: invert(1);
+    justify-content: center;
+    /* margin: auto; */
+    animation: blink 2s linear infinite;
+}
+
+@keyframes blink{
+    50%{
+        opacity: 0;
+    }
 }

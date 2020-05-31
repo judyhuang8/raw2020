@@ -14,13 +14,14 @@
 
   <!-- import the webpage's javascript file -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <!-- <script src="scripts/jquery-3.4.1.min.js"></script> -->
   <script src="scripts/script.js" defer></script>
   <script src="scripts/articles.js" defer></script>
 
 </head>
 
-<body onload="init()">
-  <canvas id="can"></canvas>
+<body>
+  <!-- <canvas id="can"></canvas> -->
   <main class="container-fluid">
     <div class="row icons">
       <div>
@@ -47,8 +48,7 @@
     </div>
 
     <!-- COVER -->
-
-    <!-- PAGE 1 -->
+    <div class="page_nav row"></div>
     <div class="article_cover row" id="apg_0">
       <div class="col-1"></div>
       <div id="pg_0" class="page row">
@@ -82,7 +82,7 @@
     </div>
 
     <!-- PAGE 1 -->
-    <div class="article_page row" id="apg_1">
+    <div class="article_page row hidden" id="apg_1">
       <div class="col-1">
         <img src="images/icons/backarrow.png" class="arrow back_arrow">
       </div>
@@ -128,7 +128,7 @@
     </div>
 
     <!-- PAGE 2 -->
-    <div class="article_page row" id="apg_2">
+    <div class="article_page row hidden" id="apg_2">
       <div class="col-1">
         <img src="images/icons/backarrow.png" class="arrow back_arrow">
       </div>
@@ -184,7 +184,7 @@
     </div>
 
     <!-- PAGE 3 -->
-    <div class="article_page row" id="apg_3">
+    <div class="article_page row hidden" id="apg_3">
       <div class="col-1">
         <img src="images/icons/backarrow.png" class="arrow back_arrow">
       </div>
@@ -224,6 +224,25 @@
           <p>
             Guess party planning isn’t so easy after all.
           </p>
+        </div>
+      </div>
+      <div class="col-1 front">
+        <img src="images/icons/frontarrow.png" class="arrow front_arrow">
+      </div>
+    </div>
+
+    <!-- PAGE 4 -->
+    <div class="article_page row hidden" id="apg_4">
+      <div class="col-1">
+        <img src="images/icons/backarrow.png" class="arrow back_arrow">
+      </div>
+      <div id="pg_4" class="interact hidden row">
+        <div class="col" onload="init()">
+          <h5>PROMPT QUESTION</h5>
+          <canvas id="can"></canvas>
+          <a href="mailto:mediumdesigncollective@gmail.com?subject=I made something!!" id="interact_b">
+            <p>Send!</p>
+          </a>
         </div>
       </div>
       <div class="col-1"></div>

@@ -242,6 +242,6 @@ a{
       margin-left: 10px;
     }
     .nav-bar{
-      filter: drop-shadow(2px 2px 1px grey);
+      box-shadow: 2px 2px 4px #c4c4c4;
     }
   }

@@ -21,7 +21,7 @@ function hideContent() {
   fullView = false;
   document.getElementById('outerwrapper').style.display = "none";
   $('#incubates-img').css("left", "50%");
-  $('#incubates-img').css("height", "70vh");
+  $('#incubates-img').css("height", "65vh");
 }
 
 function updateContent() {
@@ -73,13 +73,13 @@ function updateContent() {
       authors = "Erika Hauschild and Fiona Rath with help from Chelsea choi, Sarah Mirae Kim, Stephanie Zheng";
       description = "FIBERS (Furthering the Inclusion of Bodies Everywhere through a Reliable Search) is a website that enables those with disabilities to easily find clothing for their needs. This is made possible through two components of our website: the search engine and community. Our search engine assists users through the process of finding clothing that suits their bodies. The FIBERS community is a place for customers of all disabilities to share their fashion tips and recommendations. We realized that customers know their bodies best and need a platform to voice their past experiences with fashion. ";
       bgcolor = "peach";
-      link = "https://medium.com/@esh79/6ff8989de6c3";
+      link = "https://medium.com/@esh79/fibers-affordable-fashion-for-people-with-disabilities-6ff8989de6c3";
       break;
     case 4:
       title = "FVSO";
-      overview = "Fact and Opinion Checker";
+      overview = "Objective - Subjective Language Training";
       authors = "Olivia Gee, Varun Iyengar, Iris Kim, Ami Mehta, and Valentin Porcellini";
-      description = "FVSO is a Web extension that promotes news literacy and critical thinking by quantifying the volume of objective versus subjective language in the media. It’s a tool that allows the user to view headlines from a range of sources side by side, on a spectrum that ranges from totally objective to totally subjective. The goal here is to showcase the differences in levels of objectivity and subjectivity in the headlines and articles of popular news media sources in a way that gives the reader a full awareness of any potential bias they have when choosing their new source. We also hope for users to think more critically about the sources they select, and to become more attuned to authorial bias in the news that they read.";
+      description = "FVSO (Fact vs. Opinion) is a Web extension that promotes news literacy and critical thinking by quantifying the volume of objective versus subjective language in the media. It’s a tool that allows the user to view headlines from a range of sources side by side, on a spectrum that ranges from totally objective to totally subjective. The goal here is to showcase the differences in levels of objectivity and subjectivity in the headlines and articles of popular news media sources in a way that gives the reader a full awareness of any potential bias they have when choosing their new source. We also hope for users to think more critically about the sources they select, and to become more attuned to authorial bias in the news that they read.";
       bgcolor = "orange";
       link = "https://medium.com/@ong2/fvso-a-more-neutral-approach-to-media-3a3da6ac69e";
       break;

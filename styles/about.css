@@ -1,5 +1,5 @@
 .about-body img{
-    width: 125%;
+    width: 115%;
     height: auto;
     margin-left: 0px;
     border-radius: 53% 47% 36% 64% / 37% 37% 63% 63%;
@@ -73,9 +73,7 @@ display: inline;
 font-family: 'Neue Haas Grotesk 65', sans-serif; 
 font-size: 24px;
 }
-.row{
-flex-flow: row wrap;
-}
+
 .creds{
   margin-top: 24px;
   text-align: center;
@@ -98,9 +96,13 @@ flex-flow: row wrap;
 }
 
  @media (max-width: 900px) {
+  html{
+    overflow-y: auto;
+    position: relative;
+  }
      .row{
-         flex-direction: column;
-     }
+      flex-wrap: wrap;
+    }
      .about-body{
          margin-left: 2em;
          width: 90vw;

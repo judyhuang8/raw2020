@@ -36,7 +36,7 @@ $(document).ready(function () {
     $('#pg_' + (i - 1)).addClass("hidden");
     $('#apg_' + (i - 1)).addClass("hidden");
     pg_dots(i);
-    ctx.clearRect(0, 0, w, h);
+    // ctx.clearRect(0, 0, w, h);
   }
   function backPg() {
     // console.log("back clicked");
@@ -49,13 +49,19 @@ $(document).ready(function () {
     $('#pg_' + (i)).addClass("fadeLeft");
     $('#pg_' + (i)).removeClass("fadeRight");
     pg_dots(i);
-    ctx.clearRect(0, 0, w, h);
+    // ctx.clearRect(0, 0, w, h);
   }
 
   $(".front_arrow").click(nextPg);
   $(".back_arrow").click(backPg);
 
+  // $("#save").click(function (e) {
 
+  //   var dataURL = canvas.toDataURL('image/png').replace("image/png", "image/octet-stream");
+  //   // console.log(dataURL);
+  //   $(".display img").src = dataURL;
+
+  // });
 
 });
 
@@ -73,15 +79,12 @@ function init() {
   console.log("initalized")
   canvas = document.getElementById('can');
   ctx = canvas.getContext("2d");
-  w = window.innerWidth * .72;
-  ctx.canvas.width = w;
-  // console.log(w);
-  h = window.innerHeight * .80;
-  ctx.canvas.height = h;
-  // console.log(h);
+  w = canvas.width;
+  h = canvas.height;
 
   canvas.addEventListener("mousemove", function (e) {
     findxy('move', e)
+    console.log("drawing");
   }, false);
   canvas.addEventListener("mousedown", function (e) {
     findxy('down', e)

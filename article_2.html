@@ -8,7 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- import the webpage's stylesheet -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"> -->
   <link rel="stylesheet" href="styles/style.css">
   <link rel="stylesheet" href="styles/articles.css">
 
@@ -19,8 +19,7 @@
 
 </head>
 
-<body>
-
+<body onload="init()">
   <main class="container-fluid">
     <div class="row icons">
       <div>
@@ -73,16 +72,7 @@
             better representation in art. Let’s start with some
             introductions.
           </p>
-          <p>
-            <strong>Minzie:</strong>
-            I am a Korean-American female student
-            currently majoring in Fine Arts at Cornell. My
-            knowledge from numerous art related classes I
-            took, combined with my own background, gives me
-            some insight and more in-depth views of the art
-            world, compared with those who aren’t as involved.
 
-          </p>
         </div>
       </div>
       <div class="col-1 front">
@@ -98,7 +88,13 @@
       <div id="pg_1" class="page hidden row">
         <div class="info col-5">
           <p>
-            <strong>M:</strong>
+            <strong>Minzie:</strong>
+            I am a Korean-American female student
+            currently majoring in Fine Arts at Cornell. My
+            knowledge from numerous art related classes I
+            took, combined with my own background, gives me
+            some insight and more in-depth views of the art
+            world, compared with those who aren’t as involved.
             I hope that this knowledge and my experiences as a
             person of color (POC) female in settings such as art
             institutions will help people understand more about
@@ -110,22 +106,24 @@
             Economics and minoring in Fine Art. Having
             attended both middle school and high school for
             art, I’ve had the pleasure of growing up and learning
-            with artists from all walks of life. Being both art and
+            with artists from all walks of life.
+
+        </div>
+        <div class="info col-5">
+          <p>
+
+            Being both art and
             business-minded, I’m hoping to share my two cents
             on what the industry itself can do to fight for better
             representation in the art world. So, first things first,
             let’s take a deeper look at what the problem is from
             the museums’ perspective.
-
           </p>
           <p>
             <strong>M:</strong>
             Is it just that they’re not fully committing to
             better representing different groups of people?
           </p>
-
-        </div>
-        <div class="info col-5">
           <p>
             <strong>A:</strong>
             Well, that’s definitely part of it, but it goes
@@ -135,6 +133,22 @@
             acknowledging that there’s a bigger issue at hand
             than just ratios in their collections.
           </p>
+
+
+        </div>
+      </div>
+      <div class="col-1 front">
+        <img src="images/icons/frontarrow.png" class="arrow front_arrow">
+      </div>
+    </div>
+
+    <!-- PAGE 2 -->
+    <div class="article_page row hidden" id="apg_2">
+      <div class="col-1">
+        <img src="images/icons/backarrow.png" class="arrow back_arrow">
+      </div>
+      <div id="pg_2" class="page hidden row">
+        <div class="info col-5">
           <p>
             <strong>M:</strong>
             What do you mean by that?
@@ -152,27 +166,17 @@
             well-represented works from white men in what we
             consider “art history.”
           </p>
-
-        </div>
-      </div>
-      <div class="col-1 front">
-        <img src="images/icons/frontarrow.png" class="arrow front_arrow">
-      </div>
-    </div>
-
-    <!-- PAGE 2 -->
-    <div class="article_page row hidden" id="apg_2">
-      <div class="col-1">
-        <img src="images/icons/backarrow.png" class="arrow back_arrow">
-      </div>
-      <div id="pg_2" class="page hidden row">
-        <div class="info col-5">
           <p>
             <strong>A:</strong>
             And since representation in
             art history basically translates to importance, white
             guys have had way more attention in museums.
           </p>
+
+
+
+        </div>
+        <div class="info col-5">
           <p>
             <strong>M:</strong>
             Yeah I see that. But Eurocentrism is more
@@ -197,8 +201,19 @@
             representation that you mentioned before?
           </p>
 
-
         </div>
+      </div>
+      <div class="col-1 front">
+        <img src="images/icons/frontarrow.png" class="arrow front_arrow">
+      </div>
+    </div>
+
+    <!-- PAGE 3 -->
+    <div class="article_page row hidden" id="apg_3">
+      <div class="col-1">
+        <img src="images/icons/backarrow.png" class="arrow back_arrow">
+      </div>
+      <div id="pg_3" class="page hidden row">
         <div class="info col-5">
           <p>
             <strong>A:</strong>
@@ -228,20 +243,7 @@
           </p>
 
 
-
         </div>
-      </div>
-      <div class="col-1 front">
-        <img src="images/icons/frontarrow.png" class="arrow front_arrow">
-      </div>
-    </div>
-
-    <!-- PAGE 3 -->
-    <div class="article_page row hidden" id="apg_3">
-      <div class="col-1">
-        <img src="images/icons/backarrow.png" class="arrow back_arrow">
-      </div>
-      <div id="pg_3" class="page hidden row">
         <div class="info col-5">
           <p>
             <strong>A:</strong>
@@ -268,7 +270,20 @@
             a push to represent the under-represented.
           </p>
 
+
         </div>
+      </div>
+      <div class="col-1 front">
+        <img src="images/icons/frontarrow.png" class="arrow front_arrow">
+      </div>
+    </div>
+
+    <!-- PAGE 3 -->
+    <div class="article_page row hidden" id="apg_4">
+      <div class="col-1">
+        <img src="images/icons/backarrow.png" class="arrow back_arrow">
+      </div>
+      <div id="pg_4" class="page hidden row">
         <div class="info col-5">
           <p>
             <strong>M:</strong>
@@ -295,19 +310,8 @@
             these goals?
           </p>
 
-        </div>
-      </div>
-      <div class="col-1 front">
-        <img src="images/icons/frontarrow.png" class="arrow front_arrow">
-      </div>
-    </div>
 
-    <!-- PAGE 3 -->
-    <div class="article_page row hidden" id="apg_4">
-      <div class="col-1">
-        <img src="images/icons/backarrow.png" class="arrow back_arrow">
-      </div>
-      <div id="pg_4" class="page hidden row">
+        </div>
         <div class="info col-5">
           <p>
             <strong>A:</strong>
@@ -338,7 +342,35 @@
             as a “female artist” rather than just an artist?
           </p>
 
+
         </div>
+      </div>
+      <div class="col-1 front">
+        <img src="images/icons/frontarrow.png" class="arrow front_arrow">
+      </div>
+    </div>
+
+    <!-- PAGE 6 -->
+    <div class="article_page row hidden" id="apg_5">
+      <div class="col-1">
+        <img src="images/icons/backarrow.png" class="arrow back_arrow">
+      </div>
+      <div id="pg_5" class="page hidden row">
+        <div class="info">
+          <img src="images/articles/AMO_concept_collage_03.png" alt="graphic with people" class="img-fluid" />
+        </div>
+      </div>
+      <div class="col-1 front">
+        <img src="images/icons/frontarrow.png" class="arrow front_arrow">
+      </div>
+    </div>
+
+    <!-- PAGE 5 -->
+    <div class="article_page row hidden" id="apg_6">
+      <div class="col-1">
+        <img src="images/icons/backarrow.png" class="arrow back_arrow">
+      </div>
+      <div id="pg_6" class="page hidden row">
         <div class="info col-5">
           <p>
             <strong>M:</strong>
@@ -363,27 +395,15 @@
             than their identity as artists, are taken into account
             when curating their work.
           </p>
+
+        </div>
+        <div class="info col-5">
           <p>
             <strong>A:</strong>
             Doesn’t that create an opportunity for
             people to profit off their identity, rather than their
             art?
           </p>
-
-        </div>
-      </div>
-      <div class="col-1 front">
-        <img src="images/icons/frontarrow.png" class="arrow front_arrow">
-      </div>
-    </div>
-
-    <!-- PAGE 5 -->
-    <div class="article_page row hidden" id="apg_5">
-      <div class="col-1">
-        <img src="images/icons/backarrow.png" class="arrow back_arrow">
-      </div>
-      <div id="pg_5" class="page hidden row">
-        <div class="info col-5">
           <p>
             <strong>M:</strong>
             Yeah, it’s not great. Instead, artists should
@@ -406,17 +426,29 @@
             It’s just a question of how you take advantage of
             that “name tag.”
           </p>
+
+
+
+        </div>
+      </div>
+      <div class="col-1 front">
+        <img src="images/icons/frontarrow.png" class="arrow front_arrow">
+      </div>
+    </div>
+
+    <!-- PAGE 7 -->
+    <div class="article_page row hidden" id="apg_7">
+      <div class="col-1">
+        <img src="images/icons/backarrow.png" class="arrow back_arrow">
+      </div>
+      <div id="pg_7" class="page hidden row">
+        <div class="info col-5">
           <p>
             <strong>A:</strong>
             And how would they take advantage? It
             seems that the system is already skewed against
             them.
           </p>
-
-
-
-        </div>
-        <div class="info col-5">
           <p>
             <strong>M:</strong>
             If they get labeled regardless of these
@@ -436,31 +468,17 @@
             As a POC female artist myself, I feel as
             though the “label” mentioned before is a necessary
             sacrifice we have to make in order to gain access
-            to mainstream exposure. When we’re finally
+            to mainstream exposure.
+        </div>
+        <div class="info col-5">
+
+          <p>When we’re finally
             “inside” the mainstream art world, we can get rid
             of the labels. Because if this trend of specialized
             exhibitors for under-represented groups continues,
             I think that the value of POC and female artists will
             gradually be integrated to the art industry.
           </p>
-
-
-
-
-        </div>
-      </div>
-      <div class="col-1 front">
-        <img src="images/icons/frontarrow.png" class="arrow front_arrow">
-      </div>
-    </div>
-
-    <!-- PAGE 6 -->
-    <div class="article_page row hidden" id="apg_6">
-      <div class="col-1">
-        <img src="images/icons/backarrow.png" class="arrow back_arrow">
-      </div>
-      <div id="pg_6" class="page hidden row">
-        <div class="col-5">
           <p>
             <strong>A:</strong>
             Hmm.. obviously that’s not ideal, but I agree.
@@ -476,11 +494,22 @@
             the bottom-up, the artists themselves, as it will
             from the top-down, the museums and the curators.
           </p>
-          <img src="images/articles/AMO_concept_collage_03.png" alt="graphic with people" class="img-fluid" />
         </div>
-        <div class="col-5" onload="init()">
+      </div>
+      <div class="col-1 front">
+        <img src="images/icons/frontarrow.png" class="arrow front_arrow">
+      </div>
+    </div>
+
+    <!-- PAGE 8 -->
+    <div class="article_page row hidden" id="apg_8">
+      <div class="col-1">
+        <img src="images/icons/backarrow.png" class="arrow back_arrow">
+      </div>
+      <div id="pg_8" class="page hidden row">
+        <div class="col-10">
           <h5>PROMPT QUESTION</h5>
-          <canvas id="can"></canvas>
+          <canvas id="can" width="500" height="500"></canvas>
           <a href="mailto:mediumdesigncollective@gmail.com?subject=I made something!!" id="interact_b">
             <p>Send!</p>
           </a>

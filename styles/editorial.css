@@ -105,7 +105,7 @@ h2{
     text-align: center;
     color: white;
 }
-.buy a{
+.buy .buy_button{
     border: 2px solid white;
     width: 100px;
     border-radius: 8px;
@@ -115,11 +115,14 @@ h2{
 .buy h5{
     letter-spacing: 1px;
 }
-.buy a:hover{
+.buy .buy_button:hover{
     text-decoration: none;
     color: black;
     background-color: white;
     transition-duration: .5s;
+}
+.buy .link{
+    text-decoration: underline;
 }
 #expand{
     filter: invert(1);

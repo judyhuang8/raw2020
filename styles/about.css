@@ -97,10 +97,14 @@ flex-flow: row wrap;
   background-position: 0 48%;
 }
 
- @media (max-width: 900px) {
+@media (max-width: 900px) {
+  html{
+    overflow-y: auto;
+    position: relative;
+  }
      .row{
-         flex-direction: column;
-     }
+      flex-wrap: wrap;
+    }
      .about-body{
          margin-left: 2em;
          width: 90vw;

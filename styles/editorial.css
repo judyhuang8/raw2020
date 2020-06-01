@@ -108,7 +108,7 @@ h2{
 .buy a{
     border: 2px solid white;
     width: 100px;
-    border-radius: 20px;
+    border-radius: 8px;
     padding: 5px 10px;
     margin-top: 20px;
 }

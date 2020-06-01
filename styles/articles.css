@@ -179,8 +179,22 @@ a{
   }
 }
 @media screen and (max-width: 900px){
+  .article_cover,.article_page{
+    height: 100%;
+    padding: 20px 0px;
+  }
+  .page{
+    width: 100%;
+  }
+  .page_nav{
+    margin-bottom: 20px;
+    position: absolute;
+    bottom: 0;
+    left: 39vw;
+  }
   html{
-    overflow-y: scroll;
+    overflow-y: auto;
+    position: relative;
   }
   #can{
     display: none;
@@ -195,12 +209,15 @@ a{
     margin-left: 0;
   }
   .front_arrow{
-    margin-bottom: 20px;
+    margin: 10px 0px;
   }
   .info{
     padding: 0px
   }
   .article_imgs{
     width: 100%;
+  }
+  .prompt{
+    display: none;
   }
 }

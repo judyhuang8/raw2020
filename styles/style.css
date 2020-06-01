@@ -239,6 +239,7 @@ a{
     #contents {
       flex-direction: column;
       left: -10%;
+      width: 80%;
     }
     .icons{
       margin-top: 10px;

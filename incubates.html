@@ -1,21 +1,261 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Medium Design Collective</title>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    
-    <!-- import the webpage's stylesheet -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="styles/style.css">
-    
-    <!-- import the webpage's javascript file -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="scripts/script.js" defer></script>
-    
-  </head>  
-  <body>
-    
-  </body>
+
+<head>
+  <title>Medium Design Collective</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" type="image/png" href="images/icons/Logo-sm.png" />
+
+  <!-- import the webpage's stylesheet -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="styles/incubates.css">
+
+  <!-- import the webpage's javascript file -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="scripts/script.js" defer></script>
+  <script src="scripts/incubates.js" defer></script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-167917556-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-167917556-1');
+  </script>
+
+
+</head>
+
+<body class="white">
+  <main class="container-fluid">
+    <div class="row icons">
+      <div>
+        <img src="images/icons/menu.png" class="icon" id="menu" />
+        <img src="images/icons/collapse.png" class="icon hidden" id="collapse" />
+        <div class="nav-bar">
+          <ul>
+            <li>
+              <h5><a href="index.html">Home</a></h5>
+            </li>
+            <li>
+              <h5><a href="incubates.html">Incubates</a></h5>
+            </li>
+            <li>
+              <h5><a href="editorial.html">Editorial</a></h5>
+            </li>
+            <li>
+              <h5><a href="about.html">About</a></h5>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div id="incubates-header">
+      <h2 id="title">Incubates</h2>
+      <h3 id="overview"></h3>
+      <h5 id="authors"></h5>
+    </div>
+
+    <!-- BLOB VERSION -->
+    <!-- <div id="incubates-blob-img"> -->
+    <div id="emptystate" class="hidden">
+      <span></span>
+      <span></span>
+      <span></span>
+      <p class="emptystatecontent">Click the dots below to explore the projects</p>
+      <!-- <div class="content hidden">
+      </div> -->
+    </div>
+
+    <div id="incubates-full" class="hidden">
+      <img id="incubates-img" class="img-normal" src="">
+      <h6 id="readmore">Click to read more</h6>
+
+      <div id="outerwrapper">
+        <div id="innerwrapper">
+          <div class="incubates-description">
+            <div class="incubates-text">
+              <p id="description">
+              </p>
+            </div>
+            <a class="button" href="" id="casestudy-link" target="_blank">
+              <h4>Read full case study</h4>
+            </a>
+          </div>
+          <img src="images/icons/X.png" class="icon" id="incubates-x">
+        </div>
+      </div>
+
+    </div>
+
+    <div id="incubates-nav-container">
+      <div class="single-nav-container">
+        <div id="incubates-nav-small-1">
+          <svg width="25" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg"
+            class="small-blob">
+            <path id="nav-path-1" fill-rule="evenodd" clip-rule="evenodd"
+              d="M11.122 0.362913C14.5003 0.536234 17.0994 2.88905 19.3264 5.43535C21.7395 8.19452 24.5734 11.2889 23.8142 14.875C23.0475 18.4969 19.2024 20.2245 15.859 21.8145C12.5449 23.3907 8.83419 25.1866 5.54215 23.5648C2.27036 21.9531 1.41939 17.9321 0.713723 14.3537C0.0435475 10.9554 -0.278012 7.31474 1.78947 4.53564C3.92939 1.65916 7.54158 0.179222 11.122 0.362913Z"
+              fill="white" stroke="black" stroke-width="2" />
+          </svg>
+          <div id="hoverblob-1"></div>
+        </div>
+      </div>
+
+      <div class="single-nav-container">
+        <div id="incubates-nav-small-2">
+          <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg"
+            class="small-blob">
+            <path id="nav-path-2" fill-rule="evenodd" clip-rule="evenodd"
+              d="M11.4804 0.765429C14.9165 0.824794 18.4153 1.396 20.7627 3.9059C23.3421 6.66376 24.7346 10.4624 24.0169 14.1697C23.2718 18.0183 20.6222 21.2566 17.079 22.9339C13.5645 24.5977 9.3376 24.6862 5.99364 22.7017C2.9195 20.8773 2.14355 17.1059 1.37557 13.6147C0.618757 10.1741 -0.390663 6.34714 1.78699 3.57806C3.97508 0.795688 7.94126 0.704284 11.4804 0.765429Z"
+              fill="white" stroke="black" stroke-width="2" />
+          </svg>
+          <div id="hoverblob-2"></div>
+
+        </div>
+      </div>
+
+      <div class="single-nav-container">
+        <div id="incubates-nav-small-3">
+          <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+            class="small-blob">
+            <path id="nav-path-3" fill-rule="evenodd" clip-rule="evenodd"
+              d="M12.3084 0.368157C15.7161 0.56901 18.333 2.96774 20.5277 5.58224C22.8196 8.31252 25.3072 11.4474 24.5291 14.9262C23.7486 18.4156 20.207 20.3057 16.9197 21.7123C13.8601 23.0216 10.4667 23.6304 7.44457 22.2368C4.364 20.8161 2.36848 17.8833 1.50353 14.603C0.596191 11.162 0.625617 7.37055 2.77717 4.53599C4.98287 1.6301 8.66653 0.153499 12.3084 0.368157Z"
+              fill="white" stroke="black" stroke-width="2" />
+          </svg>
+          <div id="hoverblob-3"></div>
+
+        </div>
+      </div>
+
+      <div class="single-nav-container">
+        <div id="incubates-nav-small-4">
+          <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg"
+            class="small-blob">
+            <path id="nav-path-4" fill-rule="evenodd" clip-rule="evenodd"
+              d="M12.7145 0.171269C16.3472 0.223369 20.2824 0.506304 22.5852 3.31641C24.9145 6.15894 24.7762 10.1744 23.8193 13.7226C22.9146 17.0779 20.6873 19.7582 17.6812 21.5016C14.2924 23.467 10.2566 25.3206 6.71739 23.6411C3.16448 21.9551 2.18418 17.6243 1.39271 13.7722C0.630501 10.0624 0.0592638 5.93884 2.48225 3.0281C4.86583 0.16469 8.9892 0.117841 12.7145 0.171269Z"
+              fill="white" stroke="black" stroke-width="2" />
+          </svg>
+          <div id="hoverblob-4"></div>
+        </div>
+      </div>
+
+    </div>
+
+    <div id="incubates-mobile">
+
+      <!-- Heart Tube Heart -->
+      <div class="project">
+        <h3>Heart-Tube-Heart</h3>
+        <h4>Designing a “connector” for story-telling and unexpected bonding</h4>
+        <h5>Sheri Guo, Connie Liu, Benji Magin, Mikail Maqsood, Joseph Yoon</h5>
+        <div class="mobile-incubates-img">
+          <img src="images/incubates/full-img-1.png">
+        </div>
+        <div class="incubates-description-mobile">
+          <p>
+            Heart-Tube-Heart is an installation intended to be located on the Milstein Hall walkway at Cornell
+            University
+            for Medium RAW Expo. The installation consists of multiple sets of height adjustable pipes that loops over
+            the
+            walkway. People can interact with each other through the pipe without being able to directly see each other,
+            removing any social or visual preconceptions. People are able to press buttons that correspond to various
+            questions that serve as conversation starters, facilitating storytelling and helping people to quickly build
+            deeper connections with others.
+          </p>
+        </div>
+
+        <a class="button"
+          href="https://medium.com/@connie_liu/heart-tube-heart-designing-a-connector-for-storytelling-d49b1767a0b3"
+          id="casestudy-link" target="_blank">
+          <h4>Read full case study</h4>
+        </a>
+      </div>
+
+      <!--No-Body -->
+      <div class="project">
+        <h3>No-Body</h3>
+        <h4>Redesigning Restroom Signage</h4>
+        <h5>Lauren Lam, Hahnbee Lee</h5>
+        <div class="mobile-incubates-img">
+          <img src="images/incubates/full-img-2.png">
+        </div>
+        <div class="incubates-description-mobile">
+          <p>
+            No-Body is a restroom signage redesign. The current binary bathroom sign is not an accurate representation
+            of gender and forces people to categorize themselves into two categories. The gender neutral sign is an
+            attempt at being inclusive, but its distinguishment of an “other” brings unnecessary attention to the trans
+            community. Our redesign focuses on distinguishing bathrooms by the objects that reside inside of them
+            instead of focusing on the bodies of the people that use them. We decided on this redesign because we
+            believe that no body could represent everybody.
+          </p>
+        </div>
+
+        <a class="button" href="https://medium.com/@hl985/no-body-a-bathroom-sign-redesign-69d8d24d3665"
+          id="casestudy-link" target="_blank">
+          <h4>Read full case study</h4>
+        </a>
+      </div>
+
+      <!-- Fibers -->
+      <div class="project">
+        <h3>FIBERS</h3>
+        <h4>Designing an Inclusive Clothing Community Platform</h4>
+        <h5>Erika Hauschild, Fiona Rath<br>With help from Chelsea choi, Sarah Mirae Kim, Stephanie Zheng</h5>
+        <div class="mobile-incubates-img">
+          <img src="images/incubates/full-img-3.png">
+        </div>
+        <div class="incubates-description-mobile">
+          <p>
+            FIBERS (Furthering the Inclusion of Bodies Everywhere through a Reliable Search) is a website that enables
+            those with disabilities to easily find clothing for their needs. This is made possible through two
+            components of our website: the search engine and community. Our search engine assists users through the
+            process of finding clothing that suits their bodies. The FIBERS community is a place for customers of all
+            disabilities to share their fashion tips and recommendations. We realized that customers know their bodies
+            best and need a platform to voice their past experiences with fashion.
+          </p>
+        </div>
+
+        <a class="button" href="https://medium.com/@hl985/no-body-a-bathroom-sign-redesign-69d8d24d3665"
+          id="casestudy-link" target="_blank">
+          <h4>Read full case study</h4>
+        </a>
+      </div>
+
+      <!-- FVSO -->
+      <div class="project">
+        <h3>FVSO</h3>
+        <h4>Fact and Opinion Checker</h4>
+        <h5>Olivia Gee, Varun Iyengar, Iris Kim, Ami Mehta, Valentin Porcellini</h5>
+        <div class="mobile-incubates-img">
+          <img src="images/incubates/full-img-4.png">
+        </div>
+        <div class="incubates-description-mobile">
+          <p>
+            FVSO is a Web extension that promotes news literacy and critical thinking by quantifying the volume of
+            objective versus subjective language in the media. It’s a tool that allows the user to view headlines from a
+            range of sources side by side, on a spectrum that ranges from totally objective to totally subjective. The
+            goal here is to showcase the differences in levels of objectivity and subjectivity in the headlines and
+            articles of popular news media sources in a way that gives the reader a full awareness of any potential bias
+            they have when choosing their new source. We also hope for users to think more critically about the sources
+            they select, and to become more attuned to authorial bias in the news that they read.
+          </p>
+        </div>
+
+        <a class="button" href="https://medium.com/@hl985/no-body-a-bathroom-sign-redesign-69d8d24d3665"
+          id="casestudy-link" target="_blank">
+          <h4>Read full case study</h4>
+        </a>
+      </div>
+
+    </div>
+
+  </main>
+
+</body>
+
 </html>

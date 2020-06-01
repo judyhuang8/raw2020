@@ -1,0 +1,173 @@
+body{
+    background-color: black;
+    overflow-x: hidden;
+}
+h2{
+    color: white;
+    margin-bottom: 30px;
+    margin-top: 20px;
+    
+}
+#title{
+    margin-bottom: 40px;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+}
+.container a{
+    font-family: 'Neue Haas Grotesk 55', sans-serif;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+.container p{
+ 
+    font-family: 'Neue Haas Grotesk 55', sans-serif;
+    font-size: 16px;
+    color: white;
+    float: right;
+}
+.left{
+    width: 40%;
+    padding-top: 180px;
+    margin-right: 50px;
+}
+.right{
+    width:50%;
+    padding-top: 40px;
+}
+.left img{
+    display:block;
+    margin:auto;
+    width: 60%;
+    /* height: auto;
+   top: 50%; */
+}
+.contents{
+    margin-top: 20px;
+    color: white;
+}
+
+.container a{
+    text-transform: uppercase;
+    /* font-size: 24px; */
+    color: white;
+    
+}
+
+.container a:hover{
+    color: white;
+    text-decoration: line-through;
+}
+
+.article{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+}
+
+.itm{
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+
+ .icon{
+     /* margin-top: 20px; */
+   width: 20px;
+   /* height: 20px; */
+   cursor: pointer;
+ }
+
+ .icons{
+     /* margin-top: 5px; */
+     /* margin-left: 30px; */
+     max-height: 30px;
+ }
+ 
+ .nav-bar ul{
+    margin: 1em 0px;
+ }
+ .nav-bar a:hover{
+     color: black;
+  }
+  .nav-bar{
+    filter:invert(1);
+    color: white;
+    text-decoration: none;
+}
+.buy{
+    margin: 50px;
+    width: 45%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+.buy a{
+    border: 2px solid white;
+    width: 100px;
+    border-radius: 8px;
+    padding: 5px 10px;
+    margin-top: 20px;
+}
+.buy h5{
+    letter-spacing: 1px;
+}
+.buy a:hover{
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    transition-duration: .5s;
+}
+#expand{
+    filter: invert(1);
+    justify-content: center;
+    /* margin: auto; */
+    animation: blink 2s linear infinite;
+}
+.wrap{
+    flex-wrap: wrap;
+}
+@keyframes blink{
+    50%{
+        opacity: 0;
+    }
+}
+
+@media (max-width: 900px) {
+    .left{
+        display: none;
+    }
+    .right{
+        width: 100%;
+        padding-right:60px ;
+        padding-left:60px ;
+        padding-top:0px;
+        
+    }
+    .container p{
+        float: none;
+    }
+    .buy{
+        margin: 0px;
+    }
+    .buy h5{
+        letter-spacing: 0px;
+    }
+    .container-fluid{
+        margin-left: 45px;
+        margin-right: 45px;
+        padding-bottom:45px ;
+    }
+    h2{
+        margin-top: 0px;
+    }
+    .buy{
+        width: 100%;
+    }
+    #expand{
+        display: none;
+    }
+  }

@@ -1,21 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Medium Design Collective</title>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    
-    <!-- import the webpage's stylesheet -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="styles/style.css">
-    
-    <!-- import the webpage's javascript file -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="scripts/script.js" defer></script>
-    
-  </head>  
-  <body>
-    
-  </body>
+
+<head>
+  <title>Medium Design Collective</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" type="image/png" href="images/icons/Logo-sm.png" />
+
+  <!-- import the webpage's stylesheet -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="styles/editorial.css">
+
+  <!-- import the webpage's javascript file -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="scripts/script.js" defer></script>
+  <script src="scripts/editorial.js" defer></script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-167917556-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-167917556-1');
+  </script>
+
+
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div class="row icons">
+      <div>
+        <img src="images/icons/menu_light.png" class="icon" id="menu" />
+        <img src="images/icons/collapse_light.png" class="icon hidden" id="collapse" />
+        <div class="nav-bar">
+          <ul>
+            <li>
+              <h5><a href="index.html">Home</a></h5>
+            </li>
+            <li>
+              <h5><a href="incubates.html">Incubates</a></h5>
+            </li>
+            <li>
+              <h5><a href="editorial.html">Editorial</a></h5>
+            </li>
+            <li>
+              <h5><a href="about.html">About</a></h5>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="left">
+      <img id="img" src="images/editorial/cover.png" alt="cover">
+    </div>
+
+    <div class="right">
+      <h2>Artifacts for All</h2>
+
+      <div class="itm">
+        <a id="tit_donut" href="article_1.html">01&nbsp;&nbsp;Welcome to the party </a>
+        <p>Colton Poore </p>
+      </div>
+
+      <div class="itm">
+        <a id="tit_cooktail" href="article_4.html">02&nbsp;&nbsp;Why My Chair is Not Comfy</a>
+        <p>Jennifer Lee</p>
+      </div>
+
+      <div class="itm">
+        <a id="tit_fashion" href="article_6.html">03&nbsp;&nbsp;fast fashion</a>
+        <p>Ariya Feng</p>
+      </div>
+
+      <div class="itm">
+        <a id="tit_triple" href="article_3.html">04&nbsp;&nbsp;triple a</a>
+        <p>Mollie Zhang</p>
+      </div>
+
+      <div class="itm">
+        <a id="tit_arch" href="article_5.html">05&nbsp;&nbsp;modern ARCHITECTURE</a>
+        <p>Desai Wang</p>
+      </div>
+
+      <div class="itm">
+        <a id="tit_representation" href="article_2.html">06&nbsp;&nbsp;representation in art industry</a>
+        <p>Minzie Kim & Adam Herold</p>
+      </div>
+
+    </div>
+
+  </div>
+  <div id="expand" class="row">
+    <img src="images/icons/expand.png">
+  </div>
+
+  <div class="container-fluid row wrap">
+    <img src="images/editorial/cover_mock.jpg" class="img-fluid buy">
+    <div class="buy col">
+      <h5>For more articles, check out our Issuu!</h5>
+      <a href="https://issuu.com/mediumdesigncollective/docs/editorial">Read</a>
+    </div>
+  </div>
+
+</body>
+
 </html>

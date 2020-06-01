@@ -1,0 +1,250 @@
+@font-face{
+    font-family: "Neue Haas Grotesk 65";
+    src: url("fonts/NHaasGroteskDSPro-65Md.ttf");
+  }
+  @font-face{
+    font-family: "Neue Haas Grotesk 55";
+    src: url("fonts/NHaasGroteskDSPro-55Rg.ttf");
+  }
+  @font-face{
+    font-family: "Times Now";
+    src: url("fonts/Times\ Now\ SemiLight.otf");
+  }
+
+body{
+  margin: 0px;
+  overflow-x: hidden;
+}
+.about-body{
+  overflow: hidden;
+}
+  h1, h2, h3, h4{
+    font-family: 'Neue Haas Grotesk 65', sans-serif;
+  }
+  h5, h6{
+    font-family: 'Neue Haas Grotesk 55', sans-serif;
+  }
+  h1{
+    font-size: 72px;
+  }
+  h2{
+    font-size: 48px;
+  }
+  h3{
+    font-size: 36px;
+  }
+  h4{
+    font-size: 24px;
+  }
+  h5{
+    font-size: 20px;
+    margin: 10px 10px;
+    font-weight: 500;
+  }
+  h6{
+    font-size: 18px;
+  }
+  p{
+    font-family: 'Times Now', serif;
+    font-size: 20px;
+  }
+ 
+  html {
+    scroll-behavior: smooth;
+}
+.container-fluid{
+  margin: 20px 30px;
+  width: auto;
+ }
+.nav-bar{
+  z-index: 10;
+  position: absolute;
+  display: none;
+  background-color: white;
+  
+}
+
+.nav-bar ul{
+  padding: 0px;
+  list-style: none;
+  margin-top: 0;
+}
+.nav-bar ul li{
+  border-left: 2px solid black;
+  transition: border .2s;
+}
+.nav-bar ul li:hover{
+  border-left: 5px solid black;
+}
+.icons{
+  justify-content: space-between;
+  }
+.icon{
+  width: 20px;
+  /* height: 20px; */
+  cursor: pointer;
+}
+.nav-bar a{
+  color: black;
+  text-decoration: none;
+}
+.icons{
+  /* margin-top: 5px; */
+  /* margin-left: 30px; */
+  max-height: 30px;
+}
+.center{
+ width: 400px;
+ position: absolute;
+ left: 36%;
+ top: 200px;
+ color: white;
+ mix-blend-mode: difference;
+
+}
+.center h1{
+  font-size: 64px;
+}
+.container {
+ text-align: center;
+}
+
+.container1{
+  position: relative;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+#contents {
+  position: absolute;
+  left: -110%;
+    margin-top: 300px;
+    margin-bottom: 200px;
+    color:  black;
+    display: flex;
+    flex-direction: row;
+}
+.row{
+  display: flex;
+  flex-direction: row;
+  margin: 0px;
+}
+.col{
+  display: flex;
+  flex-direction: column;
+}
+
+a{
+  font-family: 'Neue Haas Grotesk 65', sans-serif;
+  color: white;
+  font-size: 20px;
+}
+.nav-bar h5 a{
+  font-family: 'Neue Haas Grotesk 55', sans-serif;
+  /* margin: 10px 0px; */
+  font-size: 16px;
+}
+.square {
+  position: relative;
+  margin: 0 45px;
+  margin-top: 45px;
+  width: 350px;
+  height: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.square span:nth-child(1) {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 32% 58% 69% 43% / 48% 32% 59% 55%;
+  animation: animate 6s linear infinite;
+  background: lightgray;
+}
+.square span:nth-child(2) {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 38% 62% 63% 37% / 41% 44% 56% 59%;
+  animation: animate 4s linear infinite;
+  background: gray;
+}
+.square span:nth-child(3) {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 95%;
+  height: 95%;
+  border-radius: 31% 45% 74% 35% / 38% 56% 51% 87%;
+  animation: animate2 10s linear infinite;
+  background: black;
+}
+.content {
+  position: relative;
+  padding: 40px 20px;
+  color: #fff;
+  text-align: center;
+  transition: 0.5s;
+  z-index: 100;
+  margin: 30px;
+  transition: 0.8s ease;
+}
+
+.square:hover span:nth-child(1){
+   background-color:rgb(0, 150, 240);
+   border: none;
+   mix-blend-mode: multiply;
+   text-decoration: none;
+ }
+.square:hover span:nth-child(2){
+    background-color: rgb(240, 240, 0);
+    border: none;
+    mix-blend-mode: multiply;
+    text-decoration: none;
+  }
+ .square:hover span:nth-child(3){
+   background-color:rgb(240, 0, 240);
+   border: none;
+   mix-blend-mode: multiply;
+   text-decoration: none;
+ }
+ .hidden{
+  display: none;
+}
+@keyframes animate {
+  0% {
+      transform: rotate(0deg);
+  }
+  100% {
+      transform: rotate(360deg);
+  }
+}
+
+@keyframes animate2 {
+  0% {
+      transform: rotate(360deg);
+  }
+  100% {
+      transform: rotate(0deg);
+  }
+}
+@media (max-width: 900px) {
+    .center{
+      left: 10%;
+    }
+    #contents {
+      flex-direction: column;
+      left: -10%;
+    }
+    .icons{
+      margin-top: 10px;
+      margin-left: 10px;
+    }
+    .nav-bar{
+      box-shadow: 2px 2px 4px #c4c4c4;
+    }
+  }

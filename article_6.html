@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Medium Design Collective</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" type="image/png" href="images/icons/Logo-sm.png" />
+
+  <!-- import the webpage's stylesheet -->
+  <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"> -->
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="styles/articles.css">
+
+  <!-- import the webpage's javascript file -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="scripts/script.js" defer></script>
+  <script src="scripts/articles.js" defer></script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-167917556-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-167917556-1');
+  </script>
+
+
+</head>
+
+<body onload="init()">
+  <main class="container-fluid">
+    <div class="row icons">
+      <div>
+        <img src="images/icons/menu.png" class="icon" id="menu" />
+        <img src="images/icons/collapse.png" class="icon hidden" id="collapse" />
+        <div class="nav-bar">
+          <ul>
+            <li>
+              <h5><a href="index.html">Home</a></h5>
+            </li>
+            <li>
+              <h5><a href="incubates.html">Incubates</a></h5>
+            </li>
+            <li>
+              <h5><a href="editorial.html">Editorial</a></h5>
+            </li>
+            <li>
+              <h5><a href="about.html">About</a></h5>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <a href="editorial.html"><img src="images/icons/x.png" class="icon" /></a>
+    </div>
+
+    <!-- COVER -->
+    <div class="page_nav row"></div>
+    <div class="article_cover row" id="apg_0">
+      <div class="col-1"></div>
+      <div id="pg_0" class="page row">
+        <div class="info col-5">
+          <div class="details">
+            <h2>Fast Fashion: Why We Should Be Slowing Down</h2>
+            <h5>Ariya Feng</h5>
+          </div>
+          <img src="images/articles/ff.png" alt="graphic with people" class="img-fluid" />
+        </div>
+        <div class="info col-5">
+          <p>
+            I used to buy shirts at Forever21 for less than $10 thinking it
+            was a steal. Indeed it was a steal. I stole from the lives of women
+            working for less than $3 a day in factories of hazardous working
+            conditions, from the men who spend countless hours in polluted
+            cotton fields hand-picking the plants, and from the environment -
+            a sink that we use to dump our emissions and wastes in. The harsh
+            realities of the horrors that come with consumerism didn’t hit
+            me until I watched “The True Cost” on Netflix, a documentary that
+            depicts the cruelty of the fast fashion industry.
+          </p>
+        </div>
+      </div>
+      <div class="col-1 front">
+        <img src="images/icons/frontarrow.png" class="arrow front_arrow">
+      </div>
+    </div>
+
+    <!-- PAGE 1 -->
+    <div class="article_page row hidden" id="apg_1">
+      <div class="col-1">
+        <img src="images/icons/backarrow.png" class="arrow back_arrow">
+      </div>
+      <div id="pg_1" class="page hidden row">
+        <div class="info col-5">
+          <p>
+            Clothes are a way for people to express who they are, where
+            they come from, and what they represent. So it’s hard when
+            an environmentalist is also a fashion enthusiast. We want to
+            follow trends, but the fast fashion industry creates new trends
+            every week. Old clothes are constantly being thrown out and
+            incinerated, and with it, the laborious hours and environmental
+            damage that went into making it so cheap. We always hear “you
+            are what you eat”, but I believe that “you are what you wear” is an
+            issue that is just as prevalent. What is the solution?
+          </p>
+          <p>
+            Slow fashion is a fashion approach that opposes the fast fashion
+            industry. Like the pre-industrial revolution, slow fashion focuses
+            on garments that are locally sourced and produced. While the
+            prices are not as “affordable” as fast fashion clothing, people
+            making the clothes are paid a fair wage, and the clothes usually
+            last a lot longer.
+          </p>
+        </div>
+        <div class="info col-5">
+          <!-- <img src="images/articles/ff2.png" alt="graphic with people" class="img-fluid" /> -->
+          <p>
+            Second to only the oil industry, the fashion industry
+            is the second-largest polluter in the world, and is
+            responsible for 10% of global carbon emissions
+            (McFall-Johnson, 2019). The mass production of
+            inexpensive clothes through which companies to
+            keep up with new fashion trends is a large contributor
+            to that. Most fast fashion companies imitate
+            weekly fashion trends as they emerge, creating
+            an enormous quantity and variety of clothing so
+            consumers are always able to find something
+            current to buy. This rapid production comes at the
+            expense of quality materials, the environment, and
+            human well-being. Every year, 80 billion pieces of
+            new clothing are bought, the majority of which are
+            assembled in China and Bangladesh. Yet, the United
+            States consumes more clothing than any other
+            nation (Bick et al, 2018).
+          </p>
+        </div>
+      </div>
+      <div class="col-1 front">
+        <img src="images/icons/frontarrow.png" class="arrow front_arrow">
+      </div>
+    </div>
+
+    <!-- PAGE 2 -->
+    <div class="article_page row hidden" id="apg_2">
+      <div class="col-1">
+        <img src="images/icons/backarrow.png" class="arrow back_arrow">
+      </div>
+      <div id="pg_2" class="page hidden row">
+        <div class="info col-5">
+          <!-- <img src="images/articles/ff3.png" alt="graphic with people" class="img-fluid" /> -->
+          <p>
+            Although the fast fashion
+            industry offers consumers clothing at affordable
+            prices, the brief materialistic happiness of those
+            consumers is not worth the pain and suffering
+            of factory workers in developing countries, nor
+            the environmental costs that come with cheap
+            manufacturing.
+            We must stop the constant cycle
+            of buying and disposing clothes and look towards
+            sustainable fashion options.
+          </p>
+          <h6>Affordable Clothing</h6>
+          <p>
+            Advocates of the fast fashion industry claim that
+            in addition to giving consumers a chance to wear
+            similar clothes from the catwalk, garments sold at
+            reasonable prices are affordable for low-income
+            households. In a world where many opportunities
+            are determined based on one’s socioeconomic
+            status, fast fashion offers something for people of
+            all backgrounds.
+          </p>
+
+
+        </div>
+        <div class="info col-5">
+          <p>
+            Another argument is that fast fashion enables
+            people to express themselves, but shopping from
+            sustainable brands is usually a luxury that most
+            cannot afford. Additionally, sustainable brands
+            potentially limit the clothing options that are
+            available to consumers. Fast fashion also increases
+            globalization and stimulates the economy in
+            developing countries when Western retailers
+            employ their labor forces. However, we must also
+            consider the long term societal and environmental
+            impacts.
+          </p>
+          <h6>Environmental Impact</h6>
+          <p>
+            The materials and processes that go into making
+            cheap clothing generates irreversible damage to
+            the environment.
+          </p>
+          <!-- <img src="images/articles/ff2.png" class="img-fluid article_imgs"> -->
+        </div>
+      </div>
+      <div class="col-1 front">
+        <img src="images/icons/frontarrow.png" class="arrow front_arrow">
+      </div>
+    </div>
+
+    <!-- PAGE 3 -->
+    <div class="article_page row hidden" id="apg_3">
+      <div class="col-1">
+        <img src="images/icons/backarrow.png" class="arrow back_arrow">
+      </div>
+      <div id="pg_3" class="page hidden row">
+        <div class="info col-5">
+          <p> The first step in the global textile
+            supply chain is to manufacture materials, a process
+            that encompasses the production of both natural
+            and synthetic fibers (Bick et al, 2018). The most
+            widely used manufactured fiber, polyester, is made
+            from petroleum. Fast fashion has increased the
+            need for man-made fibers like polyester, with its
+            demand nearly doubling in the past 15 years (Luz,
+            2007). Not only is the creation of polyester and
+            other synthetic fabrics very energy-intensive, it can
+            also emit “volatile organic compounds, particulate
+            matter, and acid gases... which can cause or
+            aggravate respiratory disease” (Luz, 2007). Textile
+            manufacturing is detrimental to the health of the
+            people in the areas in which they are manufactured,
+            predominantly in developing countries where labor
+            is outsourced. This leads to great inequalities in
+            health and quality of life.
+          </p>
+
+        </div>
+        <div class="info col-5">
+          <p>
+            These detrimental emissions are not limited to air
+            pollution. Textile dyeing results in further hazards
+            as untreated wastewater from dyes are dispensed
+            into local water systems. Chemicals including
+            heavy metals and other toxins are harmful to local
+            residents as well as organisms and animals (Bick
+            et al, 2018). Moreover, the most common natural
+            fiber, cotton, is a highly water intensive plant. The
+            fashion industry is the second-largest consumer
+            of the world’s water supply. In fact, approximately
+            2,000 gallons of water is required to produce one
+            pair of jeans (McFall-Johnson, 2019). In addition to
+            using large amounts of water, mass-production of
+            cotton also requires the use of pesticides, which
+            often ends up discharged in wastewater as well.
+          </p>
+          <p>
+            Another contributor to carbon emissions is the
+            ever-expanding disposal of clothes.
+          </p>
+
+        </div>
+      </div>
+      <div class="col-1 front">
+        <img src="images/icons/frontarrow.png" class="arrow front_arrow">
+      </div>
+    </div>
+
+    <!-- PAGE 4 -->
+    <div class="article_page row hidden" id="apg_4">
+      <div class="col-1">
+        <img src="images/icons/backarrow.png" class="arrow back_arrow">
+      </div>
+      <div id="pg_4" class="page hidden row">
+        <div class="info col-5">
+          <p>
+            This can be
+            attributed to fast fashion’s shockingly cheap prices,
+            as well as consumers’ single-use attitudes with
+            clothing. Top fast fashion retailers sell garments that
+            are expected to be worn less than ten times before
+            their disposal (Birstwistle et al, 2007). Growth of
+            the economy is starting to depend on getting rid
+            of old clothes to make room for the new clothes.
+            In addition, constant changes in stylistic norms
+            support continuous discarding as “old styles” are
+            deemed undesirable and useless (Claudio, 2007).
+            Every year, almost 3.8 billion pounds of clothing are
+            sent to landfills as solid waste, which translates
+            to 80 pounds of landfill waste per American per
+            year for disposed clothing alone (Bick et al, 2018).
+          </p>
+
+        </div>
+        <div class="info col-5">
+          <p>
+            Municipal solid waste landfills accounted for about
+            16 percent of U.S. methane (a non-CO2 gas that
+            plays a part in climate change) emissions in 2016
+            and are the third-largest source of human-related
+            methane emissions (EPA, 2017). As can be seen,
+            clothing choices and disposal rate is closely tied to
+            the wellbeing of the planet.
+          </p>
+          <img src="images/articles/ff3.png" class="img-fluid">
+        </div>
+      </div>
+      <div class="col-1 front">
+        <img src="images/icons/frontarrow.png" class="arrow front_arrow">
+      </div>
+    </div>
+
+    <!-- PAGE 5 -->
+    <div class="article_page row hidden" id="apg_5">
+      <div class="col-1">
+        <img src="images/icons/backarrow.png" class="arrow back_arrow">
+      </div>
+      <div id="pg_5" class="page hidden row">
+        <div class="info col-5">
+          <h6>Worker Impact with Case Studies in Bangladesh</h6>
+          <p>
+            Fashion consumption soared by 60% between
+            2000 and 2014 alone. In order to keep up with
+            the increasing demand of consumers, fast fashion
+            companies look to low-cost labor as the solution
+            (Remy et al, 2016). Much of this labor are women
+            in developing countries, making less than a dollar
+            an hour. Currently, one in six workers in the world
+            are employed in the fashion industry, 80% of
+            whom are females living in countries such as China,
+            Bangladesh, Vietnam, Sri Lanka, Cambodia and
+            Indonesia (McCosker, 2019). Since the factory
+            production of clothing is in offshore facilities,
+            workers rights are often violated, with little to no
+            regulation of policies pertaining to the workplace.
+            Wages are often so low that low income workers
+            cannot refuse overtime.
+          </p>
+
+        </div>
+        <div class="info col-5">
+          <p>
+            Many work 14 to 16 hours
+            a day, 7 days a week. Other concerns includes child
+            labor, and horrendous health and safety hazards.
+            Bangladesh exports more garments than any other
+            country except China. A report found that despite
+            the country’s labor laws, impoverished children
+            under the age of 14 are working an average of 64
+            hours a week (Beaubin, 2016).
+            Researchers who
+            surveyed households in the slums of Dhaka, the
+            capital and largest city in Bangladesh, found that
+            children as young as six years old were employed
+            full-time, with the average child earning less than
+            $2 a day (Quattri et al., 2016). Two-thirds of the
+            girls working were in the garment industry. The
+            fast fashion industry indirectly plays a role in the
+            deprivation of educational opportunities for these
+            children, which are crucial in escaping the poverty
+            cycle.
+          </p>
+
+        </div>
+      </div>
+      <div class="col-1 front">
+        <img src="images/icons/frontarrow.png" class="arrow front_arrow">
+      </div>
+    </div>
+
+    <!-- PAGE 6 -->
+    <div class="article_page row hidden" id="apg_6">
+      <div class="col-1">
+        <img src="images/icons/backarrow.png" class="arrow back_arrow">
+      </div>
+      <div id="pg_6" class="page hidden row">
+        <div class="info col-5">
+          <p>
+            Moreover, the buildings in which these garments
+            are mass-produced (by children and women)
+            are commonly kept in hazardous and inhumane
+            conditions. Since 2006, more than 500 Bangladeshi
+            workers have died in factory fires that could have
+            been avoided if appropriate precautions were
+            taken (Bajaj, 2012). Several factories do not have
+            sufficient amounts of fire escapes. While the 1911
+            Triangle Shirtwaist Factory fire led to improved
+            industrial protections and work standards in the
+            United States, this was not the case for countries
+            like Bangladesh, which rely on the vast quantity of
+            low-paid workers for economic growth.
+          </p>
+          <p>
+            Near Dhaka in 2013, Rana Plaza, an eight-story
+            complex of clothing factories collapsed.
+          </p>
+        </div>
+        <div class="info col-5">
+          <p>
+            It was
+            the deadliest garment-factory accident in history,
+            with deaths totaling to 1,127 people, consisting
+            of mostly young women (Taplin, 2014). The building
+            was constructed three stories taller than designed
+            and licensed for. Prior to the collapse, factory
+            workers had voiced concerns about the structural
+            safety of the building after noticing cracks on the
+            walls (Hobson, 2013). The factory’s owners did
+            nothing in response. After Rana Plaza’s collapse
+            and the arrest of its owners, thousands of workers
+            protested against poor safety standards (Manik
+            et al., 2013). Despite their efforts, little has been
+            done to heed the fundamental needs and standards
+            of many factory workers, and some protestors are
+            even persecuted. Aminul Islam, a union organizer
+            who fought for higher wages and better working
+            conditions was found tortured and killed outside
+            Dhaka (Bajaj, 2012).
+          </p>
+
+        </div>
+      </div>
+      <div class="col-1 front">
+        <img src="images/icons/frontarrow.png" class="arrow front_arrow">
+      </div>
+    </div>
+
+
+    <!-- PAGE 7 -->
+    <div class="article_page row hidden" id="apg_7">
+      <div class="col-1">
+        <img src="images/icons/backarrow.png" class="arrow back_arrow">
+      </div>
+      <div id="pg_7" class="page hidden row">
+        <div class="info col-5">
+          <img src="images/articles/ff4.jpg" class="img-fluid">
+
+        </div>
+        <div class="info col-5">
+          <p>
+            The practice of fast fashion facilitates these
+            “safety shortcuts” (Taplin, 2014). Countries that
+            are rich in labor but poor in capital adapted to a
+            model of production designed to reduce the time
+            needed from design to delivery. Pressure is put on
+            both suppliers to meet delivery deadlines as well
+            as factory owners to keep costs low enough so
+            the retail companies do not turn to other factories
+            that can make the same thing for a cheaper price.
+            The cut in costs come from labor workers’ already
+            barely livable paycheck. Employees in Bangladesh
+            are among the world’s lowest paid people, at a
+            government-mandated rate of $37 a month for
+            entry-level workers (Bajaj, 2012). Fast fashion runs
+            on the cost of their workers’ wellbeing and lives
+            because increasing demand leaves them few other
+            options.
+          </p>
+
+        </div>
+      </div>
+      <div class="col-1 front">
+        <img src="images/icons/frontarrow.png" class="arrow front_arrow">
+      </div>
+    </div>
+
+    <!-- PAGE 8 -->
+    <div class="article_page row hidden" id="apg_8">
+      <div class="col-1">
+        <img src="images/icons/backarrow.png" class="arrow back_arrow">
+      </div>
+      <div id="pg_8" class="page hidden row">
+        <div class="info col-5">
+          <h6>Sustainable Approach</h6>
+          <p>
+            The convenient and cheap aspects of fast fashion
+            often draw the attention of many consumers.
+            However, the processes sacrifice the environment
+            and those laboring in offshore factories. Consumers
+            should be looking to other options to gain the same
+            benefits fast fashion provides. Slow fashion is a
+            good mindset to adopt and encourage in others. A
+            leading brand in slow fashion today is Reformation—
+            they have been carbon-neutral since 2015 and
+            are relatively transparent in their sustainability
+            practices when compared to fast fashion retailers.
+            However, a dress at Reformation can go up to $300,
+            whereas a similar dress at H&M could be purchased
+            for less than $30. Understandably, not everyone
+            is able to contribute to the emerging slow fashion
+            industry and their costly price tags. For those
+            who have the means to, they should. However,
+            sustainable options do not stop here.
+          </p>
+
+        </div>
+        <div class="info col-5">
+          <p>
+            The most sustainable route would be to stop
+            consuming altogether. How many pairs of jeans
+            does one really need? Before making purchasing
+            decisions, people should think about what they
+            already have in their closet and the necessity of the
+            product they are buying. Nonetheless, fashion plays
+            a huge role in some people’s lives—sustainability
+            does not have to stop that. To respond to the
+            argument that fast fashion allows more choices,
+            sustainable shopping is not only limited to the few
+            slow fashion brands out there. A great substitute
+            for fast fashion is thrifting. Thrift stores sell
+            second-hand clothing items at a fraction of the
+            original price. Not only are customers saving money
+            when they buy pre-owned clothing, they are also
+            lessening the amount of textile waste that gets
+            dumped in landfills. Furthermore, clothing at thrift
+            stores are usually more unique than mass-produced
+            generic pieces sold by fast fashion retailers, which
+            can make even more of a fashion statement.
+          </p>
+
+        </div>
+      </div>
+      <div class="col-1 front">
+        <img src="images/icons/frontarrow.png" class="arrow front_arrow">
+      </div>
+    </div>
+
+    <div class="article_page row hidden" id="apg_9">
+      <div class="col-1">
+        <img src="images/icons/backarrow.png" class="arrow back_arrow">
+      </div>
+      <div id="pg_9" class="page hidden row">
+        <div class="col-5">
+          <h6>Conclusion</h6>
+          <p>
+            The fast fashion industry does more harm than
+            good. Yes, it is convenient and provides clothing
+            at cheap prices, but it comes with irreversible
+            environmental damage and the impaired livelihoods
+            of laborers in developing countries.
+            Consumers do not see everything that happens
+            behind the scenes—depleting water supply,
+            contaminated oceans, collapsed buildings, toxic
+            air, and the many lives lost. Consider reducing
+            consumption of clothing, and thoroughly evaluate
+            whether a new piece of clothing is necessary. For
+            people who use fashion as their way of expression,
+            there are still ways to acquire new clothes while
+            being sustainable. If people are not able to afford
+            slow fashion brands, they can purchase pre-owned
+            clothing items, giving them a new life while reducing
+            textile waste. “Every dollar you spend...or don’t
+            spend ... is a vote you cast for the world you want”
+            (L.N. Smith). Dress and shop responsibly.
+          </p>
+        </div>
+        <div class="col-5">
+          <h5>Sustainable solutions are often more expensive because product reuse and durability reduces buying
+            frequency and hence, decreases business income. Design a solution that can make sustainable products more
+            affordable.</h5>
+          <canvas id="can" width="350" height="350"></canvas>
+          <a href="mailto:mediumdesigncollective@gmail.com?subject=I made something!!" id="interact_b">
+            <p>Send!</p>
+          </a>
+        </div>
+      </div>
+      <div class="col-1"></div>
+    </div>
+  </main>
+
+</body>
+
+</html>

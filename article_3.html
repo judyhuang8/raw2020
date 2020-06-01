@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Medium Design Collective</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" type="image/png" href="images/icons/Logo-sm.png" />
+
+  <!-- import the webpage's stylesheet -->
+  <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"> -->
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="styles/articles.css">
+
+  <!-- import the webpage's javascript file -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="scripts/script.js" defer></script>
+  <script src="scripts/articles.js" defer></script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-167917556-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-167917556-1');
+  </script>
+
+
+</head>
+
+<body onload="init()">
+  <main class="container-fluid">
+    <div class="row icons">
+      <div>
+        <img src="images/icons/menu.png" class="icon" id="menu" />
+        <img src="images/icons/collapse.png" class="icon hidden" id="collapse" />
+        <div class="nav-bar">
+          <ul>
+            <li>
+              <h5><a href="index.html">Home</a></h5>
+            </li>
+            <li>
+              <h5><a href="incubates.html">Incubates</a></h5>
+            </li>
+            <li>
+              <h5><a href="editorial.html">Editorial</a></h5>
+            </li>
+            <li>
+              <h5><a href="about.html">About</a></h5>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <a href="editorial.html"><img src="images/icons/x.png" class="icon" /></a>
+    </div>
+
+    <!-- COVER -->
+    <div class="page_nav row"></div>
+    <div class="article_cover row" id="apg_0">
+      <div class="col-1"></div>
+      <div id="pg_0" class="page row">
+        <div class="info col-5">
+          <div class="details">
+            <h2>Triple A</h2>
+            <h5>Mollie Zhang</h5>
+          </div>
+          <h6>Diversity and Inclusion or
+            Diversity VS Inclusion?</h6>
+          <p>
+            It started with a conversation among the thought-
+            curators on the Editorial team. After Colton’s
+            proposal of the “donut” diagram of diversity as
+            the outer ring and inclusion as the inner ring,
+            we discovered that inclusivity may be a cost to
+            achieving higher diversity. Is it possible to enhance
+            diversity AND inclusion simultaneously in our
+            writing?
+          </p>
+
+        </div>
+        <div class="info col-5">
+
+          <p>
+            To answer this question, the thought-curation team
+            designed an experiment. The editorial team was
+            split into two separate groups to compete against
+            each other, and each had to design a recruitment
+            process for “Triple A multimedia design fraternity.”
+            However, the two teams did not know that they
+            were working on different prompts: one team was
+            designing a selective and diverse recruitment
+            process, while the other team was focusing on a
+            selective and inclusive process.
+          </p>
+          <img src="images/articles/triple.jpg" alt="graphic with a person" class="img-fluid" />
+        </div>
+      </div>
+      <div class="col-1 front">
+        <img src="images/icons/frontarrow.png" class="arrow front_arrow">
+      </div>
+    </div>
+
+    <!-- PAGE 1 -->
+    <div class="article_page row hidden" id="apg_1">
+      <div class="col-1">
+        <img src="images/icons/backarrow.png" class="arrow back_arrow">
+      </div>
+      <div id="pg_1" class="page hidden row">
+        <div class="info col-5">
+          <p>
+            The two teams were given three weeks to develop
+            their recruitment process before presenting in front
+            of the entire team. We revealed the difference
+            in their prompts right before they presented to
+            preserve the independence of their design thinking.
+            The following will point out some major differences
+            between the two design processes.
+          </p>
+          <p>
+            <strong>Definition of inclusivity and diversity:</strong>
+            <br>
+            The inclusivity team defined inclusivity as
+            “communication, compromising, understanding,
+            and willingness to include.” The diversity team
+            emphasized diversity in people’s skills. They expect
+            their “Triple A multimedia design fraternity” brothers
+            to be experts in diverse areas of design.
+          </p>
+          <h6>Written Application</h6>
+          <p>
+            The two teams both chose to use written application
+            as their first stage of the recruitment process.
+          </p>
+        </div>
+        <div class="info col-5">
+          <p>
+            The
+            applicants would submit an application form, and
+            the brothers in the organization will evaluate based
+            on their responses. The two teams’ justification for
+            this choice is as follow:
+          </p>
+          <p>
+            <strong>The inclusive team:</strong>
+            <br>
+            To evaluate the applicant’s passion while giving both
+            potential and mature designers equal opportunity,
+            the inclusive team decided to pick a variety of
+            prompts and ask the applicants to critique three
+            pieces of their choice. The team provides a total of
+            nine prompts in three categories: branding identity,
+            photography, and CAD.
+          </p>
+          <p>
+            <strong>The diverse team:</strong>
+            <br>
+            The diverse team aimed to design an application
+            process that classifies the applicants for them and
+            builds a basis for selecting equally across diverse
+            design fields. Thus, their application requires
+            applicants not only to respond to a prompt, but also
+            requires them to submit three or more past designs
+            reflecting their strength.
+          </p>
+        </div>
+      </div>
+      <div class="col-1 front">
+        <img src="images/icons/frontarrow.png" class="arrow front_arrow">
+      </div>
+    </div>
+
+    <!-- PAGE 2 -->
+    <div class="article_page row hidden" id="apg_2">
+      <div class="col-1">
+        <img src="images/icons/backarrow.png" class="arrow back_arrow">
+      </div>
+      <div id="pg_2" class="page hidden row">
+        <div class="info col-5">
+          <h6>Interview Process</h6>
+          <p>
+            For the next stage, both teams chose to interview
+            the applicants that theoretically passed the first
+            round of application. Both teams were designing
+            under the assumption that the time needed to train
+            interviewers and conducting interviews could be
+            ignored. This was the most interesting stage: the
+            two designs visibly diverged and either achieved
+            diversity of final interviewees or inclusivity of the
+            interviewees.
+          </p>
+          <p>
+            <strong>The inclusive team:</strong>
+            <br>
+            The inclusive team designed a two-part interview
+            process to fully test whether the interviewee
+            possesses the quality of being inclusive.
+            Interviewees are paired together based on their
+            selection in the first round. After their discussion,
+            participants are first given a few minutes to
+            individually redesign the prompt that they have
+            picked.
+          </p>
+        </div>
+        <div class="info col-5">
+          <p>
+            Then, they will communicate with each other
+            and come up with a final redesign that incorporates
+            both of their opinions. Eventually, the evaluators
+            will make the decisions based on both the quality
+            of their collaborative design and their skills to
+            incorporate others’ opinions into their designs.
+          </p>
+          <p>
+            <strong>The diverse team:</strong>
+            <br>
+            The diverse team designed a thorough interview
+            process that evaluates both the participants’ skill
+            set and their characteristics. One round of the
+            interview aims to mainly evaluate their ability to make
+            good design, while the other is composed of mainly
+            behavioral questions for vibe check. However, both
+            their critical skills and compatibility with the group’s
+            vibe are being evaluated in each round, with weights
+            of 75% and 25%. The interviewees do not know
+            about the double evaluation rubric. This ensures
+            that the interviewers can observe the participant’s
+            most natural behavior and make a fairer judgment.
+          </p>
+        </div>
+      </div>
+      <div class="col-1 front">
+        <img src="images/icons/frontarrow.png" class="arrow front_arrow">
+      </div>
+    </div>
+
+
+
+    <!-- PAGE 3 -->
+    <div class="article_page row hidden" id="apg_3">
+      <div class="col-1">
+        <img src="images/icons/backarrow.png" class="arrow back_arrow">
+      </div>
+      <div id="pg_3" class="page hidden row">
+        <div class="col-5">
+          <h6>Conclusion</h6>
+          <p>
+            The two teams’ recruitment process followed
+            the traditional route: application, interview, and
+            final-round cut. However, their emphasis on the
+            candidates’ desired qualities are different. The
+            diverse team ensures a new pledge class of people
+            with distinct design skills, while the inclusive team
+            implemented three rounds of interviews to evaluate
+            the applicant’s communication skills and inclusive
+            mindset. Aiming to achieve both diversity and
+            inclusivity, we hope to use the insights we learned
+            from this experiment to build a more diverse and
+            inclusive recruitment process for Medium in the
+            future.
+          </p>
+        </div>
+        <div class="col-5 prompt">
+          <h5>Design is not limited to spaces and products- but also processes. Re-imagine a process (ex: job
+            application) to make it more diverse and inclusive.</h5>
+          <canvas id="can" width="350" height="350"></canvas>
+          <a href="mailto:mediumdesigncollective@gmail.com?subject=I made something!!" id="interact_b">
+            <p>Send!</p>
+          </a>
+        </div>
+      </div>
+      <div class="col-1"></div>
+    </div>
+
+  </main>
+</body>
+
+</html>

@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Medium Design Collective</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" type="image/png" href="images/icons/Logo-sm.png" />
+
+  <!-- import the webpage's stylesheet -->
+  <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"> -->
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="styles/articles.css">
+
+  <!-- import the webpage's javascript file -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="scripts/script.js" defer></script>
+  <script src="scripts/articles.js" defer></script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-167917556-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-167917556-1');
+  </script>
+
+
+</head>
+
+<body onload="init()">
+  <main class="container-fluid">
+    <div class="row icons">
+      <div>
+        <img src="images/icons/menu.png" class="icon" id="menu" />
+        <img src="images/icons/collapse.png" class="icon hidden" id="collapse" />
+        <div class="nav-bar">
+          <ul>
+            <li>
+              <h5><a href="index.html">Home</a></h5>
+            </li>
+            <li>
+              <h5><a href="incubates.html">Incubates</a></h5>
+            </li>
+            <li>
+              <h5><a href="editorial.html">Editorial</a></h5>
+            </li>
+            <li>
+              <h5><a href="about.html">About</a></h5>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <a href="editorial.html"><img src="images/icons/x.png" class="icon" /></a>
+    </div>
+
+    <!-- COVER -->
+    <div class="page_nav row"></div>
+    <div class="article_cover row" id="apg_0">
+      <div class="col-1"></div>
+      <div id="pg_0" class="page row">
+        <div class="info col-5">
+          <div class="details">
+            <h2>Diversity & Inclusion in Architecture</h2>
+            <h5>Desai Wang</h5>
+          </div>
+          <img src="images/articles/arch.png" alt="graphic with a person" class="img-fluid" />
+
+        </div>
+        <div class="info col-5">
+
+          <p>
+            Starchitects—famous, star-like, architects—and
+            their architecture dominate our time. Frank Gehry,
+            Eero Saarinen, I.M. Pei and Rem Koolhaas are just
+            some amongst an ever-growing list. Perhaps you
+            don’t recognize their names, but you may have
+            heard of the Guggenheim Museum in Bilbao, Glass
+            Pyramids at the Louvre, Gateway Arch in St. Louis,
+            or the CCTV tower in Beijing. Starchitecture dots
+            the world, Cornell included: I.M. Pei designed the
+            Johnson Museum of Art and Rem Koolhaas, Milstein
+            Hall.
+          </p>
+          <p>
+            Bold and imaginative designs characterize these
+            high-profile, high-budget works, making them
+            perfect for magazine covers and city promotions.
+            Not only are works from starchitects guaranteed to
+            look good, they have also become status symbols.
+            Yet, forms aside, they accomplish little.
+          </p>
+
+        </div>
+      </div>
+      <div class="col-1 front">
+        <img src="images/icons/frontarrow.png" class="arrow front_arrow">
+      </div>
+    </div>
+
+    <!-- PAGE 1 -->
+    <div class="article_page row hidden" id="apg_1">
+      <div class="col-1">
+        <img src="images/icons/backarrow.png" class="arrow back_arrow">
+      </div>
+      <div id="pg_1" class="page hidden row">
+        <div class="info col-5">
+          <p>
+            Many high-profile designs are advertised to be
+            “sustainable” when experimental forms often
+            contradict sustainability. For example, Milstein
+            Hall has a green roof and is certified Gold by LEED
+            (Leadership in Energy and Environmental Design).
+            However, Cornell architecture professor Johnathan
+            Ochshorn points out that it is “a sealed glass box...
+            that maximizes weather-exposed surfaces” and
+            “uses far more building materials than needed.”
+            Further, Ochshorn notes that many features which
+            helped Milstein secure the gold rating had little to
+            do with the architectural form itself. For example,
+
+            features that earned LEED points include water-
+            efficient plumbing fixtures and dirt-capturing entry
+
+            mats, which are more related to interior elements
+            than the building design.
+          </p>
+        </div>
+        <div class="info col-5">
+          <p>In other words, Milstein
+            Hall, along with most starchitecture, is not as
+            sustainable as it claims to be.
+          </p>
+          <p>While people, me included, are wowed by the big
+            firms and their dazzling designs, I think we have a
+            responsibility to look beyond forms.
+            Industrialization
+            has created new materials and new methods of
+            construction, but having the ability to shape building
+            in new ways does not mean we have to.
+          </p>
+          <p>
+            Technological advancement does not result in
+            invincibility. The location of a building, and the needs
+            of people inhabiting it, should be prioritized over the
+            architectural form. Architecture should reflect the
+            diversity of its location and be inclusive towards the
+            people it serves. Form should follow function.
+          </p>
+        </div>
+      </div>
+      <div class="col-1 front">
+        <img src="images/icons/frontarrow.png" class="arrow front_arrow">
+      </div>
+    </div>
+
+    <!-- PAGE 2 -->
+    <div class="article_page row hidden" id="apg_2">
+      <div class="col-1">
+        <img src="images/icons/backarrow.png" class="arrow back_arrow">
+      </div>
+      <div id="pg_2" class="page hidden row">
+        <div class="info col-5">
+          <p>
+            Burj Khalifa, a skyscraper of 828 meters, should
+            not exist in Dubai regardless of its impressive
+            height and form. The hot and humid climate is the
+            worst place to build an exposed, steel-ribbed glass
+            structure. Its peak electrical demand is 36mW,
+            which equals to 360,000 bulbs of 100 watts
+            operating simultaneously, and its water demand
+            averages to 250,000 gallons per day.
+          </p>
+          <p>
+            However, that is not to say we should not have
+            high-rises or that they cannot have aesthetically
+            interesting forms. Singapore based firm WOHA
+            demonstrates continued experimentation on the
+            intersection of urban density and sustainability—
+            they ask the question of “how can a metropolis
+            high-rise maximize comfort living and still remain
+            energy efficient?”
+          </p>
+          <p>
+            WOHA is especially known for their use of green
+
+          </p>
+        </div>
+        <div class="info col-5">
+          <p>
+            walls. Unlike the sparse grass that occupies Milstein
+            Hall’s roof, WOHA buildings often incorporate living
+            landscapes into their building design. Founders Wo
+            Mun Summ and Richard Hassell say that their key
+            principle is to design buildings that breathe. They
+            want to design buildings that are “porous” and
+            provide “air movement, buildings that respond to
+            the environment rather than acting as sealed glass
+            boxes”.
+          </p>
+          <p>
+            In the United States, buildings account for 48%
+            of total energy consumption. Though there is a
+            trend for more sustainable housing, we still have
+            much work to do. While mechanical equipment can
+            help to reduce energy demands, it is important
+            that architecture goes beyond being impressive
+            starchitecture and responds to the environment
+            through its design.
+          </p>
+        </div>
+      </div>
+      <div class="col-1 front">
+        <img src="images/icons/frontarrow.png" class="arrow front_arrow">
+      </div>
+    </div>
+
+
+
+    <!-- PAGE 3 -->
+    <div class="article_page row hidden" id="apg_3">
+      <div class="col-1">
+        <img src="images/icons/backarrow.png" class="arrow back_arrow">
+      </div>
+      <div id="pg_3" class="page hidden row">
+        <div class="col-10">
+          <h5>How would you re-design Milstein Hall to better respond to its site (Cornell, Arts Quad) and user needs
+            (architecture students)?</h5>
+          <canvas id="can" width="400" height="400"></canvas>
+          <a href="mailto:mediumdesigncollective@gmail.com?subject=I made something!!" id="interact_b">
+            <p>Send!</p>
+          </a>
+        </div>
+      </div>
+      <div class="col-1"></div>
+    </div>
+
+  </main>
+
+</body>
+
+</html>

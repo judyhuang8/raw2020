@@ -1,0 +1,429 @@
+
+html, body {
+  margin: 0;
+  height: 100vh;
+}
+body {
+  transition: 0.5s ease;
+  overflow-y: hidden;
+}
+
+#incubates-blob-img {
+  width: 30%;
+  margin: 10vh auto;
+
+}
+
+#incubates-blob-img:hover {
+  cursor: pointer;
+}
+
+#incubates-blob-img img {
+  height: 50vh;
+}
+
+.img-normal {
+  height: 65vh;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -40%);
+  transition: 0.5s ease;
+  z-index: 1;
+}
+.img-normal:hover {
+  cursor: default;
+}
+
+.img-hover {
+  transform: scale(1.05) translate(-47.5%, -40%);
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transition: 0.3s ease;
+  cursor: pointer;
+  z-index: 1;
+}
+
+#incubates-header{
+  text-align: center;
+  margin: 1em auto;
+  position: fixed;
+  z-index: 10;
+  left: 50%;
+  transform: translateX(-50%);
+  letter-spacing: 0.75px;
+}
+
+h2{
+  font-size:28px;
+}
+h3 {
+  font-size: 20px;
+}
+h5{
+  font-size:16px;
+}
+
+.centerblob{
+  display: block;
+  margin: auto;
+  width:100%;
+}
+
+#blob1{
+  animation: 5s blobrotate cubic-bezier(0.51, 0.49, 0.5, 0.6) infinite;
+  transform-origin: 50% 50%;
+  
+}
+
+#incubates-nav-container{
+  position: fixed;
+  z-index:100;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+#mobile-incubates-nav {
+  display: none;
+}
+#mobile-incubates-nav h6 {
+  display: inline;
+  margin: 0 1em;
+}
+
+.small-blob{
+  display: inline-block;
+  margin:1em;
+  width: 16px;
+}
+
+.single-nav-container {
+  display: inline-block;
+}
+
+.hoverblob {
+  position: absolute;
+  z-index: 200;
+  bottom: 35px;
+  transform: translateX(-35%);
+  animation: .8s navhover ease;
+} 
+.absolute-centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 200px;
+  color: white;
+  text-align: center;
+}
+.absolute {
+  position: absolute;
+}
+
+.hoverblob-text {
+  color: white;
+  position: absolute;
+  z-index: 201;
+  text-align: center;
+  bottom: 100%;
+  margin: 0 auto;
+  width: 100px;
+  transform: translate(-28%, -40px);
+  animation: .5s navhover ease;
+
+}
+
+#emptystate {
+  left: 50%;
+  top: 50%;
+  position: fixed;
+  transform: translate(-50%, -50%);
+  margin: 0; 
+  width: 350px;
+  height: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#emptystate:hover {
+  cursor: default;
+}
+
+.emptystatecontent{
+  position: relative;
+  padding: 40px 20px;
+  color: #fff;
+  text-align: center;
+  transition: 0.5s;
+  z-index: 1000;
+  margin: 30px;
+}
+
+#emptystate span:nth-child(1) {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 32% 58% 69% 43% / 48% 32% 59% 55%;
+  animation: animate 6s linear infinite;
+  background: lightgray;
+}
+#emptystate span:nth-child(2) {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 38% 62% 63% 37% / 41% 44% 56% 59%;
+  animation: animate 4s linear infinite;
+  background: gray;
+}
+#emptystate span:nth-child(3) {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 95%;
+  height: 95%;
+  border-radius: 31% 45% 74% 35% / 38% 56% 51% 87%;
+  animation: animate2 10s linear infinite;
+  background: black;
+}
+
+#outerwrapper {
+  display: none;
+  justify-content: center;
+  margin: 3em auto;
+  width: 100%;
+}
+
+#innerwrapper {
+    display: flex;
+    width: 50%;
+    position: fixed;
+    right: 30%;
+    top: 50%;
+    transform: translate(50%, -50%);
+    align-items: start;
+    height: 50vh;
+    margin: 3em 4em 2em 2em;
+    animation: slideleft 0.5s ease;
+}
+
+#incubates-img-full {
+  height: 60vh;
+}
+
+.incubates-text {
+  margin: 0 2em 2em 2em;
+  height: 40vh;
+  overflow: auto;
+  padding-right: 1em;
+}
+
+#readmore {
+  font-size: 16px;
+  text-align: center;
+  position: relative;
+  top: 75vh;
+  display: none;
+  z-index: 20;
+  padding: 0.5em 1em;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: navhover 0.5s ease;
+}
+
+a.button h4 {
+  font-size: 16px;
+  margin: 0;
+  color: black;
+}
+
+a.button:hover {
+  text-decoration: none;
+}
+
+.button {
+  border: 1px solid black;
+  padding: 12px 20px;
+  float: right;
+  border-radius: 8px;
+  transition: 0.3s ease;
+}
+.button:hover, .button:hover h4 {
+  color: white;
+  background-color: black;
+  transition: 0.3s ease;
+}
+
+.yellow {
+  background-color:#EECF73;
+}
+.blue {
+  background-color: #afcbe4;
+}
+.peach {
+  background-color: #F4C9A2;
+}
+.orange {
+  background-color: #c3deb7;
+}
+.white {
+  background-color: #FFFFFF;
+}
+
+.moveleft {
+  left: 20%;
+}
+
+.nav-bar {
+  background-color: transparent;
+}
+
+@keyframes slideleft {
+  0% {
+    opacity: 0;
+    right: 0;
+  }
+
+  100% {
+    opacity: 1;
+    right: 30%;
+  }
+}
+
+@keyframes slideleft {
+  0% {
+    opacity: 0;
+    right: 0;
+  }
+
+  100% {
+    opacity: 1;
+    right: 30%;
+  }
+}
+
+@keyframes slideright {
+  0% {
+    opacity: 1;
+    right: 30%;
+  }
+
+  100% {
+    opacity: 0;
+    right: 0%;
+  }
+}
+
+#incubates-mobile {
+  display: none;
+}
+
+
+
+@keyframes navhover{
+  from {
+   opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 1000px) {
+  body{
+    overflow-y: scroll;
+  }
+  #incubates-img {
+    left:50%;
+  }
+  #incubates-header{
+    width: 100%;
+  }
+  #innerwrapper {
+    width: 50%;
+    margin: 2em 0 2em 2em;
+  }
+#description {
+  height: 50vh;
+}
+  a.button h4 {
+    display: inline-block;
+  }
+  .button {
+    float: none;
+    display: block;
+    margin: 0 auto;
+    width: 200px;
+    text-align: center;
+  }
+
+
+
+}
+
+@media (max-width: 800px) {
+
+  #incubates-header{
+    text-align: center;
+    margin: 1em auto;
+    position: static;
+    transform: none;
+  }
+
+  #incubates-full {
+    display:none;
+  }
+  #emptystate {
+    display: none;
+  }
+  #incubates-nav-container {
+    display: none;
+  }
+  #incubates-mobile {
+    display: block;
+    width: 100%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .mobile-incubates-img img {
+    width: 80%;
+    display: inline-block;
+    margin: 2em auto;
+  }
+  .mobile-incubates-img {
+    text-align: center;
+
+  }
+  .incubates-description-mobile {
+    margin: 1em auto;
+  }
+  .button {
+    float: none;
+    margin: 2em auto;
+  }
+  .project {
+    margin: 2em auto 8em auto;
+  }
+  .nav-bar {
+    background-color: white;
+  }
+  h3, h4, h5 {
+    text-align: center;
+  }
+  h3 {
+    font-size: 24px;
+  }
+  h4 {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  h5 {
+    font-size: 14px;
+  }
+}

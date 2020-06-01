@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Medium Design Collective</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" type="image/png" href="images/icons/Logo-sm.png" />
+
+  <!-- import the webpage's stylesheet -->
+  <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"> -->
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="styles/articles.css">
+
+  <!-- import the webpage's javascript file -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="scripts/script.js" defer></script>
+  <script src="scripts/articles.js" defer></script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-167917556-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-167917556-1');
+  </script>
+
+
+</head>
+
+<body onload="init()">
+  <main class="container-fluid">
+    <div class="row icons">
+      <div>
+        <img src="images/icons/menu.png" class="icon" id="menu" />
+        <img src="images/icons/collapse.png" class="icon hidden" id="collapse" />
+        <div class="nav-bar">
+          <ul>
+            <li>
+              <h5><a href="index.html">Home</a></h5>
+            </li>
+            <li>
+              <h5><a href="incubates.html">Incubates</a></h5>
+            </li>
+            <li>
+              <h5><a href="editorial.html">Editorial</a></h5>
+            </li>
+            <li>
+              <h5><a href="about.html">About</a></h5>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <a href="editorial.html"><img src="images/icons/x.png" class="icon" /></a>
+    </div>
+
+    <!-- COVER -->
+    <div class="page_nav row"></div>
+    <div class="article_cover row" id="apg_0">
+      <div class="col-1"></div>
+      <div id="pg_0" class="page row">
+        <div class="info col-5">
+          <div class="details">
+            <h2>Why My Chair is Not Comfy</h2>
+            <h5>Jennifer Lee</h5>
+          </div>
+          <img src="images/articles/chair.png" alt="graphic with a person" class="img-fluid" />
+
+
+        </div>
+        <div class="info col-5">
+          <h6>The Issue with Ergonomics</h6>
+          <p>
+            The design process of ergonomics focuses on
+            arranging the workplace, products, and systems so
+            that they optimize the health, safety, and comfort
+            of the user. Historically, the design process has
+            been targeted to benefit an ideal or primary user.
+            But how do designers decide who the ideal user is,
+            and how does this decision affect everyone else
+            who isn’t ideal? What happens when one size does
+            not fit all?
+          </p>
+          <p>
+            Deriving from the work setting, ergonomics has
+            been traditionally focused on the ideal office worker,
+            someone who remained stationary for hours and
+            hours. Moreover, this ideal office worker, in terms
+            of body size and proportions, is often a middle-aged
+            white male. But what about every other identity
+            factor (body-type, gender, age, handicaps, etc.) that
+            may prevent an individual from being a traditionally
+            ideal user?
+          </p>
+
+        </div>
+      </div>
+      <div class="col-1 front">
+        <img src="images/icons/frontarrow.png" class="arrow front_arrow">
+      </div>
+    </div>
+
+    <!-- PAGE 1 -->
+    <div class="article_page row hidden" id="apg_1">
+      <div class="col-1">
+        <img src="images/icons/backarrow.png" class="arrow back_arrow">
+      </div>
+      <div id="pg_1" class="page hidden row">
+        <div class="info col-5">
+          <p>
+            The way we are designing and arranging
+            our office spaces is clearly not inclusive of all
+            identities and human backgrounds.
+          </p>
+          <p>
+            The question remains, however, as to how we can
+            move to address design biases in ergonomics.
+            How can we change the design focus of
+            ergonomic products from an ideal user in order
+            to accommodate all users? How can we make
+            ergonomics comfortable and efficient for all?
+          </p>
+          <p>
+            A publication by the American Federation of State,
+            County and Municipal Employees (AFSCME) explores
+            the “Injuries Caused by Poor Ergonomics.” Although
+            there are no immediate effects of poor ergonomics,
+            long-term exposure to uncomfortable working
+            conditions can cause a variety of injuries and
+            illnesses, including carpal tunnel syndrome, ganglion
+            cysts, and Raynaud’s Syndrome. These maladies
+            stem from the fact that what is
+          </p>
+
+        </div>
+        <div class="info col-5">
+          <p>
+            comfortable for
+            a tall, average-sized male might put unnecessary
+            strain on a shorter, more slender user, for instance.
+            And because they happen over long periods of time
+            and are hard to observe, these discomforts have
+            persisted in the workplace.
+          </p>
+          <h6>Product Design Gone Wrong</h6>
+          <p>
+            Designing products around the needs of an ideal
+            user is not limited to the office; in fact, it can
+            be more easily observed in an industry such as
+            pharmaceuticals,
+            where doses of painkillers and
+            sleep medications aimed at an ideal user might have
+            immediate repercussions for everyone else.
+          </p>
+          <p>
+            Developing and testing the long-term effects of
+            new pharmaceutical products can cost millions of
+            dollars. In an effort to cut costs, most products
+            are created using data from white males, simply
+            because there has historically been more
+            information obtained about this demographic than
+            any of the others.
+          </p>
+        </div>
+      </div>
+      <div class="col-1 front">
+        <img src="images/icons/frontarrow.png" class="arrow front_arrow">
+      </div>
+    </div>
+
+    <!-- PAGE 2 -->
+    <div class="article_page row hidden" id="apg_2">
+      <div class="col-1">
+        <img src="images/icons/backarrow.png" class="arrow back_arrow">
+      </div>
+      <div id="pg_2" class="page hidden row">
+        <div class="info col-5">
+          <p>
+            For example, the average age
+            at which autism is diagnosed in males is 3.8, while
+            the average age is 7.6 in females.
+            This four-year
+            discrepancy is purely due to the fact that the large
+            majority of data points obtained from observing
+            autism have been focused on young boys.
+          </p>
+          <p>
+            Even more startling is the poor ergonomic design of
+            the three-point seat belt system in motor vehicles.
+            A paper by Bose et al. in 2011 found that female
+            drivers were almost 50% more likely to sustain
+            injuries during moderate to severe crashes than
+            their male counterparts, a direct consequence of
+            designing seatbelts for an ideal male user.
+          </p>
+          <h6>Hope for a Comfier Future</h6>
+          <p>
+            Designers and engineers alike are beginning to
+            understand the need to tailor their products so that
+            they work for every user, not simply the “ideal” ones.
+            The future of design is interdisciplinary, human-centric,
+            and self-accountable.
+          </p>
+
+        </div>
+        <div class="info col-5">
+          <p>
+            Randy Hunt, head of
+            Design and Grab, says that “2020 will be a tipping
+            point for designers taking responsibility for their
+            work.”
+          </p>
+          <p>
+            In our decade, we are beginning to see the world
+            of design trending towards ethical product design.
+            Designers are beginning to consider the context
+            of their products: What contribution does the
+            product provide? Who does the product help?
+            How will the product function in the long-term?
+            Many companies are also partnering with ethical,
+            values-driven organizations
+            to ensure that their
+            materials are responsibly sourced, and that their
+            products introduce good behaviors and optimal
+            user experiences.
+          </p>
+          <p>
+            One such company that exemplifies the principles
+            of ethical design is Humane by Design, created by
+            Jon Yablonski. Humane by Design creates products
+            that actually help its users.
+          </p>
+
+        </div>
+      </div>
+      <div class="col-1 front">
+        <img src="images/icons/frontarrow.png" class="arrow front_arrow">
+      </div>
+    </div>
+
+
+
+    <!-- PAGE 3 -->
+    <div class="article_page row hidden" id="apg_3">
+      <div class="col-1">
+        <img src="images/icons/backarrow.png" class="arrow back_arrow">
+      </div>
+      <div id="pg_3" class="page hidden row">
+        <div class="col-5">
+          <p>
+            These are ethical and
+            intelligent designs, aware that different users may
+            have different needs and different abilities. They
+            respect the time and attention of their users, and
+            prioritize user experience over revenue.
+          </p>
+          <p>
+            The movement in the design community toward
+            ethical and humane design illustrates that the
+            world is making positive strides toward inclusive
+            design practices. The days of the ideal user are
+            rapidly retreating. Because in the end, every user
+            should be an ideal user. Regardless of our identities,
+            we all deserve to have products that make us feel
+            comfortable and safe. And with the current trend
+            in the design community toward inclusive design,
+            soon, we will all be able to sit in a comfy chair of our
+            own.
+          </p>
+        </div>
+        <div class="col-5">
+          <h5>Have you ever encountered a product that was clearly not designed for your body? Tell us about it!</h5>
+          <canvas id="can" width="350" height="350"></canvas>
+          <a href="mailto:mediumdesigncollective@gmail.com?subject=I made something!!" id="interact_b">
+            <p>Send!</p>
+          </a>
+        </div>
+      </div>
+      <div class="col-1"></div>
+    </div>
+
+  </main>
+
+</body>
+
+</html>

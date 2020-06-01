@@ -6,25 +6,115 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" type="image/png" href="images/icons/Logo-sm.png" />
 
   <!-- import the webpage's stylesheet -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-  <link rel="stylesheet" href="styles/countdown.css">
+  <link rel="stylesheet" href="styles/style.css">
 
   <!-- import the webpage's javascript file -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="scripts/countdown.js" defer></script>
+  <script src="scripts/script.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.14/p5.js"></script>
+  <script>
+    function setup() {
+      createCanvas(windowWidth, windowHeight);
+      if (mouseX > 200) {
+        d = int(dist(mouseX, mouseY, 400, 200));
+      }
+      else if (mouseX < 200) {
+        d = int(dist(mouseX, mouseY, 0, 200));
+      }
+    }
+    function windowResized() {
+      resizeCanvas(windowWidth, windowHeight);
+    }
+    function draw() {
+      blendMode(BLEND);
+      background(256);
+      //noStroke();
+      blendMode(MULTIPLY);
+      noStroke();
+      translate(width / 2, height / 2);
+      fill(0, 150, 240);
+      drawLiq(18, d, d, d);
+      fill(240, 240, 0);
+      drawLiq(15, 90, 25, 120);
+      fill(240, 0, 240);
+      drawLiq(12, 100, 15, 75);
+    }
+
+    function drawLiq(vNnum, nm, sm, fcm) {
+      push();
+      rotate(frameCount / fcm);
+      let dr = TWO_PI / vNnum;
+      beginShape();
+      for (let i = 0; i < vNnum + 3; i++) {
+        let ind = i % vNnum;
+        let rad = dr * ind;
+        let r = height * 0.3 + noise(frameCount / nm + ind) * height * 0.1 + sin(frameCount / sm + ind) * height * 0.05;
+        curveVertex(cos(rad) * r, sin(rad) * r);
+      }
+      endShape();
+      pop();
+    }
+  </script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-167917556-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-167917556-1');
+  </script>
 
 </head>
 
 <body>
-  <div id="countdown">
-    <p>coming soon</p>
-    <div id="time"> </div>
-
-
+  <div class="container">
+    <div class="center">
+      <div id="sketch-div"></div>
+      <h1>Forms of Belonging</h1>
+      <p>A collection of design projects and writing about diversity and inclusion</p>
+      <a href="index.html#contents">Enter</a>
+      <div id="contents">
+        <div class="square">
+          <span></span>
+          <span></span>
+          <span></span>
+          <a href="incubates.html">
+            <div class="content">
+              <h3>Incubates</h3>
+              <p>group projects designing for diversity and inclusion</p>
+            </div>
+          </a>
+        </div>
+        <div class="square">
+          <span></span>
+          <span></span>
+          <span></span>
+          <a href="editorial.html">
+            <div class="content">
+              <h3>Artifacts for All</h3>
+              <p>editorial of reflections, critiques, and perspectives on belonging </p>
+            </div>
+          </a>
+        </div>
+        <div class="square">
+          <span></span>
+          <span></span>
+          <span></span>
+          <a href="about.html">
+            <div class="content">
+              <h3>About Medium</h3>
+              <p>what Medium is and what Forms of Belonging is</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
   </div>
-  <footer><a href="https://cornellmedium.design/">Medium Design Collective</a></footer>
 </body>
 
 </html>

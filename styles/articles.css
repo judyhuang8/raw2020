@@ -1,0 +1,238 @@
+html{
+  overflow: hidden;
+}
+body{
+  margin: 0px;
+}
+h5{
+  font-size: 16px;
+}
+h2, h4, h6{
+  margin: 0px 0px;
+}
+h2{
+  font-size: 43px;
+}
+h4{
+  font-size: 20px;
+}
+h4, p{
+  margin: 10px 0px;
+}
+p{
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+h6{
+  display: inline;
+  font-family: 'Neue Haas Grotesk 65', sans-serif;
+  letter-spacing: 1px;
+}
+a{
+  color: black;
+  text-decoration: none;
+}
+.row{
+  display: flex;
+  flex-direction: row;
+  /* flex-wrap: wrap; */
+}
+.img-fluid{
+  width: 100%;
+  height: auto;
+}
+.col-1{
+  display: flex;
+  flex-direction: column;
+  width: 15%;
+  align-self: flex-end;
+  padding-bottom: 20px;
+}
+.col-5, .col-10{
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  justify-content: space-evenly;
+  /* align-items: center; */
+  padding: 10px 25px;
+  overflow: hidden;
+}
+.col-5{
+  width:38%;
+  /* height: 90%; */
+}
+.col-5 img{
+  margin: 0 auto;
+}
+.col-10{
+  width:50%;
+  margin: 0 50px;
+  /* margin-left: -10px; */
+}
+.container-fluid{
+  padding-right: 15px;
+  padding-left: 15px;
+ }
+.arrow{
+  height: 15px;
+  width: 30px;
+  float: right;
+  align-self: center;
+  cursor: pointer;
+}
+.front_arrow{
+  float: left;
+}
+.article_cover, .article_page{
+  height: 85vh;
+  margin: 0px auto;
+  padding: 10px 0px;
+  /* display: inline-block; */
+}
+.page{
+  width: 75vw;
+  margin: 0 auto;
+  justify-content: space-evenly;
+}
+.prompt{
+  justify-content: center;
+}
+.interact{
+  height: 85vh;
+  width: 75vw;
+}
+.interact .col{
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+#interact_b p{
+  font-size: 16px;
+  margin: 0px;
+  text-align: center;
+}
+#interact_b{
+  margin: 20px auto;
+  border: 2px solid black;
+  border-radius: 8px;
+  padding: 5px 15px;
+  width: 25%;
+  background-color: white;
+}
+#interact_b:hover{
+  background-color: black;
+  color: white;
+  transition-duration: .5s;
+}
+.article_imgs{
+  width: 55%;
+}
+.details{
+  margin-bottom: 30px;
+}
+
+#can{
+  /* position: relative; */
+  /* top: 10%; */
+  /* left: 10%; */
+  border: 2px solid black;
+  cursor: url('../images/icons/pencil.png'), default;
+  /* position: absolute; */
+  /* margin: 3% 13%; */
+  /* width: 75%;
+  height: 80%; */
+}
+.page_nav{
+  margin: 10px auto;
+  position: fixed;
+  bottom: 20px;
+  left: 47vw;
+}
+.page_nav img{
+  width: 10px;
+  height: 10px;
+  margin: 0px 5px;
+}
+.fadeRight, .fadeLeft{
+  transition-timing-function: ease-in;
+  animation-fill-mode: both;
+}
+.fadeRight{
+  animation: fadeRight 2s;
+}
+.fadeLeft{
+  animation: fadeLeft 2s;
+}
+.hidden{
+  display: none;
+}
+
+@keyframes fadeRight {
+  0% {
+    opacity: 0;
+    transform: translate3d(50%, 0, 0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+@keyframes fadeLeft {
+  0% {
+    opacity: 0;
+    transform: translate3d(-50%, 0, 0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+@media screen and (max-width: 900px){
+  .article_cover,.article_page{
+    height: 100%;
+    padding: 20px 0px;
+  }
+  .page{
+    width: 100%;
+  }
+  .page_nav{
+    justify-content: center;
+    /* margin: 0 37vw 20px 37vw; */
+    position: absolute;
+    bottom: 0;
+    left: 30vw;
+  }
+  .page_nav img{
+    justify-content: center;
+  }
+  html{
+    overflow-y: auto;
+    position: relative;
+  }
+  #can{
+    display: none;
+  }
+  .row{
+    flex-wrap: wrap;
+  }
+  .col-1, .col-5{
+    width: 100%;
+  }
+  .icons{
+    margin-left: 0;
+  }
+  .front_arrow{
+    margin: 10px 0px;
+  }
+  .info{
+    padding: 0px
+  }
+  .article_imgs{
+    width: 100%;
+  }
+  .prompt{
+    display: none;
+  }
+}

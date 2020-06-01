@@ -110,6 +110,10 @@ h2{
     width: 20%;
     border-radius: 20px;
     padding: 5px 10px;
+    margin-top: 20px;
+}
+.buy h5{
+    letter-spacing: 1px;
 }
 .buy a:hover{
     text-decoration: none;

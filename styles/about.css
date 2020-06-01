@@ -61,6 +61,9 @@
  .about-body p{
    margin-bottom: 20px;
  }
+ .about-body h2 {
+   margin: 1em auto .5em 0;
+ }
  .members p{
   font-size: 16px;
 }

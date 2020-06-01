@@ -76,7 +76,6 @@ var x = "black",
   y = 2;
 
 function init() {
-  console.log("initalized")
   canvas = document.getElementById('can');
   ctx = canvas.getContext("2d");
   w = canvas.width;
@@ -84,7 +83,6 @@ function init() {
 
   canvas.addEventListener("mousemove", function (e) {
     findxy('move', e)
-    console.log("drawing");
   }, false);
   canvas.addEventListener("mousedown", function (e) {
     findxy('down', e)
@@ -97,12 +95,10 @@ function init() {
   }, false);
 }
 
-function color(obj) {
-  x = "black"
-  // if (x == "white") y = 14;
-  // else y = 2;
+// function color(obj) {
+//   x = "black"
 
-}
+// }
 
 function draw() {
   ctx.beginPath();
@@ -113,21 +109,6 @@ function draw() {
   ctx.stroke();
   ctx.closePath();
 }
-
-// function erase() {
-//   var m = confirm("Want to clear");
-//   if (m) {
-//     ctx.clearRect(0, 0, w, h);
-//     document.getElementById("canvasimg").style.display = "none";
-//   }
-// }
-
-// function save() {
-//   document.getElementById("canvasimg").style.border = "2px solid";
-//   var dataURL = canvas.toDataURL();
-//   document.getElementById("canvasimg").src = dataURL;
-//   document.getElementById("canvasimg").style.display = "inline";
-// }
 
 function findxy(res, e) {
   if (res == 'down') {

@@ -83,7 +83,7 @@ $(document).ready(function () {
      }).mouseout(function () {
           showNormal($('#img').get()[0]);
      });
-     window.onscroll = function (e) {
-          $("#expand").addClass("hidden");
-     }
+     // window.onscroll = function (e) {
+     //      $("#expand").addClass("hidden");
+     // }
 });

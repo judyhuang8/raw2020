@@ -19,8 +19,7 @@
 
 </head>
 
-<body>
-
+<body onload="init()">
   <main class="container-fluid">
     <div class="row icons">
       <div>
@@ -56,7 +55,7 @@
             <h2>Diversity & Inclusion in Architecture</h2>
             <h5>Desai Wang</h5>
           </div>
-          <img src="images/articles/triple.jpg" alt="graphic with a person" class="img-fluid" />
+          <img src="images/articles/arch.png" alt="graphic with a person" class="img-fluid" />
 
         </div>
         <div class="info col-5">
@@ -117,12 +116,14 @@
             efficient plumbing fixtures and dirt-capturing entry
 
             mats, which are more related to interior elements
-            than the building design. In other words, Milstein
-            Hall, along with most starchitecture, is not as
-            sustainable as it claims to be.
+            than the building design.
           </p>
         </div>
         <div class="info col-5">
+          <p>In other words, Milstein
+            Hall, along with most starchitecture, is not as
+            sustainable as it claims to be.
+          </p>
           <p>While people, me included, are wowed by the big
             firms and their dazzling designs, I think we have a
             responsibility to look beyond forms.
@@ -173,10 +174,13 @@
             high-rise maximize comfort living and still remain
             energy efficient?”
           </p>
+          <p>
+            WOHA is especially known for their use of green
+
+          </p>
         </div>
         <div class="info col-5">
           <p>
-            WOHA is especially known for their use of green
             walls. Unlike the sparse grass that occupies Milstein
             Hall’s roof, WOHA buildings often incorporate living
             landscapes into their building design. Founders Wo
@@ -211,10 +215,10 @@
       <div class="col-1">
         <img src="images/icons/backarrow.png" class="arrow back_arrow">
       </div>
-      <div id="pg_3" class="interact hidden row">
-        <div class="col" onload="init()">
+      <div id="pg_3" class="page hidden row">
+        <div class="col-10">
           <h5>PROMPT QUESTION</h5>
-          <canvas id="can"></canvas>
+          <canvas id="can" width="500" height="500"></canvas>
           <a href="mailto:mediumdesigncollective@gmail.com?subject=I made something!!" id="interact_b">
             <p>Send!</p>
           </a>
@@ -225,185 +229,6 @@
 
   </main>
 
-  <!-- <canvas id="can"></canvas>
-  <main class="container-fluid">
-    <div class="row icons">
-      <div>
-        <img src="images/icons/menu.png" class="icon" id="menu" />
-        <img src="images/icons/collapse.png" class="icon hidden" id="collapse" />
-        <div class="nav-bar">
-          <ul>
-            <li>
-              <h5><a href="index.html">Home</a></h5>
-            </li>
-            <li>
-              <h5><a href="incubates.html">Incubates</a></h5>
-            </li>
-            <li>
-              <h5><a href="editorial.html">Editorial</a></h5>
-            </li>
-            <li>
-              <h5><a href="about.html">About</a></h5>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <a href="editorial.html"><img src="images/icons/x.png" class="icon" /></a>
-    </div>
-
-    
-    <div class="article_cover row align-items-end" id="pg_0">
-      <div class="col-1"></div>
-      <div class="col-5">
-        <div class="details">
-          <h2>Modern Architecture</h2>
-          <h5>Desai Wang</h5>
-        </div>
-        <img src="images/articles/circles_muted.png" alt="graphic with people" class="img-fluid" />
-      </div>
-
-      <div class="info col-5">
-        <p>
-          Starchitects—famous, star-like, architects—and
-          their architecture dominate our time. Frank Gehry,
-          Eero Saarinen, I.M. Pei and Rem Koolhaas are just
-          some amongst an ever-growing list. Perhaps you
-          don’t recognize their names, but you must have
-          heard of the Guggenheim Museum in Bilbao, Glass
-          Pyramids at the Louvre, Gateway Arch in St. Louis,
-          or the CCTV tower in Beijing. Starchitecture dots
-          the world, Cornell included: I.M. Pei designed the
-          Johnson Museum of Art and Rem Koolhaas, Milstein
-          Hall.
-        </p>
-        <p>
-          Bold and imaginative designs characterize these
-          high profile, high budget works, making them
-          perfect for magazine covers and city promotions.
-          Not only are works from starchitects guaranteed to
-          look good, they have also become status symbols.
-          Yet, forms aside, they accomplish little.
-        </p>
-      </div>
-      <div class="col-1">
-        <img src="images/icons/frontarrow.png" class="arrow front_arrow">
-      </div>
-    </div>
-    <div class="page_nav row"></div>
-
-    
-    <div class="article_page no_img row align-items-end hidden" id="pg_1">
-      <div class="col-1">
-        <img src="images/icons/backarrow.png" class="arrow back_arrow">
-      </div>
-      <div class="info col-5">
-        <p>
-          Many high-profile designs are advertised to be
-          “sustainable” when experimental forms often
-          contradict sustainability. For example, Milstein
-          Hall has a green roof and is certified Gold by LEED
-          (Leadership in Energy and Environmental Design).
-          However, Cornell architecture professor Johnathan
-          Ochshorn points out that it is “a sealed glass box...
-          that maximizes weather-exposed surfaces” and
-          “uses far more building materials than needed.”
-          Further, Ochshorn notes that many features which
-          helped Milstein secure the gold rating had little to
-          do with the architectural form itself. For example,
-
-          features that earned LEED points include water-
-          efficient plumbing fixtures and dirt-capturing entry
-
-          mats, which are more related to construction than
-          to design. In other words, Milstein, along with most
-          starchitecture, is not as sustainable as it claims to
-          be.
-        </p>
-        <p>
-          While people, me included, are wowed by the big
-          firms and their dazzling designs, I think we have a
-        </p>
-      </div>
-      <div class="info col-5">
-        <p>
-          responsibility to look beyond forms. Industrialization
-          has created new materials and new methods of
-          construction, but having the ability to shape building
-          in new ways does not mean we have to.
-        </p>
-        <p>
-          Technological advancement does not result in
-          invincibility. The location of a building, and the needs
-          of people inhabiting it, should be prioritized over the
-          architectural form. Architecture should reflect the
-          diversity of its location and be inclusive towards the
-          people it serves. Form should follow function.
-        </p>
-
-        <p>
-          Burj Khalifa, a skyscraper of 828 meters, should
-          not exist in Dubai regardless of its impressive
-          height and form. The hot and humid climate is the
-          worst place to build an exposed, steel-ribbed glass
-          structure. Its peak electrical demand is 36mW,
-          which equals to 360,000 bulbs of 100 watts
-          operating simultaneously, and its water demand
-          averages to 250,000 gallons per day.
-        </p>
-      </div>
-      <div class="col-1 front">
-        <img src="images/icons/frontarrow.png" class="arrow front_arrow">
-      </div>
-    </div>
-
-    
-    <div class="article_page no_img row align-items-end hidden" id="pg_2">
-      <div class="col-1">
-        <img src="images/icons/backarrow.png" class="arrow back_arrow">
-      </div>
-      <div class="info col-5">
-        <p>
-          However, that is not to say we should not have
-          high-rises or that they cannot have aesthetic
-          forms. Singapore based firm WOHA demonstrates
-          continued experimentation on the intersection
-          of urban density and sustainability—they ask
-          the question of “how can a metropolis high-rise
-          maximize comfort living and still remain energy
-          efficient?”
-        </p>
-        <p>
-          WOHA is especially known for their use of green
-          walls—unlike the sparse grass that occupy
-          Milstein’s roof, WOHA buildings often incorporate
-          living landscape into their design. Founders Wo
-          Mun Summ and Richard Hassell say that their key
-          principle is to design buildings that breathe. They
-          want to design buildings that are “porous” and
-          provide “air movement, buildings that respond to
-          the environment rather than acting as sealed glass
-          boxes.
-        </p>
-      </div>
-      <div class="info col-5">
-        <p>
-          Would ideally have stats on their projects here but
-          hard to find online, will see if can access journal
-          through Cornell library.
-        </p>
-        <p>
-          In the United States, buildings account for 48%
-          of total energy consumption. Though there is a
-          trend for more sustainable housing, we still have
-          much work to do. While mechanical equipment can
-          help reduce energy demands, it is important that
-          architecture responds to the environment through
-          its design.
-        </p>
-      </div>
-    </div>
-
-  </main> -->
 </body>
 
 </html>

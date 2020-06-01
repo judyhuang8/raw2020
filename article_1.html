@@ -20,7 +20,7 @@
 
 </head>
 
-<body>
+<body onload="init()">
   <!-- <canvas id="can"></canvas> -->
   <main class="container-fluid">
     <div class="row icons">
@@ -57,7 +57,7 @@
             <h2>Welcome to the Party: Diversity and Inclusion</h2>
             <h5>Colton Poore</h5>
           </div>
-          <img src="images/articles/circles_muted.png" alt="graphic with people" class="img-fluid" />
+          <img src="images/articles/party.png" alt="graphic with people" class="img-fluid" />
         </div>
         <div class="info col-5">
           <p>
@@ -76,6 +76,11 @@
             In a perfect world, you’d invite everyone, they’d all come, and they’d all
             have a great time — diversity and inclusivity would be one and the same.
           </p>
+          <p>
+            But who’s ever had that happen to them? Either your guests already
+            had an event going on that night, or something came up last minute,
+            or they’re out of town.
+          </p>
         </div>
       </div>
       <div class="col-1 front">
@@ -91,9 +96,7 @@
       <div id="pg_1" class="page hidden row">
         <div class="info col-5">
           <p>
-            But who’s ever had that happen to them? Either your guests already
-            had an event going on that night, or something came up last minute,
-            or they’re out of town. There’s no way that everyone’s invited, and
+            There’s no way that everyone’s invited, and
             everyone shows up. The feeling of inclusivity is always a subset of
             diversity. The number of people you invite will always be greater than
             the number of people who show up and have fun.
@@ -110,6 +113,7 @@
             just so happens to be the night of the Orgo Prelim. Archies have studio
             the next day. English majors have their essays due.
           </p>
+
         </div>
         <div class="info col-5">
           <img src="images/articles/Dates.PNG" alt="graphic with people" class="img-fluid article_imgs" />
@@ -128,6 +132,7 @@
           <p>
             But for the sake of necessity, say you settle on Friday at 8 pm.
           </p>
+
         </div>
       </div>
       <div class="col-1 front">
@@ -162,6 +167,7 @@
             <br>
             All of the above? In the right quantities? Good luck.
           </p>
+
         </div>
         <div class="info col-5">
           <p>
@@ -192,18 +198,7 @@
             to everyone? A rager? A kickback? A good
             old-fashioned party?
           </p>
-          <p>
-            No matter how you market it, someone’s not
-            going to like it. They’re gonna see it, roll their
-            eyes, and throw it away like they do with most
-            quarter cards.
-            Or maybe it’s a poster that they’ll never look
-            at.
-            Or a Facebook event that they’ll never check.
-            Or a finely worded, master-crafted email
-            announcement delivered instantly to their
-            inbox that is just as quickly deleted.
-          </p>
+
         </div>
       </div>
       <div class="col-1 front">
@@ -219,12 +214,27 @@
       <div id="pg_3" class="page hidden row">
         <div class="info col-5">
           <p>
+            No matter how you market it, someone’s not
+            going to like it. They’re gonna see it, roll their
+            eyes, and throw it away like they do with most
+            quarter cards.
+            Or maybe it’s a poster that they’ll never look
+            at.
+            Or a Facebook event that they’ll never check.
+            Or a finely worded, master-crafted email
+            announcement delivered instantly to their
+            inbox that is just as quickly deleted.
+          </p>
+          <p>
             Before you know it, the people who want
             to come to your party — the ones who feel
             included — are vanishing before your eyes.
           </p>
 
           <img src="images/articles/Invitation.PNG" alt="graphic with people" class="img-fluid article_imgs" />
+
+        </div>
+        <div class="info col-5">
           <p>
             But let’s spare you, the beleaguered party
             planner . Let’s say that the invites are sent
@@ -235,8 +245,6 @@
             shows up will want to dance at your party, or
             that they’ll feel comfortable being there at all.
           </p>
-        </div>
-        <div class="info col-5">
           <p>
             What if someone comes, only to run into that
             one person they can’t stand?
@@ -260,7 +268,25 @@
             goers, and instead become identity groups?
             And what if it’s no longer an innocent party,
             but a serious discussion where identity issues
-            are discussed? How do you plan this event so
+            are discussed?
+          </p>
+
+        </div>
+      </div>
+      <div class="col-1 front">
+        <img src="images/icons/frontarrow.png" class="arrow front_arrow">
+      </div>
+    </div>
+
+    <!-- PAGE 4 -->
+    <div class="article_page row hidden" id="apg_4">
+      <div class="col-1">
+        <img src="images/icons/backarrow.png" class="arrow back_arrow">
+      </div>
+      <div id="pg_4" class="page hidden row">
+        <div class="col-5">
+          <p>
+            How do you plan this event so
             that everyone — regardless of who they are
             or where they come from — feels comfortable
             attending and participating? There aren’t
@@ -280,24 +306,16 @@
             Guess party planning isn’t so easy after all.
           </p>
         </div>
-      </div>
-      <div class="col-1 front">
-        <img src="images/icons/frontarrow.png" class="arrow front_arrow">
-      </div>
-    </div>
-
-    <!-- PAGE 4 -->
-    <div class="article_page row hidden" id="apg_4">
-      <div class="col-1">
-        <img src="images/icons/backarrow.png" class="arrow back_arrow">
-      </div>
-      <div id="pg_4" class="interact hidden row">
-        <div class="col" onload="init()">
+        <div class="col-5 prompt">
           <h5>PROMPT QUESTION</h5>
-          <canvas id="can"></canvas>
+          <canvas id="can" width="400" height="400"></canvas>
           <a href="mailto:mediumdesigncollective@gmail.com?subject=I made something!!" id="interact_b">
             <p>Send!</p>
           </a>
+          <!-- <a href="#" class="button" id="save" download="image.png">Save</a> -->
+          <!-- <div class="display">
+            <img src>
+          </div> -->
         </div>
       </div>
       <div class="col-1"></div>

@@ -4,11 +4,14 @@ html{
 body{
   margin: 0px;
 }
+h5{
+  font-size: 16px;
+}
 h2, h4{
   margin: 0px 0px;
 }
 h2{
-  font-size: 47px;
+  font-size: 43px;
 }
 h4{
   font-size: 20px;
@@ -41,12 +44,17 @@ a{
   display: flex;
   flex-direction: column;
   align-self: center;
-  align-items: center;
+  justify-content: space-evenly;
+  /* align-items: center; */
   padding: 10px 25px;
   overflow: hidden;
 }
 .col-5{
-  width:37%;
+  width:38%;
+  /* height: 90%; */
+}
+.col-5 img{
+  margin: 0 auto;
 }
 .col-10{
   width:50%;
@@ -54,6 +62,7 @@ a{
   /* margin-left: -10px; */
 }
 .container-fluid{
+  padding-right: 15px;
   padding-left: 15px;
  }
 .arrow{
@@ -77,6 +86,9 @@ a{
   margin: 0 auto;
   justify-content: space-evenly;
 }
+.prompt{
+  justify-content: center;
+}
 .interact{
   height: 85vh;
   width: 75vw;
@@ -89,12 +101,15 @@ a{
 #interact_b p{
   font-size: 16px;
   margin: 0px;
+  text-align: center;
 }
 #interact_b{
-  margin: 20px 0px;
+  margin: 20px auto;
   border: 2px solid black;
-  border-radius: 3px;
-  padding: 3px 15px;
+  border-radius: 8px;
+  padding: 5px 15px;
+  width: 25%;
+  background-color: white;
 }
 #interact_b:hover{
   background-color: black;
@@ -102,7 +117,7 @@ a{
   transition-duration: .5s;
 }
 .article_imgs{
-  width: 60%;
+  width: 55%;
 }
 .details{
   margin-bottom: 30px;
@@ -110,6 +125,7 @@ a{
 
 #can{
   border: 2px solid black;
+  cursor: url('../images/icons/pencil.png'), default;
   /* position: absolute; */
   /* margin: 3% 13%; */
   /* width: 75%;

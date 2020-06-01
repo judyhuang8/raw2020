@@ -5,6 +5,7 @@ html, body {
 }
 body {
   transition: 0.5s ease;
+  overflow-y: hidden;
 }
 
 #incubates-blob-img {
@@ -333,6 +334,9 @@ a.button:hover {
 }
 
 @media (max-width: 1000px) {
+  body{
+    overflow-y: scroll;
+  }
   #incubates-img {
     left:50%;
   }

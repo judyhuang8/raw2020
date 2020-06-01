@@ -25,6 +25,7 @@ p{
 }
 h6{
   display: inline;
+  font-family: 'Neue Haas Grotesk 65', sans-serif;
 }
 a{
   color: black;
@@ -156,10 +157,10 @@ a{
   animation-fill-mode: both;
 }
 .fadeRight{
-  animation: fadeRight 1s;
+  animation: fadeRight 2s;
 }
 .fadeLeft{
-  animation: fadeLeft 1s;
+  animation: fadeLeft 2s;
 }
 .hidden{
   display: none;

@@ -127,7 +127,9 @@ h2{
     /* margin: auto; */
     animation: blink 2s linear infinite;
 }
-
+.wrap{
+    flex-wrap: wrap;
+}
 @keyframes blink{
     50%{
         opacity: 0;
@@ -161,5 +163,11 @@ h2{
     }
     h2{
         margin-top: 0px;
+    }
+    .buy{
+        width: 100%;
+    }
+    #expand{
+        display: none;
     }
   }

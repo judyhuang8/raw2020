@@ -22,7 +22,7 @@ body {
 }
 
 .img-normal {
-  height: 70vh;
+  height: 65vh;
   position: fixed;
   left: 50%;
   top: 50%;
@@ -206,7 +206,7 @@ h5{
     transform: translate(50%, -50%);
     align-items: start;
     height: 50vh;
-    margin: 2em 4em 2em 2em;
+    margin: 3em 4em 2em 2em;
     animation: slideleft 0.5s ease;
 }
 
@@ -249,20 +249,25 @@ a.button:hover {
   padding: 12px 20px;
   float: right;
   border-radius: 8px;
+  transition: 0.3s ease;
 }
-
+.button:hover, .button:hover h4 {
+  color: white;
+  background-color: black;
+  transition: 0.3s ease;
+}
 
 .yellow {
-  background-color:#ECD178;
+  background-color:#EECF73;
 }
 .blue {
-  background-color: #99C2E5;
+  background-color: #afcbe4;
 }
 .peach {
   background-color: #F4C9A2;
 }
 .orange {
-  background-color: #DF9059;
+  background-color: #c3deb7;
 }
 .white {
   background-color: #FFFFFF;

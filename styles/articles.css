@@ -7,7 +7,7 @@ body{
 h5{
   font-size: 16px;
 }
-h2, h4{
+h2, h4, h6{
   margin: 0px 0px;
 }
 h2{
@@ -17,9 +17,15 @@ h4{
   font-size: 20px;
 }
 h4, p{
-  margin: 10px 5px;
+  margin: 10px 0px;
 }
-
+p{
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+h6{
+  display: inline;
+}
 a{
   color: black;
   text-decoration: none;
@@ -58,7 +64,7 @@ a{
 }
 .col-10{
   width:50%;
-  margin: auto;
+  margin: 0 50px;
   /* margin-left: -10px; */
 }
 .container-fluid{
@@ -124,6 +130,9 @@ a{
 }
 
 #can{
+  /* position: relative; */
+  /* top: 10%; */
+  /* left: 10%; */
   border: 2px solid black;
   cursor: url('../images/icons/pencil.png'), default;
   /* position: absolute; */
@@ -187,10 +196,14 @@ a{
     width: 100%;
   }
   .page_nav{
-    margin-bottom: 20px;
+    justify-content: center;
+    /* margin: 0 37vw 20px 37vw; */
     position: absolute;
     bottom: 0;
-    left: 39vw;
+    left: 30vw;
+  }
+  .page_nav img{
+    justify-content: center;
   }
   html{
     overflow-y: auto;

@@ -96,10 +96,11 @@ body{
 .center{
  width: 400px;
  position: absolute;
- left: 36%;
+ left: calc(50% - 200px);
  top: 200px;
  color: white;
  mix-blend-mode: difference;
+ 
 
 }
 .center h1{
@@ -234,11 +235,12 @@ a{
 }
 @media (max-width: 900px) {
     .center{
-      left: 10%;
+      left: calc(50% - 200px);
     }
     #contents {
       flex-direction: column;
       left: -10%;
+      width: 80%;
     }
     .icons{
       margin-top: 10px;
